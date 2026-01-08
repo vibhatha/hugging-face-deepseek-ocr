@@ -73,7 +73,13 @@ if [[ "$(uname)" == "Linux" ]]; then
     # 3. Install Requirements
     log_info "Installing requirements.txt..."
     if [ -f "$SUBMODULE_PATH/requirements.txt" ]; then
+        # Use --no-deps for tokenizers/transformers in requirements to avoid downgrading what vLLM needs?
+        # Or just let it install and then fix it.
         pip install -r "$SUBMODULE_PATH/requirements.txt"
+        
+        # fix: requirements.txt pins tokenizers==0.20.3 which breaks vllm 0.6.x+
+        log_info "Fixing dependency conflict: Upgrading tokenizers and transformers for vLLM compatibility..."
+        pip install --upgrade "tokenizers>=0.21.0" transformers
     fi
 
     # 4. Install flash-attn
@@ -95,6 +101,10 @@ else
     log_info "Installing requirements.txt..."
     if [ -f "$SUBMODULE_PATH/requirements.txt" ]; then
         pip install -r "$SUBMODULE_PATH/requirements.txt"
+        
+        # fix: same fix for mac
+        log_info "Fixing dependency conflict: Upgrading tokenizers and transformers..."
+        pip install --upgrade "tokenizers>=0.21.0" transformers
     fi
 
     # 4. Install flash-attn (Optional/Best-effort on Mac)
