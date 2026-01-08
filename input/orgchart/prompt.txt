@@ -1,0 +1,28 @@
+**Objective:** Extract all tables from the provided document.
+
+**Context:**
+- The document is a PDF containing tables with information about various ministers.
+- A single page may contain the continuation of one minister's table AND the start of a completely
+  new minister's table.
+
+**Instructions:**
+1. **Identify Minister:** Locate the name of the minister associated with the table(s). **Crucial:** If a page
+   transitions from one minister to another, you MUST extract them as **two separate tables**. Look for bold
+   headings or structural breaks indicating a new minister.
+2. **Strict Row Alignment:** Each column generally has items with numbering (e.g., 1, 2, 3...). You must extract
+   data such that one number refers to exactly ONE row across all columns.
+   - If Column I has item "12" and Column II has no corresponding item, leave Column II **empty** for that row.
+   - Do **not** compress the table; preserve the alignment based on the numbering.
+   - Please extract the numbering given for each record as it is. Don't miss the numbers.
+   - Ensure values per each column for each row are in order of the numbers associated with each record.
+3. **Metadata Collection:** Extract metadata for each table as per the provided metadata schema.
+    - The metadata schema is provided in the `metadata_schema_path` argument.
+    - The metadata schema is a YAML file containing a list of fields with their names, types, and descriptions.
+    - The metadata schema is used to validate the extracted data.
+    - Do not hallucinate field values; leave them empty if they are not found in the source.
+    - All metadata fields must be present, even if their values are empty.
+    - Empty values must be left as "" (empty string).
+4. **Consolidate Data:** Ensure that all records belonging to the same minister are aggregated together.
+5. **Output Constraint:** Generate a separate, single output structure for each minister found. The goal is to
+   produce specific CSV files for each minister containing ONLY their data. Make sure for each table there is
+   a corresponding metadata file.

@@ -164,6 +164,7 @@ def main():
     parser = argparse.ArgumentParser(description="DeepSeek-OCR PDF Processor")
     parser.add_argument("--input_dir", type=str, required=True, help="Directory containing PDF files")
     parser.add_argument("--output_dir", type=str, required=True, help="Directory to save output JSON and images")
+    parser.add_argument("--prompt_file", type=str, help="Path to a text file containing the custom prompt", default=None)
     args = parser.parse_args()
     
     if not os.path.exists(args.input_dir):
@@ -177,8 +178,20 @@ def main():
     # Initialize Engine
     llm, sampling_params = setup_llm()
     
-    # Simple Prompt
-    prompt_str = config.PROMPT # '<image>\n<|grounding|>Convert the document to markdown.'
+    # Determine Prompt
+    prompt_str = config.PROMPT # Default fallback
+    if args.prompt_file:
+        if os.path.exists(args.prompt_file):
+            try:
+                with open(args.prompt_file, 'r', encoding='utf-8') as f:
+                    prompt_str = f.read().strip()
+                print(f"Loaded custom prompt from: {args.prompt_file}")
+            except Exception as e:
+                print(f"Error reading prompt file: {e}. Using default prompt.")
+        else:
+            print(f"Warning: Prompt file '{args.prompt_file}' not found. Using default prompt.")
+    else:
+        print("Using default prompt from config.")
     
     pdf_files = glob.glob(os.path.join(args.input_dir, "*.pdf"))
     print(f"Found {len(pdf_files)} PDF files.")

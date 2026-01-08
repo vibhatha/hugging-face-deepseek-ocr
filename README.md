@@ -26,3 +26,26 @@ conda activate deepseek-ocr
 ```
 
 You can then access the `DeepSeek-OCR` code in `external/DeepSeek-OCR`.
+
+## Running the OCR Application
+
+This repository includes a custom application `ocr_app.py` for batch processing PDF files.
+
+### Basic Usage
+
+```bash
+python ocr_app.py --input_dir /path/to/pdfs --output_dir /path/to/output
+```
+
+### Using a Custom Prompt
+
+You can provide a specific prompt via a text file:
+
+```bash
+python ocr_app.py --input_dir /input/path --output_dir /output/path --prompt_file /path/to/prompt.txt
+```
+
+**Arguments:**
+*   `--input_dir`: Directory containing `.pdf` files.
+*   `--output_dir`: Directory where extracted JSON and images will be saved.
+*   `--prompt_file`: (Optional) Path to a text file containing the custom prompt.
