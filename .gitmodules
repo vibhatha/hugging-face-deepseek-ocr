@@ -1,0 +1,3 @@
+[submodule "external/DeepSeek-OCR"]
+	path = external/DeepSeek-OCR
+	url = https://github.com/deepseek-ai/DeepSeek-OCR.git
