@@ -31,6 +31,9 @@ You can then access the `DeepSeek-OCR` code in `external/DeepSeek-OCR`.
 
 This repository includes a custom application `ocr_app.py` for batch processing PDF files.
 
+> [!NOTE]
+> DeepSeek-OCR requires custom logits processors which are not supported in vLLM V1. The application defaults to `VLLM_USE_V1=0` to ensure compatibility.
+
 ### Basic Usage
 
 ```bash
@@ -49,3 +52,21 @@ python ocr_app.py --input_dir /input/path --output_dir /output/path --prompt_fil
 *   `--input_dir`: Directory containing `.pdf` files.
 *   `--output_dir`: Directory where extracted JSON and images will be saved.
 *   `--prompt_file`: (Optional) Path to a text file containing the custom prompt.
+
+## Examples
+
+### Orgchart Example
+
+To parse the organizational charts and extract minister data:
+
+```bash
+VLLM_USE_V1=0 python ocr_app.py --input_dir input/orgchart --output_dir output/orgchart --prompt_file input/orgchart/prompt.txt
+```
+
+### Tourism Example
+
+To extract tables and metadata from the tourism report:
+
+```bash
+VLLM_USE_V1=0 python ocr_app.py --input_dir input/tourism --output_dir output/tourism --prompt_file input/tourism/prompt.txt
+```

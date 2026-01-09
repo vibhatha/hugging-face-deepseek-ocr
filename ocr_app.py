@@ -1,12 +1,26 @@
 import os
 import sys
+
+# 0. Setup Environment Variables
+# DeepSeek-OCR requires disabling VLLM V1 for custom logits processors
+# We must ensure VLLM_USE_V1='0' is set in the process environment from the start.
+if os.environ.get('VLLM_USE_V1') != '0':
+    print("Restarting script with VLLM_USE_V1=0 to disable V1 engine...")
+    new_env = os.environ.copy()
+    new_env['VLLM_USE_V1'] = '0'
+    new_env['CUDA_VISIBLE_DEVICES'] = '0'
+    os.execve(sys.executable, [sys.executable] + sys.argv, new_env)
+
+os.environ['VLLM_USE_V1'] = '0'
+os.environ["CUDA_VISIBLE_DEVICES"] = '0' 
+
 import glob
 import json
 import argparse
 import time
 import io
 import re
-from pathlib import Path
+from pathlib import Path 
 
 # 1. Setup Path to import DeepSeek-OCR modules
 current_dir = os.getcwd()
@@ -160,6 +174,57 @@ def crop_and_save_images(image, matches_images, output_dir, page_idx, base_filen
             
     return saved_images
 
+def parse_and_save_artifacts(text, output_dir, page_idx, base_filename):
+    """
+    Parses Markdown text for code blocks (csv, json) and saves them to files.
+    """
+    artifacts = {
+        "csvs": [],
+        "metadata": []
+    }
+    
+    # Create subdirectories
+    csv_dir = os.path.join(output_dir, "csvs")
+    meta_dir = os.path.join(output_dir, "metadata")
+    os.makedirs(csv_dir, exist_ok=True)
+    os.makedirs(meta_dir, exist_ok=True)
+    
+    # Regex for code blocks: ```type content ```
+    # Using dotall to capture multi-line content
+    # We iterate to find all blocks
+    
+    # 1. Find CSV blocks
+    # Pattern: ```csv\n(content)\n```
+    csv_matches = re.finditer(r'```csv\s*(.*?)\s*```', text, re.DOTALL | re.IGNORECASE)
+    for idx, match in enumerate(csv_matches):
+        content = match.group(1)
+        if content.strip():
+            fname = f"{base_filename}_p{page_idx}_t{idx}.csv"
+            save_path = os.path.join(csv_dir, fname)
+            try:
+                with open(save_path, 'w', encoding='utf-8') as f:
+                    f.write(content)
+                artifacts["csvs"].append(os.path.relpath(save_path, output_dir))
+            except Exception as e:
+                print(f"Error saving CSV artifact: {e}")
+
+    # 2. Find JSON blocks (Metadata)
+    # Pattern: ```json\n(content)\n```
+    json_matches = re.finditer(r'```json\s*(.*?)\s*```', text, re.DOTALL | re.IGNORECASE)
+    for idx, match in enumerate(json_matches):
+        content = match.group(1)
+        if content.strip():
+            fname = f"{base_filename}_p{page_idx}_m{idx}.json"
+            save_path = os.path.join(meta_dir, fname)
+            try:
+                with open(save_path, 'w', encoding='utf-8') as f:
+                    f.write(content)
+                artifacts["metadata"].append(os.path.relpath(save_path, output_dir))
+            except Exception as e:
+                print(f"Error saving JSON artifact: {e}")
+                
+    return artifacts
+
 def main():
     parser = argparse.ArgumentParser(description="DeepSeek-OCR PDF Processor")
     parser.add_argument("--input_dir", type=str, required=True, help="Directory containing PDF files")
@@ -288,11 +353,16 @@ def main():
             # Cleanup formatting
             cleaned_content = cleaned_content.replace('\\coloneqq', ':=').replace('\\eqqcolon', '=:')
             
+            # 5. Parse and Save Artifacts (CSVs, Metadata)
+            artifacts = parse_and_save_artifacts(cleaned_content, args.output_dir, idx, base_name)
+            
             page_record = {
                 "page": idx + 1,
                 "content": cleaned_content,
                 "raw_content": text_content,
-                "images": [os.path.relpath(p, args.output_dir) for p in saved_img_paths]
+                "images": [os.path.relpath(p, args.output_dir) for p in saved_img_paths],
+                "csvs": artifacts["csvs"],
+                "metadata": artifacts["metadata"]
             }
             doc_data["pages"].append(page_record)
             
