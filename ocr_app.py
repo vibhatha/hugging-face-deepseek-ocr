@@ -230,6 +230,7 @@ def main():
     parser.add_argument("--input_dir", type=str, required=True, help="Directory containing PDF files")
     parser.add_argument("--output_dir", type=str, required=True, help="Directory to save output JSON and images")
     parser.add_argument("--prompt_file", type=str, help="Path to a text file containing the custom prompt", default=None)
+    parser.add_argument("--schema_file", type=str, help="Path to a JSON/YAML file containing the metadata schema", default=None)
     args = parser.parse_args()
     
     if not os.path.exists(args.input_dir):
@@ -257,6 +258,19 @@ def main():
             print(f"Warning: Prompt file '{args.prompt_file}' not found. Using default prompt.")
     else:
         print("Using default prompt from config.")
+
+    # Append Schema if provided
+    if args.schema_file:
+        if os.path.exists(args.schema_file):
+            try:
+                with open(args.schema_file, 'r', encoding='utf-8') as f:
+                    schema_content = f.read().strip()
+                prompt_str += f"\n\nPlease extract the following metadata for each table/section, strictly adhering to this schema:\n\n{schema_content}"
+                print(f"Loaded schema from: {args.schema_file}")
+            except Exception as e:
+                print(f"Error reading schema file: {e}")
+        else:
+            print(f"Warning: Schema file '{args.schema_file}' not found.")
     
     pdf_files = glob.glob(os.path.join(args.input_dir, "*.pdf"))
     print(f"Found {len(pdf_files)} PDF files.")

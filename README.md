@@ -52,21 +52,30 @@ python ocr_app.py --input_dir /input/path --output_dir /output/path --prompt_fil
 *   `--input_dir`: Directory containing `.pdf` files.
 *   `--output_dir`: Directory where extracted JSON and images will be saved.
 *   `--prompt_file`: (Optional) Path to a text file containing the custom prompt.
+*   `--schema_file`: (Optional) Path to a JSON file containing the schema for structured data extraction.
 
-## Examples
+### 3. Run the OCR Application
 
-### Orgchart Example
+The application processes all PDF files in the input directory and saves the results to the output directory. It is crucial to set `VLLM_USE_V1=0` to ensure compatibility.
 
-To parse the organizational charts and extract minister data:
-
-```bash
-VLLM_USE_V1=0 python ocr_app.py --input_dir input/orgchart --output_dir output/orgchart --prompt_file input/orgchart/prompt.txt
-```
-
-### Tourism Example
-
-To extract tables and metadata from the tourism report:
+**Example 1: Organization Chart Extraction**
 
 ```bash
-VLLM_USE_V1=0 python ocr_app.py --input_dir input/tourism --output_dir output/tourism --prompt_file input/tourism/prompt.txt
+VLLM_USE_V1=0 python ocr_app.py \
+    --input_dir input/orgchart \
+    --output_dir output/orgchart \
+    --prompt_file input/orgchart/prompt.txt \
+    --schema_file input/orgchart/schema.json
 ```
+
+**Example 2: Tourism Data Extraction**
+
+```bash
+VLLM_USE_V1=0 python ocr_app.py \
+    --input_dir input/tourism \
+    --output_dir output/tourism \
+    --prompt_file input/tourism/prompt.txt \
+    --schema_file input/tourism/schema.json
+```
+
+**Note:** The `--schema_file` argument is optional but recommended for structured metadata extraction. It appends the schema content to your prompt.

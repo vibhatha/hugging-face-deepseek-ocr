@@ -1,6 +1,11 @@
 Look into the report and extract all the tables from the document. 
-Extract which page each table belongs and any metadata for each table. 
-I want each table extracted in csv format in a folder called csvs. 
-Each table needs its metadata data in .json format and they will be in folder
-metadata. All the images will be also in images folder.
-
+Extract which page each table belongs and any metadata for each table3. **Output Format:**
+   - Extract each table in **CSV format** inside a Markdown code block:
+     ```csv
+     ...
+     ```
+   - Extract metadata for each table in **JSON format** inside a Markdown code block:
+     ```json
+     ...
+     ```
+   - Do not describe the folders. Just provide the code blocks.

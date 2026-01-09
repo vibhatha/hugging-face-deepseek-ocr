@@ -16,13 +16,19 @@
    - Please extract the numbering given for each record as it is. Don't miss the numbers.
    - Ensure values per each column for each row are in order of the numbers associated with each record.
 3. **Metadata Collection:** Extract metadata for each table as per the provided metadata schema.
-    - The metadata schema is provided in the `metadata_schema_path` argument.
-    - The metadata schema is a YAML file containing a list of fields with their names, types, and descriptions.
-    - The metadata schema is used to validate the extracted data.
-    - Do not hallucinate field values; leave them empty if they are not found in the source.
-    - All metadata fields must be present, even if their values are empty.
-    - Empty values must be left as "" (empty string).
 4. **Consolidate Data:** Ensure that all records belonging to the same minister are aggregated together.
-5. **Output Constraint:** Generate a separate, single output structure for each minister found. The goal is to
-   produce specific CSV files for each minister containing ONLY their data. Make sure for each table there is
-   a corresponding metadata file.
+5. **Output Constraint:** 
+   - You MUST output the data for each minister in a **Markdown code block** tagged as `csv`.
+   - You MUST output the metadata for each table in a **Markdown code block** tagged as `json`.
+   - Format:
+     ```csv
+     Minister, Column I, Column II, Column III
+     ...
+     ```
+     ```json
+     {
+       "minister_name": "...",
+       "page_number": ...
+     }
+     ```
+   - Do NOT output HTML tables. Use CSV format inside code blocks.
