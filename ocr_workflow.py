@@ -106,7 +106,7 @@ class ExtractorAgent(Agent):
             include_stop_str_in_output=True,
         )
 
-    def process(self, pdf_path: str) -> List[Dict[str, Any]]:
+    def process(self, pdf_path: str, output_dir: Optional[str] = None) -> List[Dict[str, Any]]:
         self.log(f"Converting PDF to images: {pdf_path}")
         images = pdf_to_images(pdf_path)
         if not images:
@@ -133,16 +133,46 @@ class ExtractorAgent(Agent):
         outputs = self.llm.generate(batch_inputs, sampling_params=self.sampling_params)
         
         results = []
+        intermediate_data = [] # For JSON serialization
+        
+        # Setup Intermediate Directory if output_dir provided
+        save_intermediate = output_dir is not None
+        if save_intermediate:
+            base_name = Path(pdf_path).stem
+            inter_dir = os.path.join(output_dir, "intermediate", base_name)
+            images_dir = os.path.join(inter_dir, "images")
+            os.makedirs(images_dir, exist_ok=True)
+        
         for idx, (output, img) in enumerate(zip(outputs, images)):
             text = output.outputs[0].text
             # Clean generic eos token
             text = text.replace('<｜end▁of▁sentence｜>', '')
             
+            # Save Image if requested
+            img_path = None
+            if save_intermediate:
+                img_name = f"{base_name}_p{idx+1}.png"
+                img_path = os.path.join(images_dir, img_name)
+                img.save(img_path)
+            
             results.append({
                 "page_num": idx + 1,
                 "raw_content": text,
-                "image": img # Keep image in memory if needed for crops, or just drop it
+                "image": img # Keep object for pipeline
             })
+            
+            intermediate_data.append({
+                "page_num": idx + 1,
+                "raw_content": text,
+                "image_path": img_path
+            })
+            
+        # Save Intermediate JSON
+        if save_intermediate:
+            json_path = os.path.join(inter_dir, "ocr_raw_output.json")
+            with open(json_path, 'w', encoding='utf-8') as f:
+                json.dump(intermediate_data, f, indent=2, ensure_ascii=False)
+            self.log(f"Saved intermediate OCR results to: {json_path}")
             
         return results
 
@@ -354,7 +384,8 @@ class OrchestratorAgent(Agent):
                 self.log(f"--- Starting Workflow for {pdf.name} ---")
                 
                 # Step 1: Extract
-                raw_pages = self.extractor.process(str(pdf))
+                # Pass output_dir to save intermediate steps
+                raw_pages = self.extractor.process(str(pdf), self.args.output_dir)
                 
                 # Step 2: Process
                 structured_pages = self.processor.process(raw_pages)
