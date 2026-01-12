@@ -72,6 +72,50 @@ def pdf_to_images(pdf_path, dpi=144):
         print(f"Error converting PDF to images: {e}")
     return images
 
+def re_match(text):
+    pattern = r'(<\|ref\|>(.*?)<\|/ref\|><\|det\|>(.*?)<\|/det\|>)'
+    matches = re.findall(pattern, text, re.DOTALL)
+
+    matches_image = []
+    matches_other = []
+    for a_match in matches:
+        if '<|ref|>image<|/ref|>' in a_match[0]:
+            matches_image.append(a_match[0])
+        else:
+            matches_other.append(a_match[0])
+    return matches, matches_image, matches_other
+
+def crop_and_save_images(image, matches_images, output_dir, page_idx, base_filename):
+    image_width, image_height = image.size
+    saved_images = []
+    
+    img_idx = 0
+    for match in matches_images:
+        try:
+            # Simple manual parse for safety
+            det_content_match = re.search(r'<\|det\|>(.*?)<\|/det\|>', match)
+            if det_content_match:
+                cor_list = eval(det_content_match.group(1))
+                
+                for points in cor_list:
+                    x1, y1, x2, y2 = points
+                    x1 = int(x1 / 999 * image_width)
+                    y1 = int(y1 / 999 * image_height)
+                    x2 = int(x2 / 999 * image_width)
+                    y2 = int(y2 / 999 * image_height)
+                    
+                    cropped = image.crop((x1, y1, x2, y2))
+                    fname = f"{base_filename}_p{page_idx}_{img_idx}.jpg"
+                    save_path = os.path.join(output_dir, fname)
+                    cropped.save(save_path)
+                    saved_images.append(save_path)
+                    img_idx += 1
+        except Exception as e:
+            print(f"Error processing image crop: {e}")
+            continue
+            
+    return saved_images
+
 # ==========================================
 # Agent Definitions
 # ==========================================
@@ -137,34 +181,65 @@ class ExtractorAgent(Agent):
         
         # Setup Intermediate Directory if output_dir provided
         save_intermediate = output_dir is not None
+        images_out_dir = None
         if save_intermediate:
             base_name = Path(pdf_path).stem
             inter_dir = os.path.join(output_dir, "intermediate", base_name)
-            images_dir = os.path.join(inter_dir, "images")
-            os.makedirs(images_dir, exist_ok=True)
+            images_out_dir = os.path.join(inter_dir, "images")
+            os.makedirs(images_out_dir, exist_ok=True)
         
         for idx, (output, img) in enumerate(zip(outputs, images)):
             text = output.outputs[0].text
             # Clean generic eos token
             text = text.replace('<｜end▁of▁sentence｜>', '')
             
-            # Save Image if requested
-            img_path = None
-            if save_intermediate:
-                img_name = f"{base_name}_p{idx+1}.png"
-                img_path = os.path.join(images_dir, img_name)
-                img.save(img_path)
+            # 1. Parse Image Refs
+            matches_all, matches_images, matches_other = re_match(text)
             
+            # 2. Crop and Save Images (if intermediate saving enabled)
+            saved_img_paths = []
+            if save_intermediate and images_out_dir:
+                # Also save the full page for reference
+                full_page_path = os.path.join(images_out_dir, f"{base_name}_p{idx+1}_full.png")
+                img.save(full_page_path)
+                
+                # Crop detections
+                saved_img_paths = crop_and_save_images(img, matches_images, images_out_dir, idx, base_name)
+            
+            # 3. Create Cleaned Content (Replace refs with markdown)
+            cleaned_content = text
+            current_img_idx = 0
+            for match_str in matches_images:
+                if current_img_idx < len(saved_img_paths) and save_intermediate:
+                     rel_path = os.path.relpath(saved_img_paths[current_img_idx], output_dir)
+                     cleaned_content = cleaned_content.replace(match_str, f'\n![Figure]({rel_path})\n')
+                else:
+                     # If not saving intermediate, strictly we can't link images easily.
+                     # Just remove or leave placeholder? User wants content. 
+                     # Let's remove if we can't link, or keep placeholder.
+                     # "content: cleaner version". 
+                     cleaned_content = cleaned_content.replace(match_str, '')
+                current_img_idx += 1
+            
+            # Remove other refs
+            for match_str in matches_other:
+                cleaned_content = cleaned_content.replace(match_str, '')
+
+            # Cleanup formatting
+            cleaned_content = cleaned_content.replace('\\coloneqq', ':=').replace('\\eqqcolon', '=:')
+
             results.append({
                 "page_num": idx + 1,
                 "raw_content": text,
-                "image": img # Keep object for pipeline
+                "content": cleaned_content, # New field
+                "image": img
             })
             
             intermediate_data.append({
                 "page_num": idx + 1,
                 "raw_content": text,
-                "image_path": img_path
+                "content": cleaned_content,
+                "image_paths": [os.path.relpath(p, output_dir) for p in saved_img_paths] if save_intermediate else []
             })
             
         # Save Intermediate JSON
@@ -200,14 +275,26 @@ class ProcessorAgent(Agent):
         batch_prompts = []
         
         for page in raw_pages:
-            raw_text = page['raw_content']
+            raw_text = page['raw_content'] # Use raw for LLM context as it might need coordinate info?
+            # Actually, user prompts usually act on text.
+            # "The user's prompt... post process the data"
+            # It's safer to provide the CLEANED content if the prompt expects human readable text?
+            # But tables might be in HTML in raw_content. 
+            # OCR App uses cleaned_content for saving but passes what to LLM? Wait.
+            # OCR App doesn't pass anything to a second LLM. 
+            # Our ProcessorAgent prompt: "Explain this image..." (NO).
+            # ProcessorAgent prompt: "Format this extracted text..."
+            # Let's provide BOTH or just raw. The HTML tables are in raw.
+            # DeepSeek OCR output has HTML tables. cleaned_content keeps them (just removes refs).
+            # So cleaned_content is better.
+            
+            context_text = page.get('content', raw_text)
             
             # Construct Prompt
-            # We wrap the OCR text effectively as context
             full_prompt = (
                 f"{self.user_prompt}\n\n"
-                f"Here is the raw OCR content from Page {page['page_num']}:\n"
-                f"```text\n{raw_text}\n```\n\n"
+                f"Here is the content from Page {page['page_num']}:\n"
+                f"```text\n{context_text}\n```\n\n"
                 f"Please output ONLY the JSON structure as requested."
             )
             
