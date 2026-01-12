@@ -279,26 +279,22 @@ class ProcessorAgent(Agent):
             content = page.get('content', page['raw_content'])
             
             # Construct Prompt
-            # Be very explicit about ignoring previous examples in the prompt if they confuse the model.
+            # Switching to a more direct instruction format without chat tokens if they are confusing the model
             full_prompt = (
+                f"You are a helpful assistant that helps to extract structured data tables from text.\n"
                 f"{self.user_prompt}\n\n"
-                f"--- END OF INSTRUCTIONS ---\n\n"
-                f"Input Data (Page {page['page_num']}):\n"
-                f"```text\n{content}\n```\n\n"
-                f"Task: Parse the above 'Input Data' into the JSON format defined in the instructions. Output ONLY valid JSON."
+                f"--- INPUT DATA (Page {page['page_num']}) ---\n"
+                f"{content}\n\n"
+                f"--- END INPUT ---\n\n"
+                f"RESPONSE (JSON ONLY):"
             )
             
             # Accumulate prompts for batch processing
             batch_prompts.append(full_prompt)
 
         # Run LLM
-        final_prompts = []
-        for p in batch_prompts:
-            # Manually formatted chat for DeepSeek-VL
-            # Assuming standard <|User|>;...<|Assistant|>; or similar.
-            # But the model seems to just take text. 
-            # Let's try to wrap it cleanly.
-            final_prompts.append(f"<|User|>: {p}\n\n<|Assistant|>:")
+        # Use raw prompts without <|User|> wrapper as the model seems to hallucinate on them
+        final_prompts = batch_prompts
 
         outputs = self.llm.generate(final_prompts, sampling_params=self.sampling_params)
         
