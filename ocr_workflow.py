@@ -273,28 +273,40 @@ class ProcessorAgent(Agent):
     def process(self, raw_pages: List[Dict[str, Any]], output_dir: Optional[str] = None, pdf_name: str = "") -> List[Dict[str, Any]]:
         self.log("Structuring data using User Prompt...")
         
-        batch_prompts = []
+    def process(self, raw_pages: List[Dict[str, Any]], output_dir: Optional[str] = None, pdf_name: str = "") -> List[Dict[str, Any]]:
+        self.log("Structuring data using User Prompt...")
+        
+        # Get Tokenizer for Chat Template
+        tokenizer = self.llm.get_tokenizer()
+        
+        final_prompts = []
         
         for page in raw_pages:
             content = page.get('content', page['raw_content'])
             
-            # Construct Prompt
-            # Switching to a more direct instruction format without chat tokens if they are confusing the model
-            full_prompt = (
-                f"You are a helpful assistant that helps to extract structured data tables from text.\n"
-                f"{self.user_prompt}\n\n"
-                f"--- INPUT DATA (Page {page['page_num']}) ---\n"
-                f"{content}\n\n"
-                f"--- END INPUT ---\n\n"
-                f"RESPONSE (JSON ONLY):"
-            )
+            # Construct Messages
+            messages = [
+                {"role": "system", "content": "You are a helpful assistant that extracts structured data tables from text. Output ONLY valid JSON."},
+                {"role": "user", "content": f"{self.user_prompt}\n\n--- INPUT DATA (Page {page['page_num']}) ---\n{content}\n\n--- END INPUT ---\n\nRESPONSE (JSON ONLY):"}
+            ]
             
-            # Accumulate prompts for batch processing
-            batch_prompts.append(full_prompt)
+            # Apply Template
+            # This handles <|im_start|>, [INST], etc. automatically based on the loaded model
+            try:
+                formatted_prompt = tokenizer.apply_chat_template(
+                    messages, 
+                    tokenize=False, 
+                    add_generation_prompt=True
+                )
+            except Exception as e:
+                # Fallback if no chat template exists (e.g. base model)
+                self.log(f"Warning: Could not apply chat template ({e}). Using raw concatenation.")
+                formatted_prompt = f"{self.user_prompt}\n\nInput:\n{content}\n\nOutput JSON:"
+
+            final_prompts.append(formatted_prompt)
 
         # Run LLM
-        # Use raw prompts without <|User|> wrapper as the model seems to hallucinate on them
-        final_prompts = batch_prompts
+        outputs = self.llm.generate(final_prompts, sampling_params=self.sampling_params)
 
         outputs = self.llm.generate(final_prompts, sampling_params=self.sampling_params)
         
@@ -428,33 +440,18 @@ class FinalizerAgent(Agent):
 # ==========================================
 # Orchestrator
 # ==========================================
+# ==========================================
+# Orchestrator
+# ==========================================
 class OrchestratorAgent(Agent):
     def __init__(self, args):
         super().__init__("Orchestrator")
         self.args = args
         
-        # Init LLM Engine (Shared Resource)
-        self.log("Initializing Shared VLLM Engine...")
-        model_path = args.model_path if args.model_path else config.MODEL_PATH
-        
-        self.llm = LLM(
-            model=model_path,
-            hf_overrides={"architectures": ["DeepseekOCRForCausalLM"]},
-            block_size=256, # Consistent with ocr_app
-            trust_remote_code=True,
-            max_model_len=8192,
-            max_num_seqs=config.MAX_CONCURRENCY,
-            gpu_memory_utilization=0.9,
-            disable_mm_preprocessor_cache=True
-        )
-        
         # Load User Prompt
         with open(args.prompt_file, 'r', encoding='utf-8') as f:
-            user_prompt = f.read()
-            
-        # Init Agents
-        self.extractor = ExtractorAgent(self.llm)
-        self.processor = ProcessorAgent(self.llm, user_prompt)
+            self.user_prompt_content = f.read()
+
         self.aggregator = AggregatorAgent()
         self.finalizer = FinalizerAgent()
 
@@ -464,16 +461,86 @@ class OrchestratorAgent(Agent):
         pdf_files = list(input_path.glob("*.pdf"))
         self.log(f"Found {len(pdf_files)} PDF files.")
         
+        # --- PHASE 1: EXTRACTION (OCR MODEL) ---
+        self.log("--- PHASE 1: STARTING EXTRACTION (OCR) ---")
+        ocr_model_path = self.args.model_path if self.args.model_path else config.MODEL_PATH
+        self.log(f"Loading OCR Model: {ocr_model_path}")
+        
+        # Initialize OCR Engine
+        ocr_llm = LLM(
+            model=ocr_model_path,
+            hf_overrides={"architectures": ["DeepseekOCRForCausalLM"]},
+            block_size=256,
+            trust_remote_code=True,
+            max_model_len=8192,
+            max_num_seqs=config.MAX_CONCURRENCY,
+            gpu_memory_utilization=0.9,
+            disable_mm_preprocessor_cache=True
+        )
+        
+        extractor = ExtractorAgent(ocr_llm)
+        
+        # Initializing storage for raw results to pass to Phase 2
+        # Map: pdf_path (str) -> raw_pages (List[Dict])
+        all_raw_pages = {} 
+        
         for pdf in pdf_files:
             try:
-                self.log(f"--- Starting Workflow for {pdf.name} ---")
+                self.log(f"Extracting: {pdf.name}")
+                raw_pages = extractor.process(str(pdf), self.args.output_dir)
+                all_raw_pages[str(pdf)] = raw_pages
+            except Exception as e:
+                self.log(f"Error extracting {pdf.name}: {e}")
+                import traceback
+                traceback.print_exc()
+
+        # UNLOAD OCR MODEL
+        self.log("Unloading OCR Model to free VRAM...")
+        del extractor
+        del ocr_llm
+        import gc
+        gc.collect()
+        torch.cuda.empty_cache()
+        self.log("OCR Model Unloaded.")
+        
+        # --- PHASE 2: PROCESSING (TEXT MODEL) ---
+        self.log("--- PHASE 2: STARTING PROCESSING (TEXT STRUCTURING) ---")
+        
+        # Hardcoded default as per requirements
+        processor_model_path = "Qwen/Qwen2.5-7B-Instruct" 
+                    
+        self.log(f"Loading Processor Model: {processor_model_path}")
+        
+        # Recalculate tokenizer settings or specific configs for Text Model?
+        # VLLM handles auto config usually.
+        # Note: If reusing DeepSeek-OCR for text, we need the override. If using Qwen/Llama, we DO NOT.
+        
+        processed_hf_overrides = None
+        if "deepseek-ocr" in processor_model_path.lower():
+             processed_hf_overrides = {"architectures": ["DeepseekOCRForCausalLM"]}
+             
+        processor_llm = LLM(
+            model=processor_model_path,
+            hf_overrides=processed_hf_overrides, 
+            trust_remote_code=True,
+            max_model_len=8192, # Adjust based on model capability
+            max_num_seqs=config.MAX_CONCURRENCY,
+            gpu_memory_utilization=0.9
+        )
+        
+        processor = ProcessorAgent(processor_llm, self.user_prompt_content)
+        
+        for pdf in pdf_files:
+            pdf_str = str(pdf)
+            if pdf_str not in all_raw_pages:
+                continue
                 
-                # Step 1: Extract
-                # Pass output_dir to save intermediate steps
-                raw_pages = self.extractor.process(str(pdf), self.args.output_dir)
+            try:
+                self.log(f"Processing: {pdf.name}")
+                raw_pages = all_raw_pages[pdf_str]
                 
                 # Step 2: Process
-                structured_pages = self.processor.process(
+                structured_pages = processor.process(
                     raw_pages, 
                     output_dir=self.args.output_dir,
                     pdf_name=pdf.stem
@@ -492,6 +559,8 @@ class OrchestratorAgent(Agent):
                 self.log(f"Error processing {pdf.name}: {e}")
                 import traceback
                 traceback.print_exc()
+        
+        self.log("All tasks completed.")
 
 # ==========================================
 # Main
