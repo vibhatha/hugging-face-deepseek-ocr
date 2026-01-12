@@ -275,7 +275,7 @@ class ProcessorAgent(Agent):
         batch_prompts = []
         
         for page in raw_pages:
-            raw_text = page['raw_content'] # Use raw for LLM context as it might need coordinate info?
+            content = page['content'] # Use raw for LLM context as it might need coordinate info?
             # Actually, user prompts usually act on text.
             # "The user's prompt... post process the data"
             # It's safer to provide the CLEANED content if the prompt expects human readable text?
@@ -288,7 +288,7 @@ class ProcessorAgent(Agent):
             # DeepSeek OCR output has HTML tables. cleaned_content keeps them (just removes refs).
             # So cleaned_content is better.
             
-            context_text = page.get('content', raw_text)
+            context_text = page.get('content', content)
             
             # Construct Prompt
             full_prompt = (
@@ -299,11 +299,7 @@ class ProcessorAgent(Agent):
             )
             
             # For DeepSeek-VL-Chat (or OCR model behaving as VLM), we pass text prompt.
-            # vllm.generate accepts list of strings for text-only generation.
-            batch_inputs = [full_prompt] # Wait, batch_inputs for generate is list of prompts.
-             
-            # Actually we collect all pages to run one batch?
-            # Yes, let's process all pages in one batch for efficiency.
+            # Accumulate prompts for batch processing
             batch_prompts.append(full_prompt)
 
         # Run LLM
