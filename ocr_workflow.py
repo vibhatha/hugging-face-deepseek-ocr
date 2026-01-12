@@ -266,7 +266,8 @@ class ProcessorAgent(Agent):
         self.sampling_params = SamplingParams(
             temperature=0.1,
             max_tokens=4096,
-            skip_special_tokens=True # We want clean JSON
+            skip_special_tokens=True, # We want clean JSON
+            repetition_penalty=1.2 # Prevent looping
         )
 
     def process(self, raw_pages: List[Dict[str, Any]], output_dir: Optional[str] = None, pdf_name: str = "") -> List[Dict[str, Any]]:
@@ -278,11 +279,13 @@ class ProcessorAgent(Agent):
             content = page.get('content', page['raw_content'])
             
             # Construct Prompt
+            # Be very explicit about ignoring previous examples in the prompt if they confuse the model.
             full_prompt = (
                 f"{self.user_prompt}\n\n"
-                f"Here is the content from Page {page['page_num']}:\n"
+                f"--- END OF INSTRUCTIONS ---\n\n"
+                f"Input Data (Page {page['page_num']}):\n"
                 f"```text\n{content}\n```\n\n"
-                f"Please output ONLY the JSON structure as requested."
+                f"Task: Parse the above 'Input Data' into the JSON format defined in the instructions. Output ONLY valid JSON."
             )
             
             # Accumulate prompts for batch processing
@@ -291,8 +294,11 @@ class ProcessorAgent(Agent):
         # Run LLM
         final_prompts = []
         for p in batch_prompts:
-            # Simple manual chat template approximation
-            final_prompts.append(f"<|User|>: {p}\n<|Assistant|>:")
+            # Manually formatted chat for DeepSeek-VL
+            # Assuming standard <|User|>;...<|Assistant|>; or similar.
+            # But the model seems to just take text. 
+            # Let's try to wrap it cleanly.
+            final_prompts.append(f"<|User|>: {p}\n\n<|Assistant|>:")
 
         outputs = self.llm.generate(final_prompts, sampling_params=self.sampling_params)
         
