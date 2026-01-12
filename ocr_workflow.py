@@ -269,50 +269,29 @@ class ProcessorAgent(Agent):
             skip_special_tokens=True # We want clean JSON
         )
 
-    def process(self, raw_pages: List[Dict[str, Any]]) -> List[Dict[str, Any]]:
+    def process(self, raw_pages: List[Dict[str, Any]], output_dir: Optional[str] = None, pdf_name: str = "") -> List[Dict[str, Any]]:
         self.log("Structuring data using User Prompt...")
         
         batch_prompts = []
         
         for page in raw_pages:
-            content = page['content'] # Use raw for LLM context as it might need coordinate info?
-            # Actually, user prompts usually act on text.
-            # "The user's prompt... post process the data"
-            # It's safer to provide the CLEANED content if the prompt expects human readable text?
-            # But tables might be in HTML in raw_content. 
-            # OCR App uses cleaned_content for saving but passes what to LLM? Wait.
-            # OCR App doesn't pass anything to a second LLM. 
-            # Our ProcessorAgent prompt: "Explain this image..." (NO).
-            # ProcessorAgent prompt: "Format this extracted text..."
-            # Let's provide BOTH or just raw. The HTML tables are in raw.
-            # DeepSeek OCR output has HTML tables. cleaned_content keeps them (just removes refs).
-            # So cleaned_content is better.
-            
-            context_text = page.get('content', content)
+            content = page.get('content', page['raw_content'])
             
             # Construct Prompt
             full_prompt = (
                 f"{self.user_prompt}\n\n"
                 f"Here is the content from Page {page['page_num']}:\n"
-                f"```text\n{context_text}\n```\n\n"
+                f"```text\n{content}\n```\n\n"
                 f"Please output ONLY the JSON structure as requested."
             )
             
-            # For DeepSeek-VL-Chat (or OCR model behaving as VLM), we pass text prompt.
             # Accumulate prompts for batch processing
             batch_prompts.append(full_prompt)
 
         # Run LLM
-        # Note: Depending on the model, we might need chat formatting.
-        # But let's try raw prompt injection first as DeepSeek usually handles it.
-        # If the model is strictly instruction tuned with a template, we might need <|User|> ...
-        
-        # DeepSeek-VL Chat Template usually:
-        # <|User|>: ... <|Assistant|>:
-        # Let's apply a simple check or default wrapper.
         final_prompts = []
         for p in batch_prompts:
-            # Simple manual chat template approximation if not using tokenizer.apply_chat_template
+            # Simple manual chat template approximation
             final_prompts.append(f"<|User|>: {p}\n<|Assistant|>:")
 
         outputs = self.llm.generate(final_prompts, sampling_params=self.sampling_params)
@@ -330,8 +309,20 @@ class ProcessorAgent(Agent):
                 "raw_response": response_text
             })
             
+        # Save Intermediate Artifacts
+        if output_dir and pdf_name:
+            inter_dir = os.path.join(output_dir, "intermediate", pdf_name)
+            os.makedirs(inter_dir, exist_ok=True)
+            
+            json_path = os.path.join(inter_dir, "llm_structured_output.json")
+            
+            # Create a serializable version (remove non-serializable if any, though dicts should be fine)
+            with open(json_path, 'w', encoding='utf-8') as f:
+                json.dump(processed_pages, f, indent=2, ensure_ascii=False)
+            self.log(f"Saved intermediate Processor results to: {json_path}")
+            
         return processed_pages
-
+    
     def _extract_json(self, text):
         # basic regex extraction
         match = re.search(r'```json\s*(.*?)\s*```', text, re.DOTALL | re.IGNORECASE)
@@ -340,6 +331,15 @@ class ProcessorAgent(Agent):
                  return json.loads(match.group(1))
              except:
                  pass
+        
+        # Try without code blocks if it looks like JSON
+        try:
+             stripped = text.strip()
+             if (stripped.startswith('{') or stripped.startswith('[')) and (stripped.endswith('}') or stripped.endswith(']')):
+                 return json.loads(stripped)
+        except:
+             pass
+
         # Fallback: try finding first { and last }
         try:
             start = text.find('{')
