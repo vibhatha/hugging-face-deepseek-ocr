@@ -394,7 +394,7 @@ class AggregatorAgent(Agent):
             for item in items:
                 if not isinstance(item, dict): continue
                 
-                minister_name = item.get("Minister", "")
+                minister_name = item.get("Minister") or ""
                 
                 is_continuation = (
                     minister_name == "CONTINUATION_FROM_PREVIOUS" or 
