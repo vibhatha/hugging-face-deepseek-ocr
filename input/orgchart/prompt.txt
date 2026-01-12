@@ -1,34 +1,61 @@
-**Objective:** Extract all tables from the provided document.
+**Objective:** Extract all table data visible on this **SINGLE PAGE**.
 
 **Context:**
-- The document is a PDF containing tables with information about various ministers.
-- A single page may contain the continuation of one minister's table AND the start of a completely
-  new minister's table.
+- You are viewing ONE PAGE of a document.
+- Structurally, this page may contain:
+  1. **New Table**: Starts with a Minister's name and table headers.
+  2. **Continuation**: Continues a table from the previous page (NO Minister name, NO headers).
+  3. **Transition**: Ends one Minister's table and starts another.
 
 **Instructions:**
-1. **Identify Minister:** Locate the name of the minister associated with the table(s). **Crucial:** If a page
-   transitions from one minister to another, you MUST extract them as **two separate tables**. Look for bold
-   headings or structural breaks indicating a new minister.
-2. **Strict Row Alignment:** Each column generally has items with numbering (e.g., 1, 2, 3...). You must extract
-   data such that one number refers to exactly ONE row across all columns.
-   - If Column I has item "12" and Column II has no corresponding item, leave Column II **empty** for that row.
-   - Do **not** compress the table; preserve the alignment based on the numbering.
-   - Please extract the numbering given for each record as it is. Don't miss the numbers.
-   - Ensure values per each column for each row are in order of the numbers associated with each record.
-3. **Metadata Collection:** Extract metadata for each table as per the provided metadata schema.
-4. **Consolidate Data:** Ensure that all records belonging to the same minister are aggregated together.
-5. **Output Constraint:** 
-   - You MUST output the data for each minister in a **Markdown code block** tagged as `csv`.
-   - You MUST output the metadata for each table in a **Markdown code block** tagged as `json`.
-   - Format:
-     ```csv
-     Minister, Column I, Column II, Column III
-     ...
-     ```
+
+1. **Identify Page Type & Minister:**
+   - **New Start:** If you see a Minister's name at the top, that is the `Minister`.
+   - **Continuation:** If the page starts with data rows (numbers/items) but NO Minister name header, set `Minister` to `CONTINUATION_FROM_PREVIOUS`. 
+                     Or sometimes it may say something like (Contid) or Continue in brackets or the may notion the idea of continuing the same table for
+                     the previous Minister.
+   - **Transition:** If the data switches from one table to a new Minister's header, split the extraction into TWO blocks.
+
+2. **Handle Headers:**
+   - **Visible Headers:** If headers (e.g., Column I, Column II) are present, use them.
+   - **Missing Headers:** If headers are not visible (continuation), infer the columns based on the alignment of the previous page's structure (typically 3 main columns + numbering). output the rows strictly maintaining the column order.
+
+3. **Strict Row Alignment (CRITICAL):**
+   - Use the row numbering (1, 2, 3...) as the anchor.
+   - **One Number = One Row**.
+   - If "Column I" has item "12" but "Column II" is blank for that row, output an empty string for Column II. **Do not shift data up.**
+
+4. **Output Constraint:**
+   - Output data in JSON format where each minister will have 3 objects.
+   - **Format:**
      ```json
      {
-       "minister_name": "...",
-       "page_number": ...
+        "Minister": "Minister Name OR CONTINUATION_FROM_PREVIOUS",
+        "Column I": "Value",
+        "Column II": "Value",
+        "Column III": "Value"
      }
      ```
-   - Do NOT output HTML tables. Use CSV format inside code blocks.
+     Note that this each Value has a list of items. They carry numbers to represent each item.
+     So each value in column I, column II, column III will be a list of items. Make sure to include
+     the item number in the list.
+   - Example Output:
+     ```json
+     {
+        "Minister": "Hon. John Doe",
+        "Column I": ["1. Item A", "2. Item B", "3. Item C"],
+        "Column II": ["1. Item B", "2. Item C", "3. Item D"],
+        "Column III": ["1. Item C", "2. Item D", "3. Item E"]
+     }
+     ```
+
+5. **Metadata:**
+   - Extract metadata in a **Markdown JSON code block**.
+   - If it is a continuation and you cannot find metadata, output `null` for those fields.
+     ```json
+     {
+       "minister_name": "Name OR CONTINUATION_FROM_PREVIOUS",
+       "page_context": "start" | "continuation" | "transition"
+       "page_number": "Page number where this table appears"
+     }
+     ```
