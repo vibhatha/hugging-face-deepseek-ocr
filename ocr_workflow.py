@@ -471,7 +471,11 @@ class OrchestratorAgent(Agent):
                 raw_pages = self.extractor.process(str(pdf), self.args.output_dir)
                 
                 # Step 2: Process
-                structured_pages = self.processor.process(raw_pages)
+                structured_pages = self.processor.process(
+                    raw_pages, 
+                    output_dir=self.args.output_dir,
+                    pdf_name=pdf.stem
+                )
                 
                 # Step 3: Aggregate
                 consolidated_data = self.aggregator.process(structured_pages)
