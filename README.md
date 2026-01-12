@@ -79,3 +79,21 @@ VLLM_USE_V1=0 python ocr_app.py \
 ```
 
 **Note:** The `--schema_file` argument is optional but recommended for structured metadata extraction. It appends the schema content to your prompt.
+
+## Multi-Agent Workflow (Advanced)
+
+For more complex use cases requiring structural formatting (JSON) and multi-page data consolidation, use the `ocr_workflow.py`. This script employs a Multi-Agent architecture:
+
+1.  **Extractor**: Runs DeepSeek-OCR to get raw text.
+2.  **Processor**: Uses your custom `prompt.txt` to structure the raw text into JSON.
+3.  **Aggregator**: Stitches pages together (handling "CONTINUATION" logic).
+4.  **Finalizer**: Saves the consolidated data.
+
+### Usage
+```bash
+python ocr_workflow.py \
+    --input_dir input/orgchart \
+    --output_dir output/orgchart_workflow \
+    --prompt_file input/orgchart/prompt.txt
+```
+**Note:** This workflow re-uses the loaded DeepSeek model for both OCR and post-processing, optimizing VRAM usage.
