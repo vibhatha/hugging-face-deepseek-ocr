@@ -432,10 +432,52 @@ class FinalizerAgent(Agent):
         self.log(f"Saving final output to {output_dir}")
         os.makedirs(output_dir, exist_ok=True)
         
-        out_path = os.path.join(output_dir, "final_consolidated_output.json")
-        with open(out_path, 'w', encoding='utf-8') as f:
+        # 1. Save JSON
+        out_path_json = os.path.join(output_dir, "final_consolidated_output.json")
+        with open(out_path_json, 'w', encoding='utf-8') as f:
             json.dump(data, f, indent=2, ensure_ascii=False)
-        self.log(f"Saved: {out_path}")
+        self.log(f"Saved JSON: {out_path_json}")
+        
+        # 2. Save CSV (Flattened)
+        out_path_csv = os.path.join(output_dir, "final_consolidated_output.csv")
+        try:
+            import csv
+            
+            # Determine max columns dynamically or fixed?
+            # Prompt asked for Column I, II, III.
+            headers = ["Minister", "Row_ID", "Column I", "Column II", "Column III"]
+            
+            with open(out_path_csv, 'w', encoding='utf-8', newline='') as f:
+                writer = csv.writer(f)
+                writer.writerow(headers)
+                
+                for entry in data:
+                    minister = entry.get("Minister", "Unknown")
+                    
+                    # Align columns by index
+                    col1 = entry.get("Column I", [])
+                    col2 = entry.get("Column II", [])
+                    col3 = entry.get("Column III", [])
+                    
+                    # Ensure they are lists
+                    if isinstance(col1, str): col1 = [col1]
+                    if isinstance(col2, str): col2 = [col2]
+                    if isinstance(col3, str): col3 = [col3]
+                    
+                    # Get max length to iterate rows
+                    max_len = max(len(col1), len(col2), len(col3))
+                    
+                    for i in range(max_len):
+                        val1 = col1[i] if i < len(col1) else ""
+                        val2 = col2[i] if i < len(col2) else ""
+                        val3 = col3[i] if i < len(col3) else ""
+                        
+                        writer.writerow([minister, i+1, val1, val2, val3])
+                        
+            self.log(f"Saved CSV: {out_path_csv}")
+            
+        except Exception as e:
+            self.log(f"Error saving CSV: {e}")
 
 # ==========================================
 # Orchestrator
