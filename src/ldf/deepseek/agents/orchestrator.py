@@ -33,6 +33,13 @@ class OrchestratorAgent(Agent):
         self.finalizer = FinalizerAgent()
 
     def run(self):
+        import time
+        start_time = time.time()
+        
+        # Token Counters
+        workflow_input_tokens = 0
+        workflow_output_tokens = 0
+        
         # Scan Inputs
         input_path = Path(self.input_dir)
         pdf_files = list(input_path.glob("*.pdf"))
@@ -40,6 +47,7 @@ class OrchestratorAgent(Agent):
         
         # --- PHASE 1: EXTRACTION (OCR MODEL) ---
         self.log("--- PHASE 1: STARTING EXTRACTION (OCR) ---")
+        phase1_start = time.time()
         
         # Initialize OCR Engine
         ocr_llm = LLM(
@@ -58,8 +66,11 @@ class OrchestratorAgent(Agent):
         
         for pdf_file in pdf_files:
             self.log(f"Processing PDF (OCR): {pdf_file.name}")
-            pages_data = extractor.process(str(pdf_file), self.output_dir)
+            pages_data, usage = extractor.process(str(pdf_file), self.output_dir)
             all_workflow_data[pdf_file.name] = pages_data
+            
+            workflow_input_tokens += usage.get('input', 0)
+            workflow_output_tokens += usage.get('output', 0)
             
         # Clean up OCR Model
         del extractor
@@ -67,9 +78,12 @@ class OrchestratorAgent(Agent):
         gc.collect()
         torch.cuda.empty_cache()
         self.log("OCR Model Unloaded.")
+        phase1_duration = time.time() - phase1_start
+        self.log(f"Phase 1 (OCR) Duration: {phase1_duration:.2f} seconds")
         
         # --- PHASE 2: PROCESSING (TEXT MODEL) ---
         self.log("--- PHASE 2: STARTING PROCESSING (TEXT) ---")
+        phase2_start = time.time()
         
         # Initialize Text Engine
         text_llm = LLM(
@@ -84,7 +98,10 @@ class OrchestratorAgent(Agent):
             self.log(f"Processing PDF (Struct): {pdf_name}")
             
             # 1. Structure (Processor)
-            structured_pages = processor.process(pages_data, self.output_dir, pdf_name)
+            structured_pages, usage = processor.process(pages_data, self.output_dir, pdf_name)
+            
+            workflow_input_tokens += usage.get('input', 0)
+            workflow_output_tokens += usage.get('output', 0)
             
             # 2. Aggregate
             consolidated_data = self.aggregator.process(structured_pages, self.output_dir, pdf_name)
@@ -97,4 +114,27 @@ class OrchestratorAgent(Agent):
             pdf_out_dir = os.path.join(self.output_dir, Path(pdf_name).stem)
             self.finalizer.process(consolidated_data, pdf_out_dir)
             
-        self.log("Workflow Complete.")
+        phase2_duration = time.time() - phase2_start
+        total_duration = time.time() - start_time
+        
+        self.log(f"Phase 2 (Processing) Duration: {phase2_duration:.2f} seconds")
+        self.log(f"Workflow Complete. Total Time: {total_duration:.2f} seconds")
+        self.log(f"Total Workflow Token Usage - Input: {workflow_input_tokens}, Output: {workflow_output_tokens}")
+        
+        # Save Metrics to Disk
+        metrics = {
+            "total_duration_seconds": total_duration,
+            "phase1_duration_seconds": phase1_duration,
+            "phase2_duration_seconds": phase2_duration,
+            "token_usage": {
+                "total_input": workflow_input_tokens,
+                "total_output": workflow_output_tokens
+            }
+        }
+        
+        # Use json module (already imported? No, let's assume it is or import it inside)
+        import json
+        metrics_path = os.path.join(self.output_dir, "workflow_metrics.json")
+        with open(metrics_path, 'w', encoding='utf-8') as f:
+            json.dump(metrics, f, indent=2)
+        self.log(f"Saved workflow metrics to: {metrics_path}")

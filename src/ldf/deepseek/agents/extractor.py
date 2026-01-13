@@ -37,12 +37,12 @@ class ExtractorAgent(Agent):
             include_stop_str_in_output=True,
         )
 
-    def process(self, pdf_path: str, output_dir: Optional[str] = None) -> List[Dict[str, Any]]:
+    def process(self, pdf_path: str, output_dir: Optional[str] = None) -> (List[Dict[str, Any]], Dict[str, int]):
         self.log(f"Converting PDF to images: {pdf_path}")
         images = pdf_to_images(pdf_path)
         if not images:
             self.log("No images found.")
-            return []
+            return [], {'input': 0, 'output': 0}
 
         # Prepare Batch
         batch_inputs = []
@@ -65,6 +65,12 @@ class ExtractorAgent(Agent):
 
         self.log(f"Running OCR on {len(batch_inputs)} pages...")
         outputs = self.llm.generate(batch_inputs, sampling_params=self.sampling_params)
+        
+        # Calculate Token Usage
+        total_input_tokens = sum(len(o.prompt_token_ids) for o in outputs)
+        total_output_tokens = sum(len(o.outputs[0].token_ids) for o in outputs)
+        self.log(f"OCR Token Usage - Input: {total_input_tokens}, Output: {total_output_tokens}")
+        usage_stats = {'input': total_input_tokens, 'output': total_output_tokens}
         
         results = []
         intermediate_data = [] # For JSON serialization
@@ -135,4 +141,4 @@ class ExtractorAgent(Agent):
                 json.dump(intermediate_data, f, indent=2, ensure_ascii=False)
             self.log(f"Saved intermediate OCR results to: {json_path}")
             
-        return results
+        return results, usage_stats

@@ -150,12 +150,12 @@ class ExtractorAgent(Agent):
             include_stop_str_in_output=True,
         )
 
-    def process(self, pdf_path: str, output_dir: Optional[str] = None) -> List[Dict[str, Any]]:
+    def process(self, pdf_path: str, output_dir: Optional[str] = None) -> (List[Dict[str, Any]], Dict[str, int]):
         self.log(f"Converting PDF to images: {pdf_path}")
         images = pdf_to_images(pdf_path)
         if not images:
             self.log("No images found.")
-            return []
+            return [], {'input': 0, 'output': 0}
 
         # Prepare Batch
         batch_inputs = []
@@ -175,6 +175,12 @@ class ExtractorAgent(Agent):
 
         self.log(f"Running OCR on {len(batch_inputs)} pages...")
         outputs = self.llm.generate(batch_inputs, sampling_params=self.sampling_params)
+        
+        # Calculate Token Usage
+        total_input_tokens = sum(len(o.prompt_token_ids) for o in outputs)
+        total_output_tokens = sum(len(o.outputs[0].token_ids) for o in outputs)
+        self.log(f"OCR Token Usage - Input: {total_input_tokens}, Output: {total_output_tokens}")
+        usage_stats = {'input': total_input_tokens, 'output': total_output_tokens}
         
         results = []
         intermediate_data = [] # For JSON serialization
@@ -249,7 +255,7 @@ class ExtractorAgent(Agent):
                 json.dump(intermediate_data, f, indent=2, ensure_ascii=False)
             self.log(f"Saved intermediate OCR results to: {json_path}")
             
-        return results
+        return results, usage_stats
 
 class ProcessorAgent(Agent):
     """
@@ -270,7 +276,7 @@ class ProcessorAgent(Agent):
             repetition_penalty=1.2 # Prevent looping
         )
 
-    def process(self, raw_pages: List[Dict[str, Any]], output_dir: Optional[str] = None, pdf_name: str = "") -> List[Dict[str, Any]]:
+    def process(self, raw_pages: List[Dict[str, Any]], output_dir: Optional[str] = None, pdf_name: str = "") -> (List[Dict[str, Any]], Dict[str, int]):
         self.log("Structuring data using User Prompt...")
         
     def process(self, raw_pages: List[Dict[str, Any]], output_dir: Optional[str] = None, pdf_name: str = "") -> List[Dict[str, Any]]:
@@ -310,6 +316,12 @@ class ProcessorAgent(Agent):
 
         outputs = self.llm.generate(final_prompts, sampling_params=self.sampling_params)
         
+        # Calculate Token Usage
+        total_input_tokens = sum(len(o.prompt_token_ids) for o in outputs)
+        total_output_tokens = sum(len(o.outputs[0].token_ids) for o in outputs)
+        self.log(f"Processor Token Usage - Input: {total_input_tokens}, Output: {total_output_tokens}")
+        usage_stats = {'input': total_input_tokens, 'output': total_output_tokens}
+        
         processed_pages = []
         for i, output in enumerate(outputs):
             response_text = output.outputs[0].text
@@ -335,7 +347,7 @@ class ProcessorAgent(Agent):
                 json.dump(processed_pages, f, indent=2, ensure_ascii=False)
             self.log(f"Saved intermediate Processor results to: {json_path}")
             
-        return processed_pages
+        return processed_pages, usage_stats
     
     def _extract_json(self, text):
         # basic regex extraction
@@ -610,6 +622,13 @@ class OrchestratorAgent(Agent):
         self.finalizer = FinalizerAgent()
 
     def run(self):
+        import time
+        start_time = time.time()
+        
+        # Token Counters
+        workflow_input_tokens = 0
+        workflow_output_tokens = 0
+
         # Scan Inputs
         input_path = Path(self.args.input_dir)
         pdf_files = list(input_path.glob("*.pdf"))
@@ -617,6 +636,7 @@ class OrchestratorAgent(Agent):
         
         # --- PHASE 1: EXTRACTION (OCR MODEL) ---
         self.log("--- PHASE 1: STARTING EXTRACTION (OCR) ---")
+        phase1_start = time.time()
         ocr_model_path = self.args.model_path if self.args.model_path else config.MODEL_PATH
         self.log(f"Loading OCR Model: {ocr_model_path}")
         
@@ -641,8 +661,11 @@ class OrchestratorAgent(Agent):
         for pdf in pdf_files:
             try:
                 self.log(f"Extracting: {pdf.name}")
-                raw_pages = extractor.process(str(pdf), self.args.output_dir)
+                raw_pages, usage = extractor.process(str(pdf), self.args.output_dir)
                 all_raw_pages[str(pdf)] = raw_pages
+                
+                workflow_input_tokens += usage.get('input', 0)
+                workflow_output_tokens += usage.get('output', 0)
             except Exception as e:
                 self.log(f"Error extracting {pdf.name}: {e}")
                 import traceback
@@ -656,9 +679,12 @@ class OrchestratorAgent(Agent):
         gc.collect()
         torch.cuda.empty_cache()
         self.log("OCR Model Unloaded.")
+        phase1_duration = time.time() - phase1_start
+        self.log(f"Phase 1 (OCR) Duration: {phase1_duration:.2f} seconds")
         
         # --- PHASE 2: PROCESSING (TEXT MODEL) ---
         self.log("--- PHASE 2: STARTING PROCESSING (TEXT STRUCTURING) ---")
+        phase2_start = time.time()
         
         # Hardcoded default as per requirements
         processor_model_path = "Qwen/Qwen2.5-7B-Instruct" 
@@ -694,11 +720,14 @@ class OrchestratorAgent(Agent):
                 raw_pages = all_raw_pages[pdf_str]
                 
                 # Step 2: Process
-                structured_pages = processor.process(
+                structured_pages, usage = processor.process(
                     raw_pages, 
                     output_dir=self.args.output_dir,
                     pdf_name=pdf.stem
                 )
+                
+                workflow_input_tokens += usage.get('input', 0)
+                workflow_output_tokens += usage.get('output', 0)
                 
                 # Step 3: Aggregate
                 consolidated_data = self.aggregator.process(
@@ -718,7 +747,28 @@ class OrchestratorAgent(Agent):
                 import traceback
                 traceback.print_exc()
         
-        self.log("All tasks completed.")
+        
+        phase2_duration = time.time() - phase2_start
+        total_duration = time.time() - start_time
+        
+        self.log(f"Phase 2 (Processing) Duration: {phase2_duration:.2f} seconds")
+        self.log(f"Workflow Complete. Total Time: {total_duration:.2f} seconds")
+        self.log(f"Total Workflow Token Usage - Input: {workflow_input_tokens}, Output: {workflow_output_tokens}")
+
+        # Save Metrics to Disk
+        metrics = {
+            "total_duration_seconds": total_duration,
+            "phase1_duration_seconds": phase1_duration,
+            "phase2_duration_seconds": phase2_duration,
+            "token_usage": {
+                "total_input": workflow_input_tokens,
+                "total_output": workflow_output_tokens
+            }
+        }
+        metrics_path = os.path.join(self.args.output_dir, "workflow_metrics.json")
+        with open(metrics_path, 'w', encoding='utf-8') as f:
+            json.dump(metrics, f, indent=2)
+        self.log(f"Saved workflow metrics to: {metrics_path}")
 
 # ==========================================
 # Main

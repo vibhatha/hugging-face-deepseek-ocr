@@ -26,7 +26,7 @@ class ProcessorAgent(Agent):
         self.tokenizer = AutoTokenizer.from_pretrained(model_path, trust_remote_code=True)
 
 
-    def process(self, extracted_pages: List[Dict[str, Any]], output_dir: Optional[str] = None, pdf_name: str = "") -> List[Dict[str, Any]]:
+    def process(self, extracted_pages: List[Dict[str, Any]], output_dir: Optional[str] = None, pdf_name: str = "") -> (List[Dict[str, Any]], Dict[str, int]):
         self.log("Processing extracted text with LLM...")
         
         prompts = []
@@ -48,6 +48,12 @@ class ProcessorAgent(Agent):
             
         self.log(f"Generating structure for {len(prompts)} pages...")
         outputs = self.llm.generate(prompts, sampling_params=self.sampling_params)
+        
+        # Calculate Token Usage
+        total_input_tokens = sum(len(o.prompt_token_ids) for o in outputs)
+        total_output_tokens = sum(len(o.outputs[0].token_ids) for o in outputs)
+        self.log(f"Processor Token Usage - Input: {total_input_tokens}, Output: {total_output_tokens}")
+        usage_stats = {'input': total_input_tokens, 'output': total_output_tokens}
         
         for idx, output in enumerate(outputs):
             gen_text = output.outputs[0].text
@@ -73,7 +79,7 @@ class ProcessorAgent(Agent):
                  json.dump(structured_data, f, indent=2, ensure_ascii=False)
              self.log(f"Saved intermediate structured data to: {json_path}")
 
-        return extracted_pages
+        return extracted_pages, usage_stats
 
     def _extract_json(self, text: str) -> Any:
         try:
