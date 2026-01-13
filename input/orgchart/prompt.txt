@@ -10,7 +10,7 @@
 **Instructions:**
 
 1. **Identify Page Type & Minister:**
-   - **New Start:** If you see a Minister's name at the top, that is the `Minister`.
+   - **New Start:** If you see a Minister's name at the top, that is the `Minister`. **EXTRACT ONLY THE NAME. Remove titles like "Hon.", "Mr.", "Dr.", etc.**
    - **Continuation:** If the page starts with data rows (numbers/items) but NO Minister name header, set `Minister` to `CONTINUATION_FROM_PREVIOUS`. 
                      Or sometimes it may say something like (Contid) or Continue in brackets or the may notion the idea of continuing the same table for
                      the previous Minister.
@@ -21,31 +21,25 @@
    - **Missing Headers:** If headers are not visible (continuation), infer the columns based on the alignment of the previous page's structure (typically 3 main columns + numbering). output the rows strictly maintaining the column order.
 
 3. **Strict Row Alignment (CRITICAL):**
-   - Use the row numbering (1, 2, 3...) as the anchor.
    - **One Number = One Row**.
-   - If "Column I" has item "12" but "Column II" is blank for that row, output an empty string for Column II. **Do not shift data up.**
+   - **Preserve Numbering**: Exact numbering extracted from the text (e.g., "1.", "2.", "(a)") MUST be included in the value string. Do not strip or alter it.
+   - **Handle Blanks**: If "Column I" has an item but "Column II" is blank for that row, you MUST output an empty string `""` for Column II.
+   - **Equal Lengths**: The arrays for `Column I`, `Column II`, and `Column III` MUST have the exact same number of elements.
 
 4. **Output Constraint:**
-   - Output data in JSON format where each minister will have 3 objects.
+   - Output data in JSON format.
    - **Format:**
      ```json
      {
-        "Minister": "Minister Name OR CONTINUATION_FROM_PREVIOUS",
-        "Column I": "Value",
-        "Column II": "Value",
-        "Column III": "Value"
+        "Minister": "Extracted Name OR CONTINUATION_FROM_PREVIOUS",
+        "Column I": ["1. Item A", "2. Item B", "3. Item C"],
+        "Column II": ["1. Item X", "", "3. Item Z"],
+        "Column III": ["1. Item P", "2. Item Q", ""]
      }
      ```
-     Note that this each Value has a list of items. They carry numbers to represent each item.
-     So each value in column I, column II, column III will be a list of items. Make sure to include
-     the item number in the list.
-   - Example Output:
-     ```json
-     {
-        "Minister": "Hon. John Doe",
-        "Column I": ["1. Item A", "2. Item B", "3. Item C"],
-        "Column II": ["1. Item B", "2. Item C", "3. Item D"],
-        "Column III": ["1. Item C", "2. Item D", "3. Item E"]
+   - **Note on Continuations**: 
+     - If the table continues from the previous page and has NO header, use `"Minister": "CONTINUATION_FROM_PREVIOUS"`.
+     - If it has a header like "Hon. Name (Contd.)", extract `"Minister": "Hon. Name (Contd.)"`.
      }
      ```
 

@@ -26,7 +26,7 @@ os.environ["CUDA_VISIBLE_DEVICES"] = '0'
 # Setup Path to import DeepSeek-OCR modules
 current_dir = os.getcwd()
 deepseek_vllm_path = os.path.join(current_dir, "external/DeepSeek-OCR/DeepSeek-OCR-master/DeepSeek-OCR-vllm")
-sys.path.insert(0, deepseek_vllm_path)
+sys.path.append(deepseek_vllm_path)
 
 # ==========================================
 # Imports
@@ -373,50 +373,88 @@ class AggregatorAgent(Agent):
     def __init__(self):
         super().__init__("Aggregator")
 
-    def process(self, processed_pages: List[Dict[str, Any]]) -> List[Dict[str, Any]]:
+    def process(self, processed_pages: List[Dict[str, Any]], output_dir: Optional[str] = None, pdf_name: str = "") -> List[Dict[str, Any]]:
         self.log("Aggregating pages...")
         
         consolidated_ministers = []
         current_minister = None
+        debug_log = [] # detailed log of decisions
         
         for page in processed_pages:
             data = page.get('json_data', {})
+            page_num = page['page_num']
             
-            # Handle list of items or single item?
-            # Prompt says: "Minister": "Name", "Column I": [...]
-            # It returns ONE object per page usually? Or multiple?
-            # The prompt implies 3 objects? No, "Output data in JSON format where each minister will have 3 objects." (Confusing prompt text in memory)
-            # Actually prompt says: "format... { Minister: ..., Column I: ... }"
-            
-            # Let's assume data is a Dict or List of Dicts.
+            # Normalize data to list
             items = data if isinstance(data, list) else [data]
             
             for item in items:
                 if not isinstance(item, dict): continue
                 
-                minister_name = item.get("Minister") or ""
+                raw_name = item.get("Minister") or ""
+                # Use extracted name directly as requested, just strip whitespace
+                minister_name = raw_name.strip()
                 
                 is_continuation = (
                     minister_name == "CONTINUATION_FROM_PREVIOUS" or 
-                    "CONTINUATION" in minister_name.upper()
+                    "CONTINUATION" in minister_name.upper() or
+                    "(CONTD" in minister_name.upper() or
+                    "(CONTINUED" in minister_name.upper()
                 )
                 
-                if is_continuation and current_minister:
-                    # Merge data
-                    self.log(f"Merging continuation on Page {page['page_num']} to {current_minister.get('Minister')}")
-                    for col in ["Column I", "Column II", "Column III"]:
-                        if col in item and col in current_minister:
-                            # Assuming list of strings
-                            if isinstance(item[col], list) and isinstance(current_minister[col], list):
-                                current_minister[col].extend(item[col])
+                decision = "UNKNOWN"
+                
+                if is_continuation:
+                    if current_minister:
+                        decision = "MERGED"
+                        self.log(f"Merging continuation on Page {page_num} to {current_minister.get('Minister')}")
+                        # Merge Logic
+                        for col in ["Column I", "Column II", "Column III"]:
+                            if col in item:
+                                # Ensure we have target list
+                                if col not in current_minister: current_minister[col] = []
+                                
+                                # Get new values
+                                new_vals = item[col]
+                                if isinstance(new_vals, str): new_vals = [new_vals]
+                                if not isinstance(new_vals, list): new_vals = []
+                                
+                                current_minister[col].extend(new_vals)
+                    else:
+                        decision = "ORPHANED_CONTINUATION"
+                        self.log(f"Warning: Orphaned continuation on Page {page_num}")
+                        
                 else:
                     # New Minister
-                    if minister_name and not is_continuation:
+                    if minister_name:
+                        decision = "NEW_MINISTER"
                         current_minister = item.copy() # Start new
-                        current_minister['_source_pages'] = [page['page_num']]
+                        current_minister['Minister'] = minister_name # Ensure clean name
+                        current_minister['_source_pages'] = [page_num]
+                        
+                        # Ensure columns become lists if they are strings
+                        for col in ["Column I", "Column II", "Column III"]:
+                            val = current_minister.get(col, [])
+                            if isinstance(val, str): current_minister[col] = [val]
+                            
                         consolidated_ministers.append(current_minister)
-                    elif is_continuation and not current_minister:
-                         self.log(f"Warning: Orphaned continuation on Page {page['page_num']}")
+                    else:
+                        decision = "SKIPPED_EMPTY_NAME"
+                        
+                debug_log.append({
+                    "page": page_num,
+                    "raw_minister": raw_name,
+                    "decision": decision,
+                    "target_minister": current_minister.get("Minister") if current_minister else None
+                })
+
+        # Save Debug Artifact
+        if output_dir and pdf_name:
+             inter_dir = os.path.join(output_dir, "intermediate", pdf_name)
+             os.makedirs(inter_dir, exist_ok=True)
+             debug_path = os.path.join(inter_dir, "aggregator_debug_log.json")
+             with open(debug_path, 'w', encoding='utf-8') as f:
+                 json.dump(debug_log, f, indent=2, ensure_ascii=False)
+             self.log(f"Saved Aggregator debug log to: {debug_path}")
                          
         return consolidated_ministers
 
@@ -589,7 +627,11 @@ class OrchestratorAgent(Agent):
                 )
                 
                 # Step 3: Aggregate
-                consolidated_data = self.aggregator.process(structured_pages)
+                consolidated_data = self.aggregator.process(
+                    structured_pages, 
+                    output_dir=self.args.output_dir,
+                    pdf_name=pdf.stem
+                )
                 
                 # Step 4: Finalize
                 output_subdir = os.path.join(self.args.output_dir, pdf.stem)
