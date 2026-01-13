@@ -75,7 +75,7 @@ class OrchestratorAgent(Agent):
         text_llm = LLM(
             model=self.processor_model_path,
             trust_remote_code=True,
-            gpu_memory_utilization=0.6 # Save some room?
+            gpu_memory_utilization=0.95 # Use full available memory
         )
         
         processor = ProcessorAgent(text_llm, self.user_prompt_content, self.processor_model_path)
