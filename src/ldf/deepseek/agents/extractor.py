@@ -10,6 +10,7 @@ from ldf.deepseek.ocr.utils import pdf_to_images, re_match, crop_and_save_images
 # We need these from the deepseek submodule...
 from ldf.deepseek.ocr.logits_process import NoRepeatNGramLogitsProcessor
 from ldf.deepseek.ocr.process import DeepseekOCRProcessor
+from ldf.deepseek.config import PROMPT
 # How to handle config? We might need to pass config or import it.
 # For now, hardcode or accept as init params.
 
@@ -24,7 +25,7 @@ class ExtractorAgent(Agent):
         super().__init__("Extractor")
         self.llm = llm_engine
         # OCR Prompt
-        self.ocr_prompt = "Explain this image in detail." 
+        self.ocr_prompt = PROMPT 
 
         # Setup Sampling Params for OCR
         logits_processors = [NoRepeatNGramLogitsProcessor(ngram_size=20, window_size=50, whitelist_token_ids={128821, 128822})]
