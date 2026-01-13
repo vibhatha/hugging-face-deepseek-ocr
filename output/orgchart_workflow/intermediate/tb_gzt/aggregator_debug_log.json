@@ -1,0 +1,500 @@
+[
+  {
+    "page": 1,
+    "raw_minister": "",
+    "decision": "SKIPPED_EMPTY_NAME",
+    "target_minister": null
+  },
+  {
+    "page": 2,
+    "raw_minister": "Minister of Defence",
+    "decision": "NEW_MINISTER",
+    "target_minister": "Minister of Defence"
+  },
+  {
+    "page": 3,
+    "raw_minister": "MINISTER_OF_DEFENCE_CONTD.",
+    "decision": "NEW_MINISTER",
+    "target_minister": "MINISTER_OF_DEFENCE_CONTD."
+  },
+  {
+    "page": 4,
+    "raw_minister": "MINISTER_OF_DEFENCE_CONTINUED",
+    "decision": "NEW_MINISTER",
+    "target_minister": "MINISTER_OF_DEFENCE_CONTINUED"
+  },
+  {
+    "page": 4,
+    "raw_minister": "MINISTER_OF_FINANCE_ECONOMIC_STABILIZATION_AND_NATIONAL_POLICIES",
+    "decision": "NEW_MINISTER",
+    "target_minister": "MINISTER_OF_FINANCE_ECONOMIC_STABILIZATION_AND_NATIONAL_POLICIES"
+  },
+  {
+    "page": 5,
+    "raw_minister": "CONTINUATION_FROM_PREVIOUS",
+    "decision": "MERGED",
+    "target_minister": "MINISTER_OF_FINANCE_ECONOMIC_STABILIZATION_AND_NATIONAL_POLICIES"
+  },
+  {
+    "page": 6,
+    "raw_minister": "CONTINUATION_FROM_PREVIOUS",
+    "decision": "MERGED",
+    "target_minister": "MINISTER_OF_FINANCE_ECONOMIC_STABILIZATION_AND_NATIONAL_POLICIES"
+  },
+  {
+    "page": 7,
+    "raw_minister": "CONTINUATION_FROM_PREVIOUS",
+    "decision": "MERGED",
+    "target_minister": "MINISTER_OF_FINANCE_ECONOMIC_STABILIZATION_AND_NATIONAL_POLICIES"
+  },
+  {
+    "page": 8,
+    "raw_minister": "CONTINUATION_FROM_PREVIOUS",
+    "decision": "MERGED",
+    "target_minister": "MINISTER_OF_FINANCE_ECONOMIC_STABILIZATION_AND_NATIONAL_POLICIES"
+  },
+  {
+    "page": 9,
+    "raw_minister": "Minister of Technology",
+    "decision": "NEW_MINISTER",
+    "target_minister": "Minister of Technology"
+  },
+  {
+    "page": 10,
+    "raw_minister": "CONTINUATION_FROM_PREVIOUS",
+    "decision": "MERGED",
+    "target_minister": "Minister of Technology"
+  },
+  {
+    "page": 10,
+    "raw_minister": "Minister of Women, Child Affairs and Social Empowerment",
+    "decision": "NEW_MINISTER",
+    "target_minister": "Minister of Women, Child Affairs and Social Empowerment"
+  },
+  {
+    "page": 11,
+    "raw_minister": "CONTINUATION_FROM_PREVIOUS",
+    "decision": "MERGED",
+    "target_minister": "Minister of Women, Child Affairs and Social Empowerment"
+  },
+  {
+    "page": 12,
+    "raw_minister": "CONTINUATION_FROM_PREVIOUS",
+    "decision": "MERGED",
+    "target_minister": "Minister of Women, Child Affairs and Social Empowerment"
+  },
+  {
+    "page": 13,
+    "raw_minister": "CONTINUATION_FROM_PREVIOUS",
+    "decision": "MERGED",
+    "target_minister": "Minister of Women, Child Affairs and Social Empowerment"
+  },
+  {
+    "page": 14,
+    "raw_minister": "Minister of Ports, Shipping and Aviation",
+    "decision": "NEW_MINISTER",
+    "target_minister": "Minister of Ports, Shipping and Aviation"
+  },
+  {
+    "page": 15,
+    "raw_minister": "MINISTER_OF_PORTS_SHIPPING_AND_AVIATION_CONTD.",
+    "decision": "NEW_MINISTER",
+    "target_minister": "MINISTER_OF_PORTS_SHIPPING_AND_AVIATION_CONTD."
+  },
+  {
+    "page": 16,
+    "raw_minister": "CONTINUATION_FROM_PREVIOUS",
+    "decision": "MERGED",
+    "target_minister": "MINISTER_OF_PORTS_SHIPPING_AND_AVIATION_CONTD."
+  },
+  {
+    "page": 17,
+    "raw_minister": "MINISTER_OF_INVESTMENT_PROMOTION_CONTD.",
+    "decision": "NEW_MINISTER",
+    "target_minister": "MINISTER_OF_INVESTMENT_PROMOTION_CONTD."
+  },
+  {
+    "page": 18,
+    "raw_minister": "CONTINUATION_FROM_PREVIOUS",
+    "decision": "MERGED",
+    "target_minister": "MINISTER_OF_INVESTMENT_PROMOTION_CONTD."
+  },
+  {
+    "page": 19,
+    "raw_minister": "CONTINUATION_FROM_PREVIOUS",
+    "decision": "MERGED",
+    "target_minister": "MINISTER_OF_INVESTMENT_PROMOTION_CONTD."
+  },
+  {
+    "page": 20,
+    "raw_minister": "CONTINUATION_FROM_PREVIOUS",
+    "decision": "MERGED",
+    "target_minister": "MINISTER_OF_INVESTMENT_PROMOTION_CONTD."
+  },
+  {
+    "page": 21,
+    "raw_minister": "CONTINUATION_FROM_PREVIOUS",
+    "decision": "MERGED",
+    "target_minister": "MINISTER_OF_INVESTMENT_PROMOTION_CONTD."
+  },
+  {
+    "page": 22,
+    "raw_minister": "MINISTER_OF_FISHERIES_CONTD.",
+    "decision": "NEW_MINISTER",
+    "target_minister": "MINISTER_OF_FISHERIES_CONTD."
+  },
+  {
+    "page": 23,
+    "raw_minister": "CONTINUATION_FROM_PREVIOUS",
+    "decision": "MERGED",
+    "target_minister": "MINISTER_OF_FISHERIES_CONTD."
+  },
+  {
+    "page": 24,
+    "raw_minister": "MINISTER_OF_EDUCATION_CONTD.",
+    "decision": "NEW_MINISTER",
+    "target_minister": "MINISTER_OF_EDUCATION_CONTD."
+  },
+  {
+    "page": 25,
+    "raw_minister": "MINISTER_OF_EDUCATION_CONTD.",
+    "decision": "NEW_MINISTER",
+    "target_minister": "MINISTER_OF_EDUCATION_CONTD."
+  },
+  {
+    "page": 26,
+    "raw_minister": "MINISTER_OF_EDUCATION_CONTD.",
+    "decision": "NEW_MINISTER",
+    "target_minister": "MINISTER_OF_EDUCATION_CONTD."
+  },
+  {
+    "page": 27,
+    "raw_minister": "MINISTER_OF_EDUCATION_CONTD.",
+    "decision": "NEW_MINISTER",
+    "target_minister": "MINISTER_OF_EDUCATION_CONTD."
+  },
+  {
+    "page": 28,
+    "raw_minister": "MINISTER_OF_EDUCATION_CONTD.",
+    "decision": "NEW_MINISTER",
+    "target_minister": "MINISTER_OF_EDUCATION_CONTD."
+  },
+  {
+    "page": 29,
+    "raw_minister": "Transport and Highways",
+    "decision": "NEW_MINISTER",
+    "target_minister": "Transport and Highways"
+  },
+  {
+    "page": 30,
+    "raw_minister": "MINISTER_OF_TRANSPORT_AND_HIGHWAYS_CONTD.",
+    "decision": "NEW_MINISTER",
+    "target_minister": "MINISTER_OF_TRANSPORT_AND_HIGHWAYS_CONTD."
+  },
+  {
+    "page": 31,
+    "raw_minister": "MINISTER_OF_TRANSPORT_AND_HIGHWAYS_CONTINUED",
+    "decision": "NEW_MINISTER",
+    "target_minister": "MINISTER_OF_TRANSPORT_AND_HIGHWAYS_CONTINUED"
+  },
+  {
+    "page": 32,
+    "raw_minister": "MINISTER_OF_MASS_MEDIA_CONTD.",
+    "decision": "NEW_MINISTER",
+    "target_minister": "MINISTER_OF_MASS_MEDIA_CONTD."
+  },
+  {
+    "page": 33,
+    "raw_minister": "MINISTER_OF_MASS_MEDIA_CONTINUED",
+    "decision": "NEW_MINISTER",
+    "target_minister": "MINISTER_OF_MASS_MEDIA_CONTINUED"
+  },
+  {
+    "page": 34,
+    "raw_minister": "MINISTER_OF_HEALTH_CONTINUED",
+    "decision": "NEW_MINISTER",
+    "target_minister": "MINISTER_OF_HEALTH_CONTINUED"
+  },
+  {
+    "page": 35,
+    "raw_minister": "MINISTER_OF_HEALTH_CONTD.",
+    "decision": "NEW_MINISTER",
+    "target_minister": "MINISTER_OF_HEALTH_CONTD."
+  },
+  {
+    "page": 36,
+    "raw_minister": "MINISTER_OF_HEALTH_CONTD.",
+    "decision": "NEW_MINISTER",
+    "target_minister": "MINISTER_OF_HEALTH_CONTD."
+  },
+  {
+    "page": 37,
+    "raw_minister": "MINISTER_OF_HEALTH_CONTINUED",
+    "decision": "NEW_MINISTER",
+    "target_minister": "MINISTER_OF_HEALTH_CONTINUED"
+  },
+  {
+    "page": 38,
+    "raw_minister": "CONTINUATION_FROM_PREVIOUS",
+    "decision": "MERGED",
+    "target_minister": "MINISTER_OF_HEALTH_CONTINUED"
+  },
+  {
+    "page": 39,
+    "raw_minister": "MINISTER_OF_WATER_SUPPLY_CONTINUED",
+    "decision": "NEW_MINISTER",
+    "target_minister": "MINISTER_OF_WATER_SUPPLY_CONTINUED"
+  },
+  {
+    "page": 40,
+    "raw_minister": "MINISTER_OF_AGRICULTURE_CONTD.",
+    "decision": "NEW_MINISTER",
+    "target_minister": "MINISTER_OF_AGRICULTURE_CONTD."
+  },
+  {
+    "page": 41,
+    "raw_minister": "MINISTER_OF_AGRICULTURE_CONTD.",
+    "decision": "NEW_MINISTER",
+    "target_minister": "MINISTER_OF_AGRICULTURE_CONTD."
+  },
+  {
+    "page": 42,
+    "raw_minister": "MINISTER_OF_AGRICULTURE_CONTD.",
+    "decision": "NEW_MINISTER",
+    "target_minister": "MINISTER_OF_AGRICULTURE_CONTD."
+  },
+  {
+    "page": 43,
+    "raw_minister": "MINISTER_OF_AGRICULTURE_CONTD",
+    "decision": "NEW_MINISTER",
+    "target_minister": "MINISTER_OF_AGRICULTURE_CONTD"
+  },
+  {
+    "page": 44,
+    "raw_minister": "MINISTER_OF_WILDLIFE_AND_FOREST_RESOURCES_CONSERVATION_CONTD.",
+    "decision": "NEW_MINISTER",
+    "target_minister": "MINISTER_OF_WILDLIFE_AND_FOREST_RESOURCES_CONSERVATION_CONTD."
+  },
+  {
+    "page": 45,
+    "raw_minister": "MINISTER_OF_WILDLIFE_AND_FOREST_RESOURCES_CONSERVATION_CONTINUED",
+    "decision": "NEW_MINISTER",
+    "target_minister": "MINISTER_OF_WILDLIFE_AND_FOREST_RESOURCES_CONSERVATION_CONTINUED"
+  },
+  {
+    "page": 46,
+    "raw_minister": "MINISTER_OF_JUSTICE_PRISONS_AFFAIRS_AND_CONSTITUTIONAL_REFORMS_CONTD.",
+    "decision": "NEW_MINISTER",
+    "target_minister": "MINISTER_OF_JUSTICE_PRISONS_AFFAIRS_AND_CONSTITUTIONAL_REFORMS_CONTD."
+  },
+  {
+    "page": 47,
+    "raw_minister": "CONTINUATION_FROM_PREVIOUS",
+    "decision": "MERGED",
+    "target_minister": "MINISTER_OF_JUSTICE_PRISONS_AFFAIRS_AND_CONSTITUTIONAL_REFORMS_CONTD."
+  },
+  {
+    "page": 48,
+    "raw_minister": "CONTINUATION_FROM_PREVIOUS",
+    "decision": "MERGED",
+    "target_minister": "MINISTER_OF_JUSTICE_PRISONS_AFFAIRS_AND_CONSTITUTIONAL_REFORMS_CONTD."
+  },
+  {
+    "page": 49,
+    "raw_minister": "MINISTER_OF_TOURISM_AND_LANDS_CONTD.",
+    "decision": "NEW_MINISTER",
+    "target_minister": "MINISTER_OF_TOURISM_AND_LANDS_CONTD."
+  },
+  {
+    "page": 50,
+    "raw_minister": "CONTINUATION_FROM_PREVIOUS",
+    "decision": "MERGED",
+    "target_minister": "MINISTER_OF_TOURISM_AND_LANDS_CONTD."
+  },
+  {
+    "page": 51,
+    "raw_minister": "MINISTER_OF_PLANTATION_INDUSTRIES_CONTD.",
+    "decision": "NEW_MINISTER",
+    "target_minister": "MINISTER_OF_PLANTATION_INDUSTRIES_CONTD."
+  },
+  {
+    "page": 52,
+    "raw_minister": "CONTINUATION_FROM_PREVIOUS",
+    "decision": "MERGED",
+    "target_minister": "MINISTER_OF_PLANTATION_INDUSTRIES_CONTD."
+  },
+  {
+    "page": 53,
+    "raw_minister": "MINISTER_OF_PLANTATION_INDUSTRIES_CONTD.",
+    "decision": "NEW_MINISTER",
+    "target_minister": "MINISTER_OF_PLANTATION_INDUSTRIES_CONTD."
+  },
+  {
+    "page": 54,
+    "raw_minister": "CONTINUATION_FROM_PREVIOUS",
+    "decision": "MERGED",
+    "target_minister": "MINISTER_OF_PLANTATION_INDUSTRIES_CONTD."
+  },
+  {
+    "page": 55,
+    "raw_minister": "Minister of Industries (Contd.)",
+    "decision": "MERGED",
+    "target_minister": "MINISTER_OF_PLANTATION_INDUSTRIES_CONTD."
+  },
+  {
+    "page": 56,
+    "raw_minister": "MINISTER_OF_INDUSTRIES_CONTD.",
+    "decision": "NEW_MINISTER",
+    "target_minister": "MINISTER_OF_INDUSTRIES_CONTD."
+  },
+  {
+    "page": 57,
+    "raw_minister": "MINISTER_OF_INDUSTRIES_CONTD",
+    "decision": "NEW_MINISTER",
+    "target_minister": "MINISTER_OF_INDUSTRIES_CONTD"
+  },
+  {
+    "page": 58,
+    "raw_minister": "MINISTER_OF_URBAN_DEVELOPMENT_AND_HOUSING_CONTD.",
+    "decision": "NEW_MINISTER",
+    "target_minister": "MINISTER_OF_URBAN_DEVELOPMENT_AND_HOUSING_CONTD."
+  },
+  {
+    "page": 59,
+    "raw_minister": "MINISTER_OF_URBAN_DEVELOPMENT_AND_HOUSING_CONTD.",
+    "decision": "NEW_MINISTER",
+    "target_minister": "MINISTER_OF_URBAN_DEVELOPMENT_AND_HOUSING_CONTD."
+  },
+  {
+    "page": 60,
+    "raw_minister": "MINISTER_OF_URBAN_DEVELOPMENT_AND_HOUSING_CONTD.",
+    "decision": "NEW_MINISTER",
+    "target_minister": "MINISTER_OF_URBAN_DEVELOPMENT_AND_HOUSING_CONTD."
+  },
+  {
+    "page": 61,
+    "raw_minister": "MINISTER_OF_URBAN_DEVELOPMENT_AND_HOUSING_CONTD.",
+    "decision": "NEW_MINISTER",
+    "target_minister": "MINISTER_OF_URBAN_DEVELOPMENT_AND_HOUSING_CONTD."
+  },
+  {
+    "page": 62,
+    "raw_minister": "CONTINUATION_FROM_PREVIOUS",
+    "decision": "MERGED",
+    "target_minister": "MINISTER_OF_URBAN_DEVELOPMENT_AND_HOUSING_CONTD."
+  },
+  {
+    "page": 63,
+    "raw_minister": "MINISTER_OF_FOREIGN AFFAIRS (Contd.)",
+    "decision": "MERGED",
+    "target_minister": "MINISTER_OF_URBAN_DEVELOPMENT_AND_HOUSING_CONTD."
+  },
+  {
+    "page": 64,
+    "raw_minister": "MINISTER_OF_FOREIGN AFFAIRS (Contd.)",
+    "decision": "MERGED",
+    "target_minister": "MINISTER_OF_URBAN_DEVELOPMENT_AND_HOUSING_CONTD."
+  },
+  {
+    "page": 65,
+    "raw_minister": "Buddhadasana, Religious and Cultural Affairs (Contd.)",
+    "decision": "MERGED",
+    "target_minister": "MINISTER_OF_URBAN_DEVELOPMENT_AND_HOUSING_CONTD."
+  },
+  {
+    "page": 66,
+    "raw_minister": "Buddhasadana, Religious and Cultural Affairs (Contd.)",
+    "decision": "MERGED",
+    "target_minister": "MINISTER_OF_URBAN_DEVELOPMENT_AND_HOUSING_CONTD."
+  },
+  {
+    "page": 67,
+    "raw_minister": "CONTINUATION_FROM_PREVIOUS",
+    "decision": "MERGED",
+    "target_minister": "MINISTER_OF_URBAN_DEVELOPMENT_AND_HOUSING_CONTD."
+  },
+  {
+    "page": 68,
+    "raw_minister": "MINISTER_OF_POWER_AND_ENERGY_CONTD.",
+    "decision": "NEW_MINISTER",
+    "target_minister": "MINISTER_OF_POWER_AND_ENERGY_CONTD."
+  },
+  {
+    "page": 69,
+    "raw_minister": "MINISTER_OF_POWER_AND_ENERGY_CONTD.",
+    "decision": "NEW_MINISTER",
+    "target_minister": "MINISTER_OF_POWER_AND_ENERGY_CONTD."
+  },
+  {
+    "page": 69,
+    "raw_minister": "MINISTER_OF_ENVIRONMENT",
+    "decision": "NEW_MINISTER",
+    "target_minister": "MINISTER_OF_ENVIRONMENT"
+  },
+  {
+    "page": 70,
+    "raw_minister": "MINISTER_OF_ENVIRONMENT_CONTD.",
+    "decision": "NEW_MINISTER",
+    "target_minister": "MINISTER_OF_ENVIRONMENT_CONTD."
+  },
+  {
+    "page": 71,
+    "raw_minister": "CONTINUATION_FROM_PREVIOUS",
+    "decision": "MERGED",
+    "target_minister": "MINISTER_OF_ENVIRONMENT_CONTD."
+  },
+  {
+    "page": 72,
+    "raw_minister": "MINISTER_OF_SPORTS_AND_YOUTH_AFFAIRS_CONTD.",
+    "decision": "NEW_MINISTER",
+    "target_minister": "MINISTER_OF_SPORTS_AND_YOUTH_AFFAIRS_CONTD."
+  },
+  {
+    "page": 73,
+    "raw_minister": "CONTINUATION_FROM_PREVIOUS",
+    "decision": "MERGED",
+    "target_minister": "MINISTER_OF_SPORTS_AND_YOUTH_AFFAIRS_CONTD."
+  },
+  {
+    "page": 74,
+    "raw_minister": "MINISTER_OF_IRRIGATION_CONTD.",
+    "decision": "NEW_MINISTER",
+    "target_minister": "MINISTER_OF_IRRIGATION_CONTD."
+  },
+  {
+    "page": 75,
+    "raw_minister": "CONTINUATION_FROM_PREVIOUS",
+    "decision": "MERGED",
+    "target_minister": "MINISTER_OF_IRRIGATION_CONTD."
+  },
+  {
+    "page": 76,
+    "raw_minister": "MINISTER_OF_LABOUR_AND_FOREIGN_EMPLOYMENT_CONTD.",
+    "decision": "NEW_MINISTER",
+    "target_minister": "MINISTER_OF_LABOUR_AND_FOREIGN_EMPLOYMENT_CONTD."
+  },
+  {
+    "page": 77,
+    "raw_minister": "MINISTER_OF_LABOUR_AND_FOREIGN_EMPLOYMENT_CONTD.",
+    "decision": "NEW_MINISTER",
+    "target_minister": "MINISTER_OF_LABOUR_AND_FOREIGN_EMPLOYMENT_CONTD."
+  },
+  {
+    "page": 78,
+    "raw_minister": "MINISTER_OF_PUBLIC_SECURITY_CONTD.",
+    "decision": "NEW_MINISTER",
+    "target_minister": "MINISTER_OF_PUBLIC_SECURITY_CONTD."
+  },
+  {
+    "page": 79,
+    "raw_minister": "CONTINUATION_FROM_PREVIOUS",
+    "decision": "MERGED",
+    "target_minister": "MINISTER_OF_PUBLIC_SECURITY_CONTD."
+  },
+  {
+    "page": 80,
+    "raw_minister": "MINISTER_OF_TRADE_COMMERCE_AND_FOOD_SECURITY_CONTD.",
+    "decision": "NEW_MINISTER",
+    "target_minister": "MINISTER_OF_TRADE_COMMERCE_AND_FOOD_SECURITY_CONTD."
+  }
+]
