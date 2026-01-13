@@ -517,6 +517,50 @@ class FinalizerAgent(Agent):
         except Exception as e:
             self.log(f"Error saving CSV: {e}")
 
+        # 3. Create Per-Minister Folders
+        self.log("Creating per-minister output folders...")
+        try:
+            for entry in data:
+                minister_name = entry.get("Minister", "Unknown")
+                # Sanitize folder name
+                safe_name = "".join([c for c in minister_name if c.isalpha() or c.isdigit() or c in (' ', '-', '_')]).strip()
+                if not safe_name: safe_name = "Unknown_Minister"
+                
+                minister_dir = os.path.join(output_dir, safe_name)
+                os.makedirs(minister_dir, exist_ok=True)
+                
+                # A. Save Minister JSON
+                min_json_path = os.path.join(minister_dir, "data.json")
+                with open(min_json_path, 'w', encoding='utf-8') as f:
+                    json.dump(entry, f, indent=2, ensure_ascii=False)
+                    
+                # B. Save Minister CSV
+                min_csv_path = os.path.join(minister_dir, "data.csv")
+                headers = ["Minister", "Row_ID", "Column I", "Column II", "Column III"]
+                
+                with open(min_csv_path, 'w', encoding='utf-8', newline='') as f:
+                    writer = csv.writer(f)
+                    writer.writerow(headers)
+                    
+                    col1 = entry.get("Column I", [])
+                    col2 = entry.get("Column II", [])
+                    col3 = entry.get("Column III", [])
+                    
+                    if isinstance(col1, str): col1 = [col1]
+                    if isinstance(col2, str): col2 = [col2]
+                    if isinstance(col3, str): col3 = [col3]
+                    
+                    max_len = max(len(col1), len(col2), len(col3))
+                    
+                    for i in range(max_len):
+                        val1 = col1[i] if i < len(col1) else ""
+                        val2 = col2[i] if i < len(col2) else ""
+                        val3 = col3[i] if i < len(col3) else ""
+                        writer.writerow([minister_name, i+1, val1, val2, val3])
+                        
+        except Exception as e:
+             self.log(f"Error creating minister folders: {e}")
+
 # ==========================================
 # Orchestrator
 # ==========================================
