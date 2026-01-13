@@ -11,10 +11,9 @@ from ldf.deepseek.agents.processor import ProcessorAgent
 from ldf.deepseek.agents.aggregator import AggregatorAgent
 from ldf.deepseek.agents.finalizer import FinalizerAgent
 # We need to register the model for VLLM
-from ldf.deepseek.ocr import setup_deepseek_environment
-
-# Ensure registry is populated
-setup_deepseek_environment() 
+# We need to register the model for VLLM
+import ldf.deepseek.ocr
+ 
 
 class OrchestratorAgent(Agent):
     def __init__(self, input_dir, output_dir, prompt_file, model_path, processor_model_path="Qwen/Qwen2.5-7B-Instruct"):
