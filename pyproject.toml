@@ -1,0 +1,37 @@
+[build-system]
+requires = ["setuptools>=61.0"]
+build-backend = "setuptools.build_meta"
+
+[project]
+name = "ldf-deepseek-ocr"
+version = "0.1.0"
+description = "A wrapper library for DeepSeek OCR + Agentic Workflow"
+authors = [
+  { name="User", email="user@example.com" },
+]
+readme = "README.md"
+requires-python = ">=3.9"
+classifiers = [
+    "Programming Language :: Python :: 3",
+    "License :: OSI Approved :: MIT License",
+    "Operating System :: OS Independent",
+]
+dependencies = [
+    "torch",
+    "vllm",
+    "pillow",
+    "pymupdf", 
+    "transformers",
+    "accelerate",
+    "einops",
+    "easydict",
+    "addict",
+    "img2pdf"
+]
+
+[project.urls]
+"Homepage" = "https://github.com/vibhatha/hugging-face-deepseek-ocr"
+
+[tool.setuptools]
+package-dir = {"" = "src"}
+packages = ["ldf"]

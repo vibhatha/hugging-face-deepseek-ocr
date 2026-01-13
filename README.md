@@ -97,3 +97,42 @@ python ocr_workflow.py \
     --prompt_file input/orgchart/prompt.txt
 ```
 **Note:** This workflow re-uses the loaded DeepSeek model for both OCR and post-processing, optimizing VRAM usage.
+
+## Library Setup (V2)
+
+We have refactored the project into a proper python library `ldf.deepseek.ocr`.
+
+### 1. Setup
+
+Run the V2 setup script to create a new environment (`deepseek-ocr-v2`) and install the library:
+
+```bash
+./setup_v2.sh
+```
+
+### 2. Initialization
+
+To activate the environment and set necessary variables:
+
+```bash
+source init_v2.sh
+```
+
+### 3. Running Workflow V2
+
+Use the new `ocr_workflow_v2.py` script which utilizes the library structure:
+
+```bash
+python ocr_workflow_v2.py \
+    --input_dir input/orgchart \
+    --output_dir output/orgchart_workflow_v2 \
+    --prompt_file input/orgchart/prompt.txt
+```
+
+## Credits
+
+This library is heavily based on and contains code from the [DeepSeek-OCR](https://github.com/deepseek-ai/DeepSeek-OCR) repository.
+We gratefully acknowledge the DeepSeek-AI team for their open-source work.
+
+Original Repository: https://github.com/deepseek-ai/DeepSeek-OCR
+License: Please refer to the original repository for license details.
