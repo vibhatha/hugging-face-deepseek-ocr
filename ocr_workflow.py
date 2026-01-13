@@ -391,19 +391,39 @@ class AggregatorAgent(Agent):
                 if not isinstance(item, dict): continue
                 
                 raw_name = item.get("Minister") or ""
-                # Use extracted name directly as requested, just strip whitespace
+                # Use extracted name directly for the record
                 minister_name = raw_name.strip()
                 
-                is_continuation = (
+                # Normalization for Comparison Logic (Internal Use Only)
+                norm_name = minister_name.upper().replace("HON.", "").replace("DR.", "").replace("MR.", "").strip()
+                # Remove common continuation markers for comparison
+                norm_name_clean = norm_name.replace("(CONTD", "").replace("(CONTINUED", "").replace("CONTD", "").replace("CONTINUED", "").strip(" .():")
+                
+                # Check current minister for comparison
+                current_norm = ""
+                if current_minister:
+                    curr_raw = current_minister.get("Minister", "")
+                    current_norm = curr_raw.upper().replace("HON.", "").replace("DR.", "").strip()
+                    current_norm = current_norm.replace("(CONTD", "").replace("(CONTINUED", "").replace("CONTD", "").replace("CONTINUED", "").strip(" .():")
+                
+                is_continuation_keyword = (
                     minister_name == "CONTINUATION_FROM_PREVIOUS" or 
                     "CONTINUATION" in minister_name.upper() or
                     "(CONTD" in minister_name.upper() or
                     "(CONTINUED" in minister_name.upper()
                 )
                 
+                # MERGE IF: Explicit Keyword OR Name Matches Previous (ignoring suffixes)
+                should_merge = False
+                if is_continuation_keyword:
+                    should_merge = True
+                elif current_minister and norm_name_clean and (norm_name_clean == current_norm):
+                    should_merge = True
+                    self.log(f"Detected name match for merge: '{minister_name}' == '{curr_raw}'")
+
                 decision = "UNKNOWN"
                 
-                if is_continuation:
+                if should_merge:
                     if current_minister:
                         decision = "MERGED"
                         self.log(f"Merging continuation on Page {page_num} to {current_minister.get('Minister')}")
@@ -428,7 +448,7 @@ class AggregatorAgent(Agent):
                     if minister_name:
                         decision = "NEW_MINISTER"
                         current_minister = item.copy() # Start new
-                        current_minister['Minister'] = minister_name # Ensure clean name
+                        current_minister['Minister'] = minister_name # Keep raw name
                         current_minister['_source_pages'] = [page_num]
                         
                         # Ensure columns become lists if they are strings
@@ -443,6 +463,7 @@ class AggregatorAgent(Agent):
                 debug_log.append({
                     "page": page_num,
                     "raw_minister": raw_name,
+                    "norm_name": norm_name_clean,
                     "decision": decision,
                     "target_minister": current_minister.get("Minister") if current_minister else None
                 })
@@ -522,9 +543,18 @@ class FinalizerAgent(Agent):
         try:
             for entry in data:
                 minister_name = entry.get("Minister", "Unknown")
-                # Sanitize folder name
-                safe_name = "".join([c for c in minister_name if c.isalpha() or c.isdigit() or c in (' ', '-', '_')]).strip()
-                if not safe_name: safe_name = "Unknown_Minister"
+                
+                # Snake Case Conversion
+                # 1. Remove titles (Hon., etc) for folder name clarity
+                clean_for_folder = minister_name.replace("Hon.", "").replace("Dr.", "").replace("Mr.", "")
+                # 2. Lowercase and replace spaces/symbols with _
+                safe_name = "".join([c if c.isalnum() else '_' for c in clean_for_folder]).strip('_')
+                # 3. Collapse multiple underscores
+                while "__" in safe_name:
+                    safe_name = safe_name.replace("__", "_")
+                safe_name = safe_name.lower()
+                
+                if not safe_name: safe_name = "unknown_minister"
                 
                 minister_dir = os.path.join(output_dir, safe_name)
                 os.makedirs(minister_dir, exist_ok=True)
