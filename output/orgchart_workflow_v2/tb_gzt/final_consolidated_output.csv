@@ -43,107 +43,89 @@ Minister of Defence,7,6. Maintenance of national and internal security-related i
 Minister of Defence,8,7. Maintenance of relations with visiting Armed Forces,,
 Minister of Defence,9,8. Extension of cooperation to international humanitarian operations.,,
 Minister of Defence,10,9. Matters relating to explosives and firearms,,
-Minister of Defence,11,10. Matters relating to maintenance of light houses (other than those belonging to the Ports Authority),,Laws and Ordinance to be Implemented
-Minister of Defence,12,Duties & Functions,"Departments, Statutory Institutions & Public Corporations","• Private Security Agencies Act, No. 45 of 1998"
-Minister of Defence,13,11. Provision of defence education and post-service education for defence service personnel,19. National Dangerous Drugs Control Board,"• Department of Coast Guard Act, No. 41 of 2009"
-Minister of Defence,14,12. Provision of higher education for defence service personnel,20. National Defence Fund,"• Convention against Illicit Traffic in Narcotic Drugs and Psychotropic Substances Act, No. 1 of 2008"
-Minister of Defence,15,13. Matters relating to private security services,21. Ranaviru Seva Authority,"• National Dangerous Drugs Control Board Act, No. 11 of 1984"
-Minister of Defence,16,14. Rescue operations and administration of Coast Guard Service,22. Api Wenuwen Api Fund,"• Ranaviru Seva Authority Act, No. 54 of 1999"
-Minister of Defence,17,15. Matters relating to Extradition,23. Department of Meteorology,"• Api Wenuwen Api Fund Act, No. 6 of 2008"
-Minister of Defence,18,16. Prevention and control of the use of dangerous drugs,24. National Disaster Management Council,"• Sri Lanka Disaster Management Act, No. 13 of 2005"
-Minister of Defence,19,17. Matters relating to veteran and disabled soldiers,25. Disaster Management Centre,"• Sri Lanka Telecommunications Act, No. 25 of 1991"
-Minister of Defence,20,18. Provision of weather and climate related services,26. National Disaster Relief Services Centre,"• All other legislations pertaining to the subjects specified in Column I and II, and not specifically brought under the purview of any other Minister."
-Minister of Defence,21,19. Meteorological surveys and research,27. National Building Research Organization,
-Minister of Defence,22,20. Landslide disaster management and related research and development,,
-Minister of Defence,23,21. Forecasting natural disasters and sensitizing relevant sectors regarding them,,
-Minister of Defence,24,22. Coordination of awareness programmes on natural and man-made disasters,,
-Minister of Defence,25,23. Conduct rescue operations during natural and man-made disasters,,
-Minister of Defence,26,24. Promotion of disaster resilient construction and provision of technical guidance.,,
+Minister of Defence,11,10. Matters relating to maintenance of light houses (other than those belonging to the Ports Authority),,
 MINISTER_OF_DEFENCE_CONTINUED,1,Duties & Functions,"Departments, Statutory Institutions & Public Corporations",Laws and Ordinance to be Implemented
-MINISTER_OF_DEFENCE_CONTINUED,2,25. Encourage research and development into appropriate technology for housing and construction sector,,
-MINISTER_OF_DEFENCE_CONTINUED,3,"26. Promote sustained development in the telecommunication industry by shaping the regulatory process, protecting public interest and being responsive to challenges in an increasingly competitive market",,
-MINISTER_OF_DEFENCE_CONTINUED,4,27. All other subjects that come under the purview of Institutions listed in Column II,,
-MINISTER_OF_DEFENCE_CONTINUED,5,28. Supervision of all the Institutions listed in Column II,,
+MINISTER_OF_DEFENCE_CONTINUED,2,11. Provision of defence education and post-service education for defence service personnel,19. National Dangerous Drugs Control Board,"• Private Security Agencies Act, No. 45 of 1998"
+MINISTER_OF_DEFENCE_CONTINUED,3,12. Provision of higher education for defence service personnel,20. National Defence Fund,"• Department of Coast Guard Act, No. 41 of 2009"
+MINISTER_OF_DEFENCE_CONTINUED,4,13. Matters relating to private security services,21. Ranaviru Seva Authority,"• Convention against Illicit Traffic in Narcotic Drugs and Psychotropic Substances Act, No. 1 of 2008"
+MINISTER_OF_DEFENCE_CONTINUED,5,14. Rescue operations and administration of Coast Guard Service,22. Api Wenuwen Api Fund,"• National Dangerous Drugs Control Board Act, No. 11 of 1984"
+MINISTER_OF_DEFENCE_CONTINUED,6,15. Matters relating to Extradition,23. Department of Meteorology,"• Ranaviru Seva Authority Act, No. 54 of 1999"
+MINISTER_OF_DEFENCE_CONTINUED,7,16. Prevention and control of the use of dangerous drugs,24. National Disaster Management Council,"• Api Wenuwen Api Fund Act, No. 6 of 2008"
+MINISTER_OF_DEFENCE_CONTINUED,8,17. Matters relating to veteran and disabled soldiers,25. Disaster Management Centre,"• Sri Lanka Disaster Management Act, No. 13 of 2005"
+MINISTER_OF_DEFENCE_CONTINUED,9,18. Provision of weather and climate related services,26. National Disaster Relief Services Centre,"• Sri Lanka Telecommunications Act, No. 25 of 1991"
+MINISTER_OF_DEFENCE_CONTINUED,10,19. Meteorological surveys and research,27. National Building Research Organization,"• All other legislations pertaining to the subjects specified in Column I and II, and not specifically brought under the purview of any other Minister."
+MINISTER_OF_DEFENCE_CONTINUED,11,20. Landslide disaster management and related research and development,,"• All other legislations pertaining to the subjects specified in Column I and II, and not specifically brought under the purview of any other Minister."
+MINISTER_OF_DEFENCE_CONTINUED,12,21. Forecasting natural disasters and sensitizing relevant sectors regarding them,,"• All other legislations pertaining to the subjects specified in Column I and II, and not specifically brought under the purview of any other Minister."
+MINISTER_OF_DEFENCE_CONTINUED,13,22. Coordination of awareness programmes on natural and man-made disasters,,"• All other legislations pertaining to the subjects specified in Column I and II, and not specifically brought under the purview of any other Minister."
+MINISTER_OF_DEFENCE_CONTINUED,14,23. Conduct rescue operations during natural and man-made disasters,,"• All other legislations pertaining to the subjects specified in Column I and II, and not specifically brought under the purview of any other Minister."
+MINISTER_OF_DEFENCE_CONTINUED,15,24. Promotion of disaster resilient construction and provision of technical guidance.,,"• All other legislations pertaining to the subjects specified in Column I and II, and not specifically brought under the purview of any other Minister."
+MINISTER_OF_DEFENCE_CONTINUED,16,Duties & Functions,"Departments, Statutory Institutions & Public Corporations","• All other legislations pertaining to the subjects specified in Column I and II, and not specifically brought under the purview of any other Minister."
+MINISTER_OF_DEFENCE_CONTINUED,17,25. Encourage research and development into appropriate technology for housing and construction sector,,Laws and Ordinance to be Implemented
+MINISTER_OF_DEFENCE_CONTINUED,18,"26. Promote sustained development in the telecommunication industry by shaping the regulatory process, protecting public interest and being responsive to challenges in an increasingly competitive market",,
+MINISTER_OF_DEFENCE_CONTINUED,19,27. All other subjects that come under the purview of Institutions listed in Column II,,
+MINISTER_OF_DEFENCE_CONTINUED,20,28. Supervision of all the Institutions listed in Column II,"Departments, Statutory Institutions & Public Corporations",
+MINISTER_OF_DEFENCE_CONTINUED,21,Duties & Functions,Department of Public Finance,Laws and Ordinances to be Implemented
+MINISTER_OF_DEFENCE_CONTINUED,22,Formulation of national economic and financial policies and strategies,Department of Treasury Operations,Excise Ordinance (Chapter 52)
+MINISTER_OF_DEFENCE_CONTINUED,23,Preparation of national development and public investment programmes,Department of State Accounts,"Finance Leasing Act, No. 56 of 2000"
+MINISTER_OF_DEFENCE_CONTINUED,24,Formulation of fiscal and macro fiscal management policies,Department of Information Technology Management,"Financial Transactions Reporting Act, No. 6 of 2006"
+MINISTER_OF_DEFENCE_CONTINUED,25,Identify causes for the economic crises and introduce immediate resuscitation remedies and programmes,Department of Legal Affairs,"Public Fiscal Management (Responsibility) Act, No. 3 of 2003"
+MINISTER_OF_DEFENCE_CONTINUED,26,"Introduce, implement and monitor economic reforms programmes needed to establish a stable and sustainable economic growth in the country.",Department of Management Audit,"Regulation of Insurance Industry Act, No. 43 of 2000"
+MINISTER_OF_DEFENCE_CONTINUED,27,Monitor the mechanism for implementation of cross-sectoral national policy priorities.,Department of International Trade Integration,"Lady Lochore Fund Act, No. 38 of 1951"
+MINISTER_OF_DEFENCE_CONTINUED,28,Function as the Focal Point for facilitation and coordination of international and regional trade integration including bilateral and multilateral trade agreements and resolution of disputes arising from these agreements.,Department of Development Finance,"Local Treasury Bills Ordinance, No. 8 of 1923"
+MINISTER_OF_DEFENCE_CONTINUED,29,Preparation of the annual budget and management of financial resources,Office of Comptroller General,"Nation Building Tax Act, No. 9 of 2009"
+MINISTER_OF_DEFENCE_CONTINUED,30,,Department of Inland Revenue,"Business Names Act, No. 07 of 1987"
+MINISTER_OF_DEFENCE_CONTINUED,31,,Sri Lanka Customs,Companies Act No. 07 of 2007
+MINISTER_OF_DEFENCE_CONTINUED,32,,Department of Excise,Trade Marks Act No. 30 of 1964
+MINISTER_OF_DEFENCE_CONTINUED,33,,National Lotteries Board,Cheetus Ordinance No. 61 of 1935
+MINISTER_OF_DEFENCE_CONTINUED,34,,Development Lotteries Board,Public Contract Act No. 03 of 1987
+MINISTER_OF_DEFENCE_CONTINUED,35,,Department of Valuation,"Prevention of Money Laundering Act, No. 5 of 2006"
+MINISTER_OF_DEFENCE_CONTINUED,36,,Import and Export Control Department,"Sri Lanka Accounting and Auditing Standards Act, No. 15 of 1995"
+MINISTER_OF_DEFENCE_CONTINUED,37,,Sri Lanka Export Development Board,"Import and Export (Control) Act, No. 1 of 1969"
+MINISTER_OF_DEFENCE_CONTINUED,38,,Central Bank of Sri Lanka,
+MINISTER_OF_DEFENCE_CONTINUED,39,,"All State Banks, Financial Institutions, Insurance Companies and their subsidiaries and related institutions",Sri Lanka Export Development Act No. 40 of 1979
+MINISTER_OF_DEFENCE_CONTINUED,40,,,
 MINISTER_OF_FINANCE_ECONOMIC_STABILIZATION_AND_NATIONAL_POLICIES_CONTD.,1,Duties & Functions,"Departments, Statutory Institutions & Public Corporations",Laws and Ordinance to be Implemented
-MINISTER_OF_FINANCE_ECONOMIC_STABILIZATION_AND_NATIONAL_POLICIES_CONTD.,2,12. Ensuring the execution of the national budget and enforcing budgetary and financial controls,29. Insurance Regulatory Commission of Sri Lanka,"<br/>Stamp Duty (Special Provisions) Act, No. 12 of 2006<br/>Stamp Duty (Special Provisions) Act, No. 10 of 2008<br/>Stamps Duty Act, No. 43 of 1982<br/>Value Added Tax Act, No. 14 of 2002<br/>Welfare Benefits Act, No. 24 of 2002<br/>Finance Act, No. 38 of 1971<br/>Environment Conservation Levy Act, No. 26 of 2008<br/>Tax Appeals Commission Act, No. 23 of 2008<br/>Public Utilities Commission of Sri Lanka Act No. 35 of 2002<br/>Institute of Policy Studies of Sri Lanka Act No. 53 of 1988<br/>Sustainable Development Act No. 19 of 2017<br/>Development Lotteries Board Act, No. 20 of 1997<br/>Sri Lanka Export Credit Insurance Act, No. 15 of 1978<br/>Inland Revenue Act, No. 24 of 2017<br/>Monetary Law Act No. 58 of 1949<br/>National Savings Bank Act, No. 30 of 1971<br/>People's Bank Act, No. 29 of 1961"
-MINISTER_OF_FINANCE_ECONOMIC_STABILIZATION_AND_NATIONAL_POLICIES_CONTD.,3,13. Management of national tax policies and effective use of Government revenue,30. Sri Lanka Insurance Corporation and its subsidiaries and affiliated companies,
-MINISTER_OF_FINANCE_ECONOMIC_STABILIZATION_AND_NATIONAL_POLICIES_CONTD.,4,14. Coordination of public and private sector activities for economic development,31. Credit Information Bureau,
-MINISTER_OF_FINANCE_ECONOMIC_STABILIZATION_AND_NATIONAL_POLICIES_CONTD.,5,15. Coordination with international agencies and mobilization of foreign resources for economic development,32. Department of the Registrar of Companies,
-MINISTER_OF_FINANCE_ECONOMIC_STABILIZATION_AND_NATIONAL_POLICIES_CONTD.,6,16. Liaising with donor agencies and international financial institutions,33. Securities and Exchange Commission of Sri Lanka,
-MINISTER_OF_FINANCE_ECONOMIC_STABILIZATION_AND_NATIONAL_POLICIES_CONTD.,7,17. Enforcement of Government Financial Regulations,34. Sri Lanka Accounting and Auditing Standard Monitoring Board,
-MINISTER_OF_FINANCE_ECONOMIC_STABILIZATION_AND_NATIONAL_POLICIES_CONTD.,8,18. Management of the Consolidated Fund,35. Public Utilities Commission of Sri Lanka,
-MINISTER_OF_FINANCE_ECONOMIC_STABILIZATION_AND_NATIONAL_POLICIES_CONTD.,9,19. Overall supervision of revenue agencies,36. Sri Lanka Export Credit Insurance Corporation,
-MINISTER_OF_FINANCE_ECONOMIC_STABILIZATION_AND_NATIONAL_POLICIES_CONTD.,10,20. Provision of direction and guidance to State Banks and Financial Agencies,37. Housing Development Finance Corporation,
-MINISTER_OF_FINANCE_ECONOMIC_STABILIZATION_AND_NATIONAL_POLICIES_CONTD.,11,21. Public expenditure management,38. State Mortgage and Investment Bank,
-MINISTER_OF_FINANCE_ECONOMIC_STABILIZATION_AND_NATIONAL_POLICIES_CONTD.,12,"22. Preparation of policies, guidelines and regulations on government procurement and provision of advice on same",39. Regional Development Bank,
-MINISTER_OF_FINANCE_ECONOMIC_STABILIZATION_AND_NATIONAL_POLICIES_CONTD.,13,"23. Maintenance of information on state property such as vehicles, buildings, lands owned by all government institutions and development of methods to utilize such resources efficiently and effectively.",40. Tax Appeals Commission,
-MINISTER_OF_FINANCE_ECONOMIC_STABILIZATION_AND_NATIONAL_POLICIES_CONTD.,14,Duties & Functions,,
-MINISTER_OF_FINANCE_ECONOMIC_STABILIZATION_AND_NATIONAL_POLICIES_CONTD.,15,Supervision of departmental and other public funds,"Departments, Statutory Institutions & Public Corporations",
-MINISTER_OF_FINANCE_ECONOMIC_STABILIZATION_AND_NATIONAL_POLICIES_CONTD.,16,Maintenance of Treasury Minutes on reports of the Public Accounts Committee,National Insurance Trust Fund,
-MINISTER_OF_FINANCE_ECONOMIC_STABILIZATION_AND_NATIONAL_POLICIES_CONTD.,17,Cadre management and advisory services on fixing of salaries,Employees' Trust Fund,
-MINISTER_OF_FINANCE_ECONOMIC_STABILIZATION_AND_NATIONAL_POLICIES_CONTD.,18,Monetary policy formulation and macroeconomic management in coordination with the Central Bank of Sri Lanka,Lady Lochore Fund,
-MINISTER_OF_FINANCE_ECONOMIC_STABILIZATION_AND_NATIONAL_POLICIES_CONTD.,19,Revenue collection and expenditure monitoring,Board of Investment of Sri Lanka,
-MINISTER_OF_FINANCE_ECONOMIC_STABILIZATION_AND_NATIONAL_POLICIES_CONTD.,20,Formulation of guidelines for the promotion of management audit in departments,Colombo Port City Economic Commission,
-MINISTER_OF_FINANCE_ECONOMIC_STABILIZATION_AND_NATIONAL_POLICIES_CONTD.,21,Regulation of insurance industry,Department of Telecommunications,
-MINISTER_OF_FINANCE_ECONOMIC_STABILIZATION_AND_NATIONAL_POLICIES_CONTD.,22,"Financial administration of Public Corporations, Statutory Boards and Government Owned Companies",Wildlife Trust,
-MINISTER_OF_FINANCE_ECONOMIC_STABILIZATION_AND_NATIONAL_POLICIES_CONTD.,23,Development of Colombo Port City Special Economic Zone as an International Business and Services Hub with specialized infrastructure and other facilities aimed at national interest and economic advancement.,Sri Lanka Media Training Institute,
-MINISTER_OF_FINANCE_ECONOMIC_STABILIZATION_AND_NATIONAL_POLICIES_CONTD.,24,Finalizethe liquidation and amalgamation work of Institutions listed in Column II from item No. 52 to 59.,"Pulse Crops, Grain Research and Production Authority",
-MINISTER_OF_FINANCE_ECONOMIC_STABILIZATION_AND_NATIONAL_POLICIES_CONTD.,25,All other subjects that come under the purview of Institutions listed in Column II,Janatha Fertilizer Enterprises Ltd,
-MINISTER_OF_FINANCE_ECONOMIC_STABILIZATION_AND_NATIONAL_POLICIES_CONTD.,26,Supervision of all the Institutions listed in Column II,Protection of Children National Trust Fund,
-MINISTER_OF_FINANCE_ECONOMIC_STABILIZATION_AND_NATIONAL_POLICIES_CONTD.,27,,Institutions coming under the Revival (Removal) of Underperforming Enterprises or Underutilized Assets Act vested to the Secretary to the Treasury,
-MINISTER_OF_FINANCE_ECONOMIC_STABILIZATION_AND_NATIONAL_POLICIES_CONTD.,28,,,
-MINISTER_OF_FINANCE_ECONOMIC_STABILIZATION_AND_NATIONAL_POLICIES_CONTD.,29,,,
-MINISTER_OF_FINANCE_ECONOMIC_STABILIZATION_AND_NATIONAL_POLICIES_CONTD.,30,,,
-MINISTER_OF_FINANCE_ECONOMIC_STABILIZATION_AND_NATIONAL_POLICIES_CONTD.,31,,,
-MINISTER_OF_FINANCE_ECONOMIC_STABILIZATION_AND_NATIONAL_POLICIES_CONTD.,32,,,
-MINISTER_OF_FINANCE_ECONOMIC_STABILIZATION_AND_NATIONAL_POLICIES_CONTD.,33,,,
-MINISTER_OF_FINANCE_ECONOMIC_STABILIZATION_AND_NATIONAL_POLICIES_CONTD.,34,,,
-MINISTER_OF_FINANCE_ECONOMIC_STABILIZATION_AND_NATIONAL_POLICIES_CONTD.,35,,,
-MINISTER_OF_FINANCE_ECONOMIC_STABILIZATION_AND_NATIONAL_POLICIES_CONTD.,36,,,
-MINISTER_OF_FINANCE_ECONOMIC_STABILIZATION_AND_NATIONAL_POLICIES_CONTD.,37,,,
-MINISTER_OF_FINANCE_ECONOMIC_STABILIZATION_AND_NATIONAL_POLICIES_CONTD.,38,,,
-MINISTER_OF_FINANCE_ECONOMIC_STABILIZATION_AND_NATIONAL_POLICIES_CONTD.,39,,,
-MINISTER_OF_FINANCE_ECONOMIC_STABILIZATION_AND_NATIONAL_POLICIES_CONTD.,40,,,
-MINISTER_OF_FINANCE_ECONOMIC_STABILIZATION_AND_NATIONAL_POLICIES_CONTD.,41,,,
-MINISTER_OF_FINANCE_ECONOMIC_STABILIZATION_AND_NATIONAL_POLICIES_CONTD.,42,,,
-MINISTER_OF_FINANCE_ECONOMIC_STABILIZATION_AND_NATIONAL_POLICIES_CONTD.,43,,,
-MINISTER_OF_FINANCE_ECONOMIC_STABILIZATION_AND_NATIONAL_POLICIES_CONTD.,44,,,
-MINISTER_OF_FINANCE_ECONOMIC_STABILIZATION_AND_NATIONAL_POLICIES_CONTD.,45,,,
-MINISTER_OF_FINANCE_ECONOMIC_STABILIZATION_AND_NATIONAL_POLICIES_CONTD.,46,,,
-MINISTER_OF_FINANCE_ECONOMIC_STABILIZATION_AND_NATIONAL_POLICIES_CONTD.,47,,,
-MINISTER_OF_FINANCE_ECONOMIC_STABILIZATION_AND_NATIONAL_POLICIES_CONTD.,48,,,
-MINISTER_OF_FINANCE_ECONOMIC_STABILIZATION_AND_NATIONAL_POLICIES_CONTD.,49,,,
-MINISTER_OF_FINANCE_ECONOMIC_STABILIZATION_AND_NATIONAL_POLICIES_CONTD.,50,,,
-MINISTER_OF_FINANCE_ECONOMIC_STABILIZATION_AND_NATIONAL_POLICIES_CONTD.,51,,,Laws and Ordinance to be Implemented
-MINISTER_OF_FINANCE_ECONOMIC_STABILIZATION_AND_NATIONAL_POLICIES_CONTD.,52,,,Bank of Ceylon Ordinance No. 53 of 1938
-MINISTER_OF_FINANCE_ECONOMIC_STABILIZATION_AND_NATIONAL_POLICIES_CONTD.,53,,,"Banking Act, No. 30 of 1988"
-MINISTER_OF_FINANCE_ECONOMIC_STABILIZATION_AND_NATIONAL_POLICIES_CONTD.,54,,,"Housing Development Finance Corporation Act, No. 07 of 1997"
-MINISTER_OF_FINANCE_ECONOMIC_STABILIZATION_AND_NATIONAL_POLICIES_CONTD.,55,,,"Recovery of loans by Banks (Special Provisions) Act, No. 4 of 1990"
-MINISTER_OF_FINANCE_ECONOMIC_STABILIZATION_AND_NATIONAL_POLICIES_CONTD.,56,,,"Securities and Exchange Commission of Sri Lanka Act, No. 36 of 1987"
-MINISTER_OF_FINANCE_ECONOMIC_STABILIZATION_AND_NATIONAL_POLICIES_CONTD.,57,,,"Regional Development Banks Act, No. 41 of 2008"
-MINISTER_OF_FINANCE_ECONOMIC_STABILIZATION_AND_NATIONAL_POLICIES_CONTD.,58,,,"National Insurance Trust Fund Act, No. 28 of 2006"
-MINISTER_OF_FINANCE_ECONOMIC_STABILIZATION_AND_NATIONAL_POLICIES_CONTD.,59,,,Employees' Trust Fund (Special Provisions) Act No. 19 of 1993
-MINISTER_OF_FINANCE_ECONOMIC_STABILIZATION_AND_NATIONAL_POLICIES_CONTD.,60,,,"Employees Trust Fund Act, No. 46 of 1980"
-MINISTER_OF_FINANCE_ECONOMIC_STABILIZATION_AND_NATIONAL_POLICIES_CONTD.,61,,,Excise (Special Provision) Act No. 13 of 1989
-MINISTER_OF_FINANCE_ECONOMIC_STABILIZATION_AND_NATIONAL_POLICIES_CONTD.,62,,,Registered Stock and Securities Ordinance No. 07 of 1937
-MINISTER_OF_FINANCE_ECONOMIC_STABILIZATION_AND_NATIONAL_POLICIES_CONTD.,63,,,"Payment and Settlement Systems Act, No. 28 of 2005"
-MINISTER_OF_FINANCE_ECONOMIC_STABILIZATION_AND_NATIONAL_POLICIES_CONTD.,64,,,"Finance Business Act, No. 42 of 2011"
-MINISTER_OF_FINANCE_ECONOMIC_STABILIZATION_AND_NATIONAL_POLICIES_CONTD.,65,,,"Foreign Exchange Act, No. 12 of 2017"
-MINISTER_OF_FINANCE_ECONOMIC_STABILIZATION_AND_NATIONAL_POLICIES_CONTD.,66,,,Census Ordinance (Chapter 143)
-MINISTER_OF_FINANCE_ECONOMIC_STABILIZATION_AND_NATIONAL_POLICIES_CONTD.,67,,,"Insurance Corporation Act, No. 02 of 1961"
-MINISTER_OF_FINANCE_ECONOMIC_STABILIZATION_AND_NATIONAL_POLICIES_CONTD.,68,,,"Credit Information Bureau of Sri Lanka Act, No. 18 of 1990"
-MINISTER_OF_FINANCE_ECONOMIC_STABILIZATION_AND_NATIONAL_POLICIES_CONTD.,69,,,Microfinance Act No. 6 of 2016
-MINISTER_OF_FINANCE_ECONOMIC_STABILIZATION_AND_NATIONAL_POLICIES_CONTD.,70,,,Finance Companies Act No. 78 of 1988
-MINISTER_OF_FINANCE_ECONOMIC_STABILIZATION_AND_NATIONAL_POLICIES_CONTD.,71,,,Exchange Control Act No. 24 of 1953
-MINISTER_OF_FINANCE_ECONOMIC_STABILIZATION_AND_NATIONAL_POLICIES_CONTD.,72,,,"Sri Lanka State Mortgage and Investment Bank Act, No. 13 of 1975"
-MINISTER_OF_FINANCE_ECONOMIC_STABILIZATION_AND_NATIONAL_POLICIES_CONTD.,73,,,"Casino Business (Regulation) Act, No. 17 of 2010"
-MINISTER_OF_FINANCE_ECONOMIC_STABILIZATION_AND_NATIONAL_POLICIES_CONTD.,74,,,"Payment Devices Frauds Act, No. 30 of 2006"
-MINISTER_OF_FINANCE_ECONOMIC_STABILIZATION_AND_NATIONAL_POLICIES_CONTD.,75,,,Greater Colombo Economic Commission Law No. 4 of 1978 (Board of Investment of Sri Lanka Law)
-MINISTER_OF_FINANCE_ECONOMIC_STABILIZATION_AND_NATIONAL_POLICIES_CONTD.,76,,,"Colombo Port City Economic Commission Act, No. 11 of 2021"
-MINISTER_OF_FINANCE_ECONOMIC_STABILIZATION_AND_NATIONAL_POLICIES_CONTD.,77,,,"Revival (Removal) of Underperforming Enterprises or Underutilized Assets Act, No. 12 of 2019"
-MINISTER_OF_FINANCE_ECONOMIC_STABILIZATION_AND_NATIONAL_POLICIES_CONTD.,78,,,"Institute of Chartered Accountants Act, No. 23 of 1959"
-MINISTER_OF_FINANCE_ECONOMIC_STABILIZATION_AND_NATIONAL_POLICIES_CONTD.,79,,,Strategic Development Project Act No. 14 of 2008
-MINISTER_OF_FINANCE_ECONOMIC_STABILIZATION_AND_NATIONAL_POLICIES_CONTD.,80,,,"All other legislations pertaining to the subjects specified in Column I and II, and not specifically brought under the purview of any other Minister."
+MINISTER_OF_FINANCE_ECONOMIC_STABILIZATION_AND_NATIONAL_POLICIES_CONTD.,2,12. Ensuring the execution of the national budget and enforcing budgetary and financial controls,Insurance Regulatory Commission of Sri Lanka,"<br/>Stamp Duty (Special Provisions) Act, No. 12 of 2006<br/>Stamp Duty (Special Provisions) Act, No. 10 of 2008<br/>Stamps Duty Act, No. 43 of 1982<br/>Value Added Tax Act, No. 14 of 2002<br/>Welfare Benefits Act, No. 24 of 2002<br/>Finance Act, No. 38 of 1971<br/>Environment Conservation Levy Act, No. 26 of 2008<br/>Tax Appeals Commission Act, No. 23 of 2008<br/>Public Utilities Commission of Sri Lanka Act No. 35 of 2002<br/>Institute of Policy Studies of Sri Lanka Act No. 53 of 1988<br/>Sustainable Development Act No. 19 of 2017<br/>Development Lotteries Board Act, No. 20 of 1997<br/>Sri Lanka Export Credit Insurance Act, No. 15 of 1978<br/>Inland Revenue Act, No. 24 of 2017<br/>Monetary Law Act No. 58 of 1949<br/>National Savings Bank Act, No. 30 of 1971<br/>People's Bank Act, No. 29 of 1961"
+MINISTER_OF_FINANCE_ECONOMIC_STABILIZATION_AND_NATIONAL_POLICIES_CONTD.,3,13. Management of national tax policies and effective use of Government revenue,Sri Lanka Insurance Corporation and its subsidiaries and affiliated companies,
+MINISTER_OF_FINANCE_ECONOMIC_STABILIZATION_AND_NATIONAL_POLICIES_CONTD.,4,14. Coordination of public and private sector activities for economic development,Credit Information Bureau,
+MINISTER_OF_FINANCE_ECONOMIC_STABILIZATION_AND_NATIONAL_POLICIES_CONTD.,5,15. Coordination with international agencies and mobilization of foreign resources for economic development,Department of the Registrar of Companies,
+MINISTER_OF_FINANCE_ECONOMIC_STABILIZATION_AND_NATIONAL_POLICIES_CONTD.,6,16. Liaising with donor agencies and international financial institutions,Securities and Exchange Commission of Sri Lanka,
+MINISTER_OF_FINANCE_ECONOMIC_STABILIZATION_AND_NATIONAL_POLICIES_CONTD.,7,17. Enforcement of Government Financial Regulations,Sri Lanka Accounting and Auditing Standard Monitoring Board,
+MINISTER_OF_FINANCE_ECONOMIC_STABILIZATION_AND_NATIONAL_POLICIES_CONTD.,8,18. Management of the Consolidated Fund,Public Utilities Commission of Sri Lanka,
+MINISTER_OF_FINANCE_ECONOMIC_STABILIZATION_AND_NATIONAL_POLICIES_CONTD.,9,19. Overall supervision of revenue agencies,Tax Appeals Commission,
+MINISTER_OF_FINANCE_ECONOMIC_STABILIZATION_AND_NATIONAL_POLICIES_CONTD.,10,20. Provision of direction and guidance to State Banks and Financial Agencies,Housing Development Finance Corporation,
+MINISTER_OF_FINANCE_ECONOMIC_STABILIZATION_AND_NATIONAL_POLICIES_CONTD.,11,21. Public expenditure management,State Mortgage and Investment Bank,
+MINISTER_OF_FINANCE_ECONOMIC_STABILIZATION_AND_NATIONAL_POLICIES_CONTD.,12,"22. Preparation of policies, guidelines and regulations on government procurement and provision of advice on same",Regional Development Bank,
+MINISTER_OF_FINANCE_ECONOMIC_STABILIZATION_AND_NATIONAL_POLICIES_CONTD.,13,"23. Maintenance of information on state property such as vehicles, buildings, lands owned by all government institutions and development of methods to utilize such resources efficiently and effectively.",Tax Appeals Commission,Laws and Ordinance to be Implemented
+MINISTER_OF_FINANCE_ECONOMIC_STABILIZATION_AND_NATIONAL_POLICIES_CONTD.,14,Duties & Functions,Department of Census and Statistics,Bank of Ceylon Ordinance No. 53 of 1938
+MINISTER_OF_FINANCE_ECONOMIC_STABILIZATION_AND_NATIONAL_POLICIES_CONTD.,15,Supervision of departmental and other public funds,Institute of Policy Studies,"Banking Act, No. 30 of 1988"
+MINISTER_OF_FINANCE_ECONOMIC_STABILIZATION_AND_NATIONAL_POLICIES_CONTD.,16,Maintenance of Treasury Minutes on reports of the Public Accounts Committee,Sustainable Development Council,"Housing Development Finance Corporation Act, No. 07 of 1997"
+MINISTER_OF_FINANCE_ECONOMIC_STABILIZATION_AND_NATIONAL_POLICIES_CONTD.,17,Cadre management and advisory services on fixing of salaries,Welfare Benefits Board,"Recovery of loans by Banks (Special Provisions) Act, No. 4 of 1990"
+MINISTER_OF_FINANCE_ECONOMIC_STABILIZATION_AND_NATIONAL_POLICIES_CONTD.,18,Monetary policy formulation and macroeconomic management in coordination with the Central Bank of Sri Lanka,Public Service Mutual Provident Fund,"Securities and Exchange Commission of Sri Lanka Act, No. 36 of 1987"
+MINISTER_OF_FINANCE_ECONOMIC_STABILIZATION_AND_NATIONAL_POLICIES_CONTD.,19,Revenue collection and expenditure monitoring,"Strike, Riot, Civil Commotion and Terrorism Fund","Regional Development Banks Act, No. 41 of 2008"
+MINISTER_OF_FINANCE_ECONOMIC_STABILIZATION_AND_NATIONAL_POLICIES_CONTD.,20,Formulation of guidelines for the promotion of management audit in departments,"Departments, Statutory Institutions & Public Corporations","National Insurance Trust Fund Act, No. 28 of 2006"
+MINISTER_OF_FINANCE_ECONOMIC_STABILIZATION_AND_NATIONAL_POLICIES_CONTD.,21,Regulation of insurance industry,National Insurance Trust Fund,Employees' Trust Fund (Special Provisions) Act No. 19 of 1993
+MINISTER_OF_FINANCE_ECONOMIC_STABILIZATION_AND_NATIONAL_POLICIES_CONTD.,22,"Financial administration of Public Corporations, Statutory Boards and Government Owned Companies",Employees' Trust Fund,"Employees Trust Fund Act, No. 46 of 1980"
+MINISTER_OF_FINANCE_ECONOMIC_STABILIZATION_AND_NATIONAL_POLICIES_CONTD.,23,Development of Colombo Port City Special Economic Zone as an International Business and Services Hub with specialized infrastructure and other facilities aimed at national interest and economic advancement.,Lady Lochore Fund,Excise (Special Provision) Act No. 13 of 1989
+MINISTER_OF_FINANCE_ECONOMIC_STABILIZATION_AND_NATIONAL_POLICIES_CONTD.,24,Finalizethe liquidation and amalgamation work of Institutions listed in Column II from item No. 52 to 59.,Board of Investment of Sri Lanka,Registered Stock and Securities Ordinance No. 07 of 1937
+MINISTER_OF_FINANCE_ECONOMIC_STABILIZATION_AND_NATIONAL_POLICIES_CONTD.,25,All other subjects that come under the purview of Institutions listed in Column II,Colombo Port City Economic Commission,"Payment and Settlement Systems Act, No. 28 of 2005"
+MINISTER_OF_FINANCE_ECONOMIC_STABILIZATION_AND_NATIONAL_POLICIES_CONTD.,26,Supervision of all the Institutions listed in Column II,Department of Telecommunications,"Finance Business Act, No. 42 of 2011"
+MINISTER_OF_FINANCE_ECONOMIC_STABILIZATION_AND_NATIONAL_POLICIES_CONTD.,27,,Wildlife Trust,"Foreign Exchange Act, No. 12 of 2017"
+MINISTER_OF_FINANCE_ECONOMIC_STABILIZATION_AND_NATIONAL_POLICIES_CONTD.,28,,Sri Lanka Media Training Institute,Census Ordinance (Chapter 143)
+MINISTER_OF_FINANCE_ECONOMIC_STABILIZATION_AND_NATIONAL_POLICIES_CONTD.,29,,"Pulse Crops, Grain Research and Production Authority","Insurance Corporation Act, No. 02 of 1961"
+MINISTER_OF_FINANCE_ECONOMIC_STABILIZATION_AND_NATIONAL_POLICIES_CONTD.,30,,Janatha Fertilizer Enterprises Ltd,"Credit Information Bureau of Sri Lanka Act, No. 18 of 1990"
+MINISTER_OF_FINANCE_ECONOMIC_STABILIZATION_AND_NATIONAL_POLICIES_CONTD.,31,,Protection of Children National Trust Fund,Microfinance Act No. 6 of 2016
+MINISTER_OF_FINANCE_ECONOMIC_STABILIZATION_AND_NATIONAL_POLICIES_CONTD.,32,,Institutions coming under the Revival (Removal) of Underperforming Enterprises or Underutilized Assets Act vested to the Secretary to the Treasury,Finance Companies Act No. 78 of 1988
+MINISTER_OF_FINANCE_ECONOMIC_STABILIZATION_AND_NATIONAL_POLICIES_CONTD.,33,,,Exchange Control Act No. 24 of 1953
+MINISTER_OF_FINANCE_ECONOMIC_STABILIZATION_AND_NATIONAL_POLICIES_CONTD.,34,,,"Sri Lanka State Mortgage and Investment Bank Act, No. 13 of 1975"
+MINISTER_OF_FINANCE_ECONOMIC_STABILIZATION_AND_NATIONAL_POLICIES_CONTD.,35,,,"Casino Business (Regulation) Act, No. 17 of 2010"
+MINISTER_OF_FINANCE_ECONOMIC_STABILIZATION_AND_NATIONAL_POLICIES_CONTD.,36,,,"Payment Devices Frauds Act, No. 30 of 2006"
+MINISTER_OF_FINANCE_ECONOMIC_STABILIZATION_AND_NATIONAL_POLICIES_CONTD.,37,,,Greater Colombo Economic Commission Law No. 4 of 1978 (Board of Investment of Sri Lanka Law)
+MINISTER_OF_FINANCE_ECONOMIC_STABILIZATION_AND_NATIONAL_POLICIES_CONTD.,38,,,"Colombo Port City Economic Commission Act, No. 11 of 2021"
+MINISTER_OF_FINANCE_ECONOMIC_STABILIZATION_AND_NATIONAL_POLICIES_CONTD.,39,,,"Revival (Removal) of Underperforming Enterprises or Underutilized Assets Act, No. 12 of 2019"
+MINISTER_OF_FINANCE_ECONOMIC_STABILIZATION_AND_NATIONAL_POLICIES_CONTD.,40,,,"Institute of Chartered Accountants Act, No. 23 of 1959"
+MINISTER_OF_FINANCE_ECONOMIC_STABILIZATION_AND_NATIONAL_POLICIES_CONTD.,41,,,Strategic Development Project Act No. 14 of 2008
+MINISTER_OF_FINANCE_ECONOMIC_STABILIZATION_AND_NATIONAL_POLICIES_CONTD.,42,,,"All other legislations pertaining to the subjects specified in Column I and II, and not specifically brought under the purview of any other Minister."
 Minister of Technology,1,Duties & Functions,"Departments, Statutory Institutions & Public Corporations",Laws and Ordinance to be Implemented
 Minister of Technology,2,"1. Formulation, implementation, monitoring and evaluation of policies, programmes and projects, in relation to the subject of Technology and Investment Promotion and those subjects that come under the purview of Departments, Statutory Institutions and Public Corporations listed in Column II based on the national policies implemented by the government.","1. Department of Registration of Persons
 2. Information and Communication Technology Agency and Allied Institutions
@@ -151,12 +133,12 @@ Minister of Technology,2,"1. Formulation, implementation, monitoring and evaluat
 4. Sri Lanka Telecom and its Subsidiaries and Allied Institutions
 5. Industrial Technology Institute
 6. Sri Lanka Standards Institute","
-• Registration of Persons Act No. 32 of 1968
-• Information and Communication Technology Act, No. 27 of 2003
-• Electronic Transactions Act, No. 19 of 2006
-• Science and Technology Development Act, No. 11 of 1994
-• Sri Lanka Standard Institute Act, No. 6 of 1984
-• All other legislations pertaining to the subjects specified in Column I and II, and not specifically brought under the purview of any other Minister."
+Registration of Persons Act No. 32 of 1968
+Information and Communication Technology Act, No. 27 of 2003
+Electronic Transactions Act, No. 19 of 2006
+Science and Technology Development Act, No. 11 of 1994
+Sri Lanka Standard Institute Act, No. 6 of 1984
+All other legislations pertaining to the subjects specified in Column I and II, and not specifically brought under the purview of any other Minister."
 Minister of Technology,3,2. Provision of public services under the purview of the Ministry in an efficient and people friendly manner,,
 Minister of Technology,4,"3. Reforming all systems and procedures using modern management techniques and technology, thus ensuring that the functions of the Ministry are fulfilled while eliminating corruption and waste.",,
 Minister of Technology,5,4. Take necessary measures for the provision of information and communication technology facilities for all by adoption of modern technologies,,
@@ -262,42 +244,42 @@ MINISTER_OF_INVESTMENT_PROMOTION,6,5. Promotion of economic potential in Sri Lan
 MINISTER_OF_INVESTMENT_PROMOTION,7,"6. Promotion, regulation and monitoring of economic development zones",,
 MINISTER_OF_INVESTMENT_PROMOTION,8,7. Matters relating to Immigration and Emigration,,
 MINISTER_OF_INVESTMENT_PROMOTION,9,8. Establish the Colombo Lotus Tower as a Business Model and promote it as a Tourist Centre,,
-MINISTER_OF_INVESTMENT_PROMOTION_CONTINUED,1,Duties & Functions,"Departments, Statutory Institutions & Public Corporations",Laws and Ordinance to be Implemented
-MINISTER_OF_INVESTMENT_PROMOTION_CONTINUED,2,9. Establishment of Technology Parks,,
-MINISTER_OF_INVESTMENT_PROMOTION_CONTINUED,3,10. Matters relating to expansion of digital technology ventures.,,
-MINISTER_OF_INVESTMENT_PROMOTION_CONTINUED,4,11. All other subjects that come under the purview of Institutions listed in Column II,,
-MINISTER_OF_INVESTMENT_PROMOTION_CONTINUED,5,12. Supervision of all Institutions listed in Column II,,
-MINISTER_OF_INVESTMENT_PROMOTION_CONTINUED,6,Duties & Functions,"Departments, Statutory Institutions & Public Corporations",Laws and Ordinance to be Implemented
-MINISTER_OF_INVESTMENT_PROMOTION_CONTINUED,7,4. Review and simplify existing rules and regulations pertaining to the public service,11. Local Government Widowers' and Orphans' Pension Fund,"• Local Government Service Act, No. 16 of 1974"
-MINISTER_OF_INVESTMENT_PROMOTION_CONTINUED,8,5. Introducing an arbitration process for resolving public service disputes,12. All District Secretariats and Divisional Secretariets,"• Government and Judicial Service Officers Pension Ordinance, No. 11 of 1910"
-MINISTER_OF_INVESTMENT_PROMOTION_CONTINUED,9,6. Administration and personnel management relating to the following services:,13. Department of Registrar General,• Military Pensions and Gratuities Minute
-MINISTER_OF_INVESTMENT_PROMOTION_CONTINUED,10,Sri Lanka Administrative Service,14. Sri Lanka Institute of Local Government,• Air Force Pensions and Gratuities Minute
-MINISTER_OF_INVESTMENT_PROMOTION_CONTINUED,11,Sri Lanka Accountants' Service,,• Navy Pensions and Gratuities Minute
-MINISTER_OF_INVESTMENT_PROMOTION_CONTINUED,12,Sri Lanka Planning Service,,"• Compulsory Public Service Act, No. 70 of 1961"
-MINISTER_OF_INVESTMENT_PROMOTION_CONTINUED,13,Sri Lanka Engineering Service,,"• Sri Lanka Institute of Development Administration Act, No. 9 of 1982"
-MINISTER_OF_INVESTMENT_PROMOTION_CONTINUED,14,Sri Lanka Scientific Service,,"• Government Quarters (Recovery of Possession) Act, No. 7 of 1969"
-MINISTER_OF_INVESTMENT_PROMOTION_CONTINUED,15,Sri Lanka Architectural Service,,"• Prize Competitions Act, No. 37 of 1957"
-MINISTER_OF_INVESTMENT_PROMOTION_CONTINUED,16,Sri Lanka Technological Service,,"• Official Languages Act, No. 33 of 1956"
-MINISTER_OF_INVESTMENT_PROMOTION_CONTINUED,17,7. Administration of the Combined Services,,"• Official Languages Commission Act, No. 18 of 1991"
-MINISTER_OF_INVESTMENT_PROMOTION_CONTINUED,18,8. Functions under the Establishments Code,,• National Human Resources Development Council of Sri Lanka Act No. 18 of 1997
-MINISTER_OF_INVESTMENT_PROMOTION_CONTINUED,19,9. Public service training,,"• National Institute of Language Education and Training Act, No. 26 of 2007"
-MINISTER_OF_INVESTMENT_PROMOTION_CONTINUED,20,10. Implementation of the Pensions Minute,,• Transfer of Powers (Divisional Secretaries) Act No. 58 of 1992
-MINISTER_OF_INVESTMENT_PROMOTION_CONTINUED,21,11. Matters relating to Parliament and Members of Parliament requiring action by the Government,,"• Leave Act, No. 29 of 1971"
-MINISTER_OF_INVESTMENT_PROMOTION_CONTINUED,22,12. Establishment matters relating to the staff of the Members of Parliament,,
-MINISTER_OF_INVESTMENT_PROMOTION_CONTINUED,23,13. District and Divisional administration activities,,
-MINISTER_OF_INVESTMENT_PROMOTION_CONTINUED,24,14. Organization of State Ceremonies,,Laws and Ordinance to be Implemented
-MINISTER_OF_INVESTMENT_PROMOTION_CONTINUED,25,Duties & Functions,,Laws and Ordinance to be Implemented
-MINISTER_OF_INVESTMENT_PROMOTION_CONTINUED,26,Regulation of activities relevant to Provincial Councils,,Laws and Ordinance to be Implemented
-MINISTER_OF_INVESTMENT_PROMOTION_CONTINUED,27,Conduct of research on all aspects of administration of Provincial Councils and Local Government Authorities,,Laws and Ordinance to be Implemented
-MINISTER_OF_INVESTMENT_PROMOTION_CONTINUED,28,Formulation and implementation of special projects to provide facilities for identified fields / divisions with less facilities in Provincial Councils and Local Government Institutions.,,Laws and Ordinance to be Implemented
-MINISTER_OF_INVESTMENT_PROMOTION_CONTINUED,29,"Training of Members, officers and employees of Provincial Councils",,Laws and Ordinance to be Implemented
-MINISTER_OF_INVESTMENT_PROMOTION_CONTINUED,30,Government functions related to Local Authorities,,Laws and Ordinance to be Implemented
-MINISTER_OF_INVESTMENT_PROMOTION_CONTINUED,31,Grant of credit facilities to Local Authorities for development of public utilities,,Laws and Ordinance to be Implemented
-MINISTER_OF_INVESTMENT_PROMOTION_CONTINUED,32,"Training of Members, officers and employees of Local Authorities","Departments, Statutory Institutions & Public Corporations",Laws and Ordinance to be Implemented
-MINISTER_OF_INVESTMENT_PROMOTION_CONTINUED,33,Matters relating to all other subjects assigned to Institutions listed in Column II,,Laws and Ordinance to be Implemented
-MINISTER_OF_INVESTMENT_PROMOTION_CONTINUED,34,Supervision of the Institutions listed in Column II,,"<br/>Registration of Deaths (Temporary) Act, No. 16 of 2016<br/>Registration of Deaths (Temporary Provisions) Act, No. 19 of 2010<br/>Local Government Elections Ordinance (262 Chapter)<br/>Provincial Councils Elections Act, No. 2 of 1988<br/>Sri Lanka Institute of Local Governance Act, No. 31 of 1999<br/>Municipal Councils Ordinance (52 Chapter)<br/>Pradeshiya Sabha Act, No. 15 of 1987<br/>Urban Councils Ordinance (255 Chapter)<br/>Provincial Councils Act, No. 42 of 1987<br/>Provincial Councils (Payment Salaries and Allowances) Act, No. 37 of 1988<br/>Local loans and Development Fund Act, No. 22 of 1916<br/>All other legislations pertaining to the subjects specified in Column I and II that have not been specifically brought under the purview of any other Minister"
-MINISTER_OF_INVESTMENT_PROMOTION_CONTINUED,35,Duties & Functions,,
-MINISTER_OF_INVESTMENT_PROMOTION_CONTINUED,36,,,
+MINISTER_OF_INVESTMENT_PROMOTION_CONTD.,1,Duties & Functions,"Departments, Statutory Institutions & Public Corporations",Laws and Ordinance to be Implemented
+MINISTER_OF_INVESTMENT_PROMOTION_CONTD.,2,9. Establishment of Technology Parks,,
+MINISTER_OF_INVESTMENT_PROMOTION_CONTD.,3,10. Matters relating to expansion of digital technology ventures.,,
+MINISTER_OF_INVESTMENT_PROMOTION_CONTD.,4,11. All other subjects that come under the purview of Institutions listed in Column II,,
+MINISTER_OF_INVESTMENT_PROMOTION_CONTD.,5,12. Supervision of all Institutions listed in Column II,,
+MINISTER_OF_INVESTMENT_PROMOTION_CONTD.,6,Duties & Functions,"Departments, Statutory Institutions & Public Corporations",Laws and Ordinance to be Implemented
+MINISTER_OF_INVESTMENT_PROMOTION_CONTD.,7,4. Review and simplify existing rules and regulations pertaining to the public service,11. Local Government Widowers' and Orphans' Pension Fund,"• Local Government Service Act, No. 16 of 1974"
+MINISTER_OF_INVESTMENT_PROMOTION_CONTD.,8,5. Introducing an arbitration process for resolving public service disputes,12. All District Secretariats and Divisional Secretariets,"• Government and Judicial Service Officers Pension Ordinance, No. 11 of 1910"
+MINISTER_OF_INVESTMENT_PROMOTION_CONTD.,9,6. Administration and personnel management relating to the following services:,13. Department of Registrar General,• Military Pensions and Gratuities Minute
+MINISTER_OF_INVESTMENT_PROMOTION_CONTD.,10,Sri Lanka Administrative Service,14. Sri Lanka Institute of Local Government,• Air Force Pensions and Gratuities Minute
+MINISTER_OF_INVESTMENT_PROMOTION_CONTD.,11,Sri Lanka Accountants' Service,,• Navy Pensions and Gratuities Minute
+MINISTER_OF_INVESTMENT_PROMOTION_CONTD.,12,Sri Lanka Planning Service,,"• Compulsory Public Service Act, No. 70 of 1961"
+MINISTER_OF_INVESTMENT_PROMOTION_CONTD.,13,Sri Lanka Engineering Service,,"• Sri Lanka Institute of Development Administration Act, No. 9 of 1982"
+MINISTER_OF_INVESTMENT_PROMOTION_CONTD.,14,Sri Lanka Scientific Service,,"• Government Quarters (Recovery of Possession) Act, No. 7 of 1969"
+MINISTER_OF_INVESTMENT_PROMOTION_CONTD.,15,Sri Lanka Architectural Service,,"• Prize Competitions Act, No. 37 of 1957"
+MINISTER_OF_INVESTMENT_PROMOTION_CONTD.,16,Sri Lanka Technological Service,,"• Official Languages Act, No. 33 of 1956"
+MINISTER_OF_INVESTMENT_PROMOTION_CONTD.,17,7. Administration of the Combined Services,,"• Official Languages Commission Act, No. 18 of 1991"
+MINISTER_OF_INVESTMENT_PROMOTION_CONTD.,18,8. Functions under the Establishments Code,,• National Human Resources Development Council of Sri Lanka Act No. 18 of 1997
+MINISTER_OF_INVESTMENT_PROMOTION_CONTD.,19,9. Public service training,,"• National Institute of Language Education and Training Act, No. 26 of 2007"
+MINISTER_OF_INVESTMENT_PROMOTION_CONTD.,20,10. Implementation of the Pensions Minute,,• Transfer of Powers (Divisional Secretaries) Act No. 58 of 1992
+MINISTER_OF_INVESTMENT_PROMOTION_CONTD.,21,11. Matters relating to Parliament and Members of Parliament requiring action by the Government,,"• Leave Act, No. 29 of 1971"
+MINISTER_OF_INVESTMENT_PROMOTION_CONTD.,22,12. Establishment matters relating to the staff of the Members of Parliament,,
+MINISTER_OF_INVESTMENT_PROMOTION_CONTD.,23,13. District and Divisional administration activities,,
+MINISTER_OF_INVESTMENT_PROMOTION_CONTD.,24,14. Organization of State Ceremonies,,Laws and Ordinance to be Implemented
+MINISTER_OF_INVESTMENT_PROMOTION_CONTD.,25,Duties & Functions,,Laws and Ordinance to be Implemented
+MINISTER_OF_INVESTMENT_PROMOTION_CONTD.,26,Regulation of activities relevant to Provincial Councils,,Laws and Ordinance to be Implemented
+MINISTER_OF_INVESTMENT_PROMOTION_CONTD.,27,Conduct of research on all aspects of administration of Provincial Councils and Local Government Authorities,,Laws and Ordinance to be Implemented
+MINISTER_OF_INVESTMENT_PROMOTION_CONTD.,28,Formulation and implementation of special projects to provide facilities for identified fields / divisions with less facilities in Provincial Councils and Local Government Institutions.,,Laws and Ordinance to be Implemented
+MINISTER_OF_INVESTMENT_PROMOTION_CONTD.,29,"Training of Members, officers and employees of Provincial Councils",,Laws and Ordinance to be Implemented
+MINISTER_OF_INVESTMENT_PROMOTION_CONTD.,30,Government functions related to Local Authorities,,Laws and Ordinance to be Implemented
+MINISTER_OF_INVESTMENT_PROMOTION_CONTD.,31,Grant of credit facilities to Local Authorities for development of public utilities,,Laws and Ordinance to be Implemented
+MINISTER_OF_INVESTMENT_PROMOTION_CONTD.,32,"Training of Members, officers and employees of Local Authorities","Departments, Statutory Institutions & Public Corporations",Laws and Ordinance to be Implemented
+MINISTER_OF_INVESTMENT_PROMOTION_CONTD.,33,Matters relating to all other subjects assigned to Institutions listed in Column II,,Laws and Ordinance to be Implemented
+MINISTER_OF_INVESTMENT_PROMOTION_CONTD.,34,Supervision of the Institutions listed in Column II,,"<br/>Registration of Deaths (Temporary) Act, No. 16 of 2016<br/>Registration of Deaths (Temporary Provisions) Act, No. 19 of 2010<br/>Local Government Elections Ordinance (262 Chapter)<br/>Provincial Councils Elections Act, No. 2 of 1988<br/>Sri Lanka Institute of Local Governance Act, No. 31 of 1999<br/>Municipal Councils Ordinance (52 Chapter)<br/>Pradeshiya Sabha Act, No. 15 of 1987<br/>Urban Councils Ordinance (255 Chapter)<br/>Provincial Councils Act, No. 42 of 1987<br/>Provincial Councils (Payment Salaries and Allowances) Act, No. 37 of 1988<br/>Local loans and Development Fund Act, No. 22 of 1916<br/>All other legislations pertaining to the subjects specified in Column I and II that have not been specifically brought under the purview of any other Minister"
+MINISTER_OF_INVESTMENT_PROMOTION_CONTD.,35,Duties & Functions,,
+MINISTER_OF_INVESTMENT_PROMOTION_CONTD.,36,,,
 MINISTER_OF_FISHERIES,1,Duties & Functions,"Departments, Statutory Institutions & Public Corporations",Laws and Ordinance to be Implemented
 MINISTER_OF_FISHERIES,2,"1. Formulation, implementation, monitoring and evaluation of policies, programmes and projects, in relation to the subject of Fisheries and those subjects that come under the purview of Departments, Statutory Institutions and Public Corporations listed in Column II based on the national policies implemented by the government.","1. Department of Fisheries and Aquatic Resources
 2. National Aquatic Resources Research and Development Agency
@@ -366,28 +348,23 @@ MINISTER_OF_EDUCATION_CONTINUED,28,30. Take necessary measures to provide vocati
 MINISTER_OF_EDUCATION_CONTINUED,29,31. Commence City Universities as higher education institutions granting degrees compatible with job opportunities.,,
 MINISTER_OF_EDUCATION_CONTINUED,30,32. Facilitate research institutions to collaborate with international research institutions,,
 MINISTER_OF_EDUCATION_CONTINUED,31,33. Formulate an efficient mechanism to utilize innovations and outcomes of research,,
-MINISTER_OF_EDUCATION_CONTINUED,32,34. Take steps to establish the National Innovation Agency,,
-MINISTER_OF_EDUCATION_CONTINUED,33,"35. Take steps to expand scientific, industrial, social and economic research and development activities",,
+MINISTER_OF_EDUCATION_CONTINUED,32,34. Take steps to establish the National Innovation Agency,,Laws and Ordinance to be Implemented
+MINISTER_OF_EDUCATION_CONTINUED,33,"35. Take steps to expand scientific, industrial, social and economic research and development activities",,"• National Highways Act, No. 40 of 2008
+• Road Development Authority Act, No. 73 of 1981
+• National Highways Act, No. 40 of 2008
+• National Transport Commission Act, No. 37 of 1991
+• Railways Act, No. 18 of 1950
+• Sri Lanka Transport Board Act, No. 27 of 2005
+• National Transport Medical Institute Act, No. 25 of 1997
+• Motor Traffic Act, No. 14 of 1951
+• All other legislations pertaining to the subjects specified in Column I and II that have not been specifically brought under the purview of any other Minister."
 MINISTER_OF_EDUCATION_CONTINUED,34,36. Motivate and direct communities towards innovation.,,
 MINISTER_OF_EDUCATION_CONTINUED,35,37. Management and development of State Universities under the administration of the University Grants Commission,,
 MINISTER_OF_EDUCATION_CONTINUED,36,38. Affiliation and promotion of cooperation with international academic institutions and other organizations with the objective of improving the quality of higher education in Sri Lanka,,
 MINISTER_OF_EDUCATION_CONTINUED,37,39. Identification and adoption of appropriate criteria in broadening avenues for higher education,,
 MINISTER_OF_EDUCATION_CONTINUED,38,40. Revise curricula within overall Education Reforms Policy to create graduates targeting domestic and foreign job markets.,,
-MINISTER_OF_EDUCATION_CONTINUED,39,41. Facilitating and encouraging research and innovation in university education,,
-MINISTER_OF_EDUCATION_CONTINUED,40,42. Taking measures to establish Smart Learning Universities,,
-MINISTER_OF_EDUCATION_CONTINUED,41,43. Taking steps to upgrade all state universities to a high position in world rankings,,
-MINISTER_OF_EDUCATION_CONTINUED,42,44. Implementation of scholarship programmes to enable qualified students in Sri Lanka,,
-MINISTER_OF_EDUCATION_CONTINUED,43,Duties & Functions,,
-MINISTER_OF_EDUCATION_CONTINUED,44,Regulate and accredit private and international universities and institutions of higher education operating in Sri Lanka,,
-MINISTER_OF_EDUCATION_CONTINUED,45,Uplifting Buddhist and Pali studies and provision of facilities required for higher education of Bhikkus,,
-MINISTER_OF_EDUCATION_CONTINUED,46,Introduction of educational reforms to cover the overall education sector in line with global requirements,,
-MINISTER_OF_EDUCATION_CONTINUED,47,Formulate a programme for utilizing the recommendations of the Presidential Task Force on Education Reforms and Special Committees for the development of education subsequent to a public discourse,,
-MINISTER_OF_EDUCATION_CONTINUED,48,Expansion of distance learning opportunities by using Information Technology,,
-MINISTER_OF_EDUCATION_CONTINUED,49,Training of teachers and enhancement of their skills to produce teachers required to ensure effective learning and teaching process,,
-MINISTER_OF_EDUCATION_CONTINUED,50,Matters relating to all other subjects assigned to Institutions listed in Column II,,
-MINISTER_OF_EDUCATION_CONTINUED,51,Supervision of all Institutions listed in Column II,,
-Transport and Highways,1,Duties & Functions,"Departments, Statutory Institutions & Public Corporations",Laws and Ordinance to be Implemented
-Transport and Highways,2,"1. Formulation, implementation, monitoring and evaluation of policies, programmes and projects, in relation to the subjects of Transport and Highways, and those subjects that come under the purview of Departments, Statutory Institutions and Public Corporations listed in Column II based on the national policies implemented by the government.","1. Road Development Authority and its subsidiaries and affiliates
+MINISTER_OF_EDUCATION_CONTINUED,39,41. Facilitating and encouraging research and innovation in university education,"Departments, Statutory Institutions & Public Corporations",
+MINISTER_OF_EDUCATION_CONTINUED,40,42. Taking measures to establish Smart Learning Universities,"1. Road Development Authority and its subsidiaries and affiliates
 2. Sahasya Investment Ltd.
 3. Maga Neguma
 4. State Development and Construction Corporation
@@ -397,39 +374,43 @@ Transport and Highways,2,"1. Formulation, implementation, monitoring and evaluat
 8. Lakdiva Engineering Ltd
 9. Sri Lanka Transport Board
 10. National Transport Medical Institute
-11. Department of Motor Traffic","• National Highways Act, No. 40 of 2008
-• Road Development Authority Act, No. 73 of 1981
-• National Highways Act, No. 40 of 2008
-• National Transport Commission Act, No. 37 of 1991
-• Railways Act, No. 18 of 1950
-• Sri Lanka Transport Board Act, No. 27 of 2005
-• National Transport Medical Institute Act, No. 25 of 1997
-• Motor Traffic Act, No. 14 of 1951
-• All other legislations pertaining to the subjects specified in Column I and II that have not been specifically brought under the purview of any other Minister."
-Transport and Highways,3,2. Provision of public services under the purview of the Ministry in an efficient and people friendly manner,,
-Transport and Highways,4,"3. Reforming all systems and procedures using modern management techniques and technology, thus ensuring that the functions of the Ministry are fulfilled while eliminating corruption and waste.",,
-Transport and Highways,5,"4. Improving and maintaining a high quality national highway system that enhances rural, pre-city and urban connectivity and promotes people-centered economic and social development.",,
-Transport and Highways,6,"5. Development, maintenance, toll setting, collection and regulation of Expressway",,
-Transport and Highways,7,"6. Preparation of programmes and projects based on National Policy on Roads belonging to Provincial Councils and Local Government Institutions, coordinating and directing those programs and projects",,
-MINISTER_OF_TRANSPORT_AND_HIGHWAYS_CONTD.,1,Duties & Functions,,"Departments, Statutory Institutions & Public Corporations"
-MINISTER_OF_TRANSPORT_AND_HIGHWAYS_CONTD.,2,Establishment of car parks to reduce traffic congestion,,
-MINISTER_OF_TRANSPORT_AND_HIGHWAYS_CONTD.,3,Development and modernization of rural road network,,
-MINISTER_OF_TRANSPORT_AND_HIGHWAYS_CONTD.,4,Develop an alternative road system for high level access to major roads and expressways,,
-MINISTER_OF_TRANSPORT_AND_HIGHWAYS_CONTD.,5,Modernization of bridges system connecting road networking,,
-MINISTER_OF_TRANSPORT_AND_HIGHWAYS_CONTD.,6,Providing passenger ferry services,,
-MINISTER_OF_TRANSPORT_AND_HIGHWAYS_CONTD.,7,Providing a safe and reliable passenger transport service,,
-MINISTER_OF_TRANSPORT_AND_HIGHWAYS_CONTD.,8,Introducing an environmental friendly transport system,,
-MINISTER_OF_TRANSPORT_AND_HIGHWAYS_CONTD.,9,Regulating private transport services,,
-MINISTER_OF_TRANSPORT_AND_HIGHWAYS_CONTD.,10,Establishment of a local industry system related to production of buses and transport sector,,
-MINISTER_OF_TRANSPORT_AND_HIGHWAYS_CONTD.,11,"Constructing new railway lines, maintenance and widening existing railway lines, acquisition of lands in relation thereto and infrastructure development including all related matters",,
-MINISTER_OF_TRANSPORT_AND_HIGHWAYS_CONTD.,12,Expansion and establishment of facilities in order to transport goods to the sea ports by train transportation,,
-MINISTER_OF_TRANSPORT_AND_HIGHWAYS_CONTD.,13,Registration and licensing of motor vehicles,,
-MINISTER_OF_TRANSPORT_AND_HIGHWAYS_CONTD.,14,Issuance of driving licenses,,
-MINISTER_OF_TRANSPORT_AND_HIGHWAYS_CONTD.,15,Regulation and issuance of guidelines and laws relating to motor traffic,,
-MINISTER_OF_TRANSPORT_AND_HIGHWAYS_CONTD.,16,Duties & Functions,"Departments, Statutory Institutions & Public Corporations",Laws and Ordinance to be Implemented
-MINISTER_OF_TRANSPORT_AND_HIGHWAYS_CONTD.,17,21. Launch strategic programmes in order to harness the contribution of the transport sector to minimize emission of greenhouse gases,,
-MINISTER_OF_TRANSPORT_AND_HIGHWAYS_CONTD.,18,22. All other subjects that come under the purview of Institutions listed in Column II,,
-MINISTER_OF_TRANSPORT_AND_HIGHWAYS_CONTD.,19,23. Supervision of the Institutions listed in Column II,,
+11. Department of Motor Traffic",
+MINISTER_OF_EDUCATION_CONTINUED,41,43. Taking steps to upgrade all state universities to a high position in world rankings,,
+MINISTER_OF_EDUCATION_CONTINUED,42,44. Implementation of scholarship programmes to enable qualified students in Sri Lanka,,
+MINISTER_OF_EDUCATION_CONTINUED,43,Duties & Functions,,
+MINISTER_OF_EDUCATION_CONTINUED,44,45. Regulate and accredit private and international universities and institutions of higher education operating in Sri Lanka,,
+MINISTER_OF_EDUCATION_CONTINUED,45,46. Uplifting Buddhist and Pali studies and provision of facilities required for higher education of Bhikkus,,
+MINISTER_OF_EDUCATION_CONTINUED,46,47. Introduction of educational reforms to cover the overall education sector in line with global requirements,,
+MINISTER_OF_EDUCATION_CONTINUED,47,48. Formulate a programme for utilizing the recommendations of the Presidential Task Force on Education Reforms and Special Committees for the development of education subsequent to a public discourse,,
+MINISTER_OF_EDUCATION_CONTINUED,48,49. Expansion of distance learning opportunities by using Information Technology,,
+MINISTER_OF_EDUCATION_CONTINUED,49,50. Training of teachers and enhancement of their skills to produce teachers required to ensure effective learning and teaching process,,
+MINISTER_OF_EDUCATION_CONTINUED,50,51. Matters relating to all other subjects assigned to Institutions listed in Column II,,
+MINISTER_OF_EDUCATION_CONTINUED,51,52. Supervision of all Institutions listed in Column II,,
+MINISTER_OF_EDUCATION_CONTINUED,52,Duties & Functions,,
+MINISTER_OF_EDUCATION_CONTINUED,53,"1. Formulation, implementation, monitoring and evaluation of policies, programmes and projects, in relation to the subjects of Transport and Highways, and those subjects that come under the purview of Departments, Statutory Institutions and Public Corporations listed in Column II based on the national policies implemented by the government.",,
+MINISTER_OF_EDUCATION_CONTINUED,54,2. Provision of public services under the purview of the Ministry in an efficient and people friendly manner,,
+MINISTER_OF_EDUCATION_CONTINUED,55,"3. Reforming all systems and procedures using modern management techniques and technology, thus ensuring that the functions of the Ministry are fulfilled while eliminating corruption and waste.",,
+MINISTER_OF_EDUCATION_CONTINUED,56,"4. Improving and maintaining a high quality national highway system that enhances rural, pre-city and urban connectivity and promotes people-centered economic and social development.",,
+MINISTER_OF_EDUCATION_CONTINUED,57,"5. Development, maintenance, toll setting, collection and regulation of Expressway",,
+MINISTER_OF_EDUCATION_CONTINUED,58,"6. Preparation of programmes and projects based on National Policy on Roads belonging to Provincial Councils and Local Government Institutions, coordinating and directing those programs and projects",,
+MINISTER_OF_TRANSPORT_AND_HIGHWAYS_CONTD.,1,7. Establishment of car parks to reduce traffic congestion,"Departments, Statutory Institutions & Public Corporations",Laws and Ordinance to be Implemented
+MINISTER_OF_TRANSPORT_AND_HIGHWAYS_CONTD.,2,8. Development and modernization of rural road network,,
+MINISTER_OF_TRANSPORT_AND_HIGHWAYS_CONTD.,3,9. Develop an alternative road system for high level access to major roads and expressways,,
+MINISTER_OF_TRANSPORT_AND_HIGHWAYS_CONTD.,4,10. Modernization of bridges system connecting road networking,,
+MINISTER_OF_TRANSPORT_AND_HIGHWAYS_CONTD.,5,11. Providing passenger ferry services,,
+MINISTER_OF_TRANSPORT_AND_HIGHWAYS_CONTD.,6,12. Providing a safe and reliable passenger transport service,,
+MINISTER_OF_TRANSPORT_AND_HIGHWAYS_CONTD.,7,13. Introducing an environmental friendly transport system,,
+MINISTER_OF_TRANSPORT_AND_HIGHWAYS_CONTD.,8,14. Regulating private transport services,,
+MINISTER_OF_TRANSPORT_AND_HIGHWAYS_CONTD.,9,15. Establishment of a local industry system related to production of buses and transport sector,,
+MINISTER_OF_TRANSPORT_AND_HIGHWAYS_CONTD.,10,"16. Constructing new railway lines, maintenance and widening existing railway lines, acquisition of lands in relation thereto and infrastructure development including all related matters",,
+MINISTER_OF_TRANSPORT_AND_HIGHWAYS_CONTD.,11,17. Expansion and establishment of facilities in order to transport goods to the sea ports by train transportation,,
+MINISTER_OF_TRANSPORT_AND_HIGHWAYS_CONTD.,12,18. Registration and licensing of motor vehicles,,
+MINISTER_OF_TRANSPORT_AND_HIGHWAYS_CONTD.,13,19. Issuance of driving licenses,,
+MINISTER_OF_TRANSPORT_AND_HIGHWAYS_CONTD.,14,20. Regulation and issuance of guidelines and laws relating to motor traffic,,
+MINISTER_OF_TRANSPORT_AND_HIGHWAYS_CONTD.,15,Duties & Functions,,
+MINISTER_OF_TRANSPORT_AND_HIGHWAYS_CONTD.,16,21. Launch strategic programmes in order to harness the contribution of the transport sector to minimize emission of greenhouse gases,,
+MINISTER_OF_TRANSPORT_AND_HIGHWAYS_CONTD.,17,22. All other subjects that come under the purview of Institutions listed in Column II,,
+MINISTER_OF_TRANSPORT_AND_HIGHWAYS_CONTD.,18,23. Supervision of the Institutions listed in Column II,,
 MINISTER_OF_MASS_MEDIA_CONTINUED,1,Duties & Functions,"Departments, Statutory Institutions & Public Corporations",Laws and Ordinance to be Implemented
 MINISTER_OF_MASS_MEDIA_CONTINUED,2,4. Adoption of necessary measures to ensure people's right to accurate information,13. Sri Lanka Institute of Printing,"• Post Office Ordinance, No. 11 of 1908"
 MINISTER_OF_MASS_MEDIA_CONTINUED,3,5. Government printing and publication activities,14. Public Performance Board,"• Sri Lanka Institute of Printing Act, No. 18 of 1984"
@@ -449,22 +430,22 @@ MINISTER_OF_MASS_MEDIA_CONTINUED,15,15. Administration of Sri Lanka Philatelic B
 MINISTER_OF_MASS_MEDIA_CONTINUED,16,16. All other subjects that come under the purview of Institutions listed in Column II,,
 MINISTER_OF_MASS_MEDIA_CONTINUED,17,17. Supervision of all Institutions listed in Column II,,
 MINISTER_OF_MASS_MEDIA_CONTINUED,18,Duties & Functions,,
-MINISTER_OF_MASS_MEDIA_CONTINUED,19,Formulation and implementation of policies required for the maintenance of public health services at a high standard and in a people friendly manner,"Departments, Statutory Institutions & Public Corporations",Laws and Ordinance to be Implemented
-MINISTER_OF_MASS_MEDIA_CONTINUED,20,"Adoption of necessary measures for the control, prevention and cure of epidemic, communicable and non-communicable diseases","Vijaya Kumaratunga Memorial Hospital
-Ashraff Memorial Hospital
-National Authority on Tobacco and Alcohol
-1990 Suwaseryia Foundation
-National Health Development Fund
-State Pharmaceutical Corporation
-State Pharmaceutical Manufacturing Corporation
-National Medicines Regulatory Authority
-Department of Ayurveda
-Sri Lanka Ayurvedic Drugs Corporation
-Ayurvedic Medical Council
-Ayurvedic College and Hospital Board
-Ayurveda Teaching and Research Hospitals
-Homeopathy Hospital, Welisara
-Homeopathy Medical Council","
+MINISTER_OF_MASS_MEDIA_CONTINUED,19,4. Formulation and implementation of policies required for the maintenance of public health services at a high standard and in a people friendly manner,"Departments, Statutory Institutions & Public Corporations",Laws and Ordinance to be Implemented
+MINISTER_OF_MASS_MEDIA_CONTINUED,20,5. Formulation and implementation of programmes to improve public health and nutrition,"13. Vijaya Kumaratunga Memorial Hospital
+14. Ashraff Memorial Hospital
+15. National Authority on Tobacco and Alcohol
+16. 1990 Suwaseryia Foundation
+17. National Health Development Fund
+18. State Pharmaceutical Corporation
+19. State Pharmaceutical Manufacturing Corporation
+20. National Medicines Regulatory Authority
+21. Department of Ayurveda
+22. Sri Lanka Ayurvedic Drugs Corporation
+23. Ayurvedic Medical Council
+24. Ayurvedic College and Hospital Board
+25. Ayurveda Teaching and Research Hospitals
+26. Homeopathy Hospital, Welisara
+27. Homeopathy Medical Council","
 • Transplantation of Human Tissues Act, No. 48 of 1987
 • Food Act, No. 26 of 1980
 • Sri Jayewardenepura General Hospital Board Act, No. 54 of 1983
@@ -475,57 +456,57 @@ Homeopathy Medical Council","
 • Ayurveda Act, No. 31 of 1961
 • Homoeopathy Act, No. 7 of 1970
 • All other legislations pertaining to the subjects specified in Column I and II that have not been specifically brought under the purview of any other Minister."
-MINISTER_OF_MASS_MEDIA_CONTINUED,21,Implementation of rules and regulations in relation to international quarantine and sanitation,,
-MINISTER_OF_MASS_MEDIA_CONTINUED,22,Providing essential physical and human resources to all hospitals,,
-MINISTER_OF_MASS_MEDIA_CONTINUED,23,Introducing new strategies for expanding research opportunities in the field of healthcare,,
-MINISTER_OF_MASS_MEDIA_CONTINUED,24,Achieving the Sustainable Development Goals relevant to the health service,,
-MINISTER_OF_MASS_MEDIA_CONTINUED,25,"Formulating a methodology to regulate private hospitals, medical services and laboratory services within the framework of a national policy, and for the delivery of a systematic service.",,
-MINISTER_OF_MASS_MEDIA_CONTINUED,26,"Upgrading a hospital in each district to the level of a National Hospital, and expanding",,
-MINISTER_OF_MASS_MEDIA_CONTINUED,27,,,
-MINISTER_OF_HEALTH_CONTD.,1,Duties & Functions,,"Departments, Statutory Institutions & Public Corporations"
-MINISTER_OF_HEALTH_CONTD.,2,Administration and Personnel Management of Sri Lanka Medical Service and other health services,,
-MINISTER_OF_HEALTH_CONTD.,3,Expansion of training opportunities required for the enhancement of quality and skills of medical and para-medical services,,
-MINISTER_OF_HEALTH_CONTD.,4,Implementation of school health services and dental medical services for children,,
-MINISTER_OF_HEALTH_CONTD.,5,General sanitation and railway services sanitation,,
-MINISTER_OF_HEALTH_CONTD.,6,Matters relating to healthcare in the estate sector,,
-MINISTER_OF_HEALTH_CONTD.,7,Matters relating to National Blood Transfusion Services,,
-MINISTER_OF_HEALTH_CONTD.,8,Implementing programmes for the provision and distribution of Thriposha and nutritious food particularly for lactating mothers,,
-MINISTER_OF_HEALTH_CONTD.,9,Operation of the 1990 Suwaseriya Ambulance Service in an efficient manner.,,
-MINISTER_OF_HEALTH_CONTD.,10,"Production, import and distribution of drugs with a high standard and in an efficient manner.",,
-MINISTER_OF_HEALTH_CONTD.,11,Manufacture and import of quality drugs,,
-MINISTER_OF_HEALTH_CONTD.,12,Duties & Functions,"Departments, Statutory Institutions & Public Corporations",Laws and Ordinance to be Implemented
-MINISTER_OF_HEALTH_CONTD.,13,23. Prevention of market monopolies and control of drug prices to protect consumers,,
-MINISTER_OF_HEALTH_CONTD.,14,24. Ensuring that drug imports take place within a transparent procurement process,,
-MINISTER_OF_HEALTH_CONTD.,15,25. Taking steps to preserve and improve traditional medicine,,
-MINISTER_OF_HEALTH_CONTD.,16,"26. Development and regulation of Ayurvedic, Siddha, Unani and Homeopathy systems of medicine",,
-MINISTER_OF_HEALTH_CONTD.,17,"27. Production of Ayurvedic, Siddha, Unani and Homeopathy medicinal drugs",,
-MINISTER_OF_HEALTH_CONTD.,18,"28. Import, sale and distribution of raw material and manufactured drugs required for Ayurvedic, Siddha, Unani and Homeopathy systems of medicine",,
-MINISTER_OF_HEALTH_CONTD.,19,"29. Establishment and management of hospitals, research and training institutes and pharmaceutical outlets for the improvement of indigenous systems of medicines such as, Ayurveda, Siddha, Unani",,
-MINISTER_OF_HEALTH_CONTD.,20,"30. Regulation of export of medicinal plants and manufactured Ayurvedic, Siddha and Unani drugs",,
-MINISTER_OF_HEALTH_CONTD.,21,31. Regulation of Ayurvedic drug manufacturers,,
-MINISTER_OF_HEALTH_CONTD.,22,Duties & Functions,,"Departments, Statutory Institutions & Public Corporations"
-MINISTER_OF_HEALTH_CONTD.,23,32. Launch of projects in coordination with relevant institutions in relation to promotion of medicinal plant cultivation and improvement of local medicinal drugs,,
-MINISTER_OF_HEALTH_CONTD.,24,"33. Registration of Ayurvedic product manufacturers, Ayurvedic practitioners and Ayurvedic para-medical personnel",,
-MINISTER_OF_HEALTH_CONTD.,25,"34. Establishment, operation and promotion of Ayurvedic Hospitals, Ayurvedic Research Institutes, Training Institutes and Pharmacies",,
-MINISTER_OF_HEALTH_CONTD.,26,35. Implementing a mechanism in coordination with and regulated by the Tourist Board to prioritize indigenous traditional and ayurvedic treatment methods for administering treatment to tourists,,
-MINISTER_OF_HEALTH_CONTD.,27,36. Encouraging research regarding drugs and treatment methods in relation to indigenous medicine,,
-MINISTER_OF_HEALTH_CONTD.,28,37. Administration and personnel management of Indigenous Medical Service,,
-MINISTER_OF_HEALTH_CONTD.,29,All other subjects that come under the purview of Institutions listed in Column II,,
-MINISTER_OF_HEALTH_CONTD.,30,Supervision of all Institutions listed in Column II,,
-MINISTER_OF_HEALTH_CONTD.,31,Duties & Functions,"Departments, Statutory Institutions & Public Corporations",Laws and Ordinance to be Implemented
-MINISTER_OF_HEALTH_CONTD.,32,"1. Formulation, implementation, monitoring and evaluation of policies, programmes and projects, in relation to the subject of water supply, and those subjects that come under the purview of Departments, Statutory Institutions and Public Corporations listed in Column II based on the national policies implemented by the government.","1. National Water Supply and Drainage Board
+MINISTER_OF_MASS_MEDIA_CONTINUED,21,"6. Adoption of necessary measures for the control, prevention and cure of epidemic, communicable and non-communicable diseases",,
+MINISTER_OF_MASS_MEDIA_CONTINUED,22,7. Implementation of rules and regulations in relation to international quarantine and sanitation,,
+MINISTER_OF_MASS_MEDIA_CONTINUED,23,8. Providing essential physical and human resources to all hospitals,,
+MINISTER_OF_MASS_MEDIA_CONTINUED,24,9. Introducing new strategies for expanding research opportunities in the field of healthcare,,
+MINISTER_OF_MASS_MEDIA_CONTINUED,25,10. Achieving the Sustainable Development Goals relevant to the health service,,
+MINISTER_OF_MASS_MEDIA_CONTINUED,26,"11. Formulating a methodology to regulate private hospitals, medical services and laboratory services within the framework of a national policy, and for the delivery of a systematic service.",,
+MINISTER_OF_MASS_MEDIA_CONTINUED,27,"12. Upgrading a hospital in each district to the level of a National Hospital, and expanding",,
+MINISTER_OF_HEALTH_CONTINUED,1,Duties & Functions,,"Departments, Statutory Institutions & Public Corporations"
+MINISTER_OF_HEALTH_CONTINUED,2,Administration and Personnel Management of Sri Lanka Medical Service and other health services,,
+MINISTER_OF_HEALTH_CONTINUED,3,Expansion of training opportunities required for the enhancement of quality and skills of medical and para-medical services,,
+MINISTER_OF_HEALTH_CONTINUED,4,Implementation of school health services and dental medical services for children,,
+MINISTER_OF_HEALTH_CONTINUED,5,General sanitation and railway services sanitation,,
+MINISTER_OF_HEALTH_CONTINUED,6,Matters relating to healthcare in the estate sector,,
+MINISTER_OF_HEALTH_CONTINUED,7,Matters relating to National Blood Transfusion Services,,
+MINISTER_OF_HEALTH_CONTINUED,8,Implementing programmes for the provision and distribution of Thriposha and nutritious food particularly for lactating mothers,,
+MINISTER_OF_HEALTH_CONTINUED,9,Operation of the 1990 Suwaseriya Ambulance Service in an efficient manner.,,
+MINISTER_OF_HEALTH_CONTINUED,10,"Production, import and distribution of drugs with a high standard and in an efficient manner.",,
+MINISTER_OF_HEALTH_CONTINUED,11,Manufacture and import of quality drugs,,
+MINISTER_OF_HEALTH_CONTINUED,12,Duties & Functions,"Departments, Statutory Institutions & Public Corporations",Laws and Ordinance to be Implemented
+MINISTER_OF_HEALTH_CONTINUED,13,23. Prevention of market monopolies and control of drug prices to protect consumers,,
+MINISTER_OF_HEALTH_CONTINUED,14,24. Ensuring that drug imports take place within a transparent procurement process,,
+MINISTER_OF_HEALTH_CONTINUED,15,25. Taking steps to preserve and improve traditional medicine,,
+MINISTER_OF_HEALTH_CONTINUED,16,"26. Development and regulation of Ayurvedic, Siddha, Unani and Homeopathy systems of medicine",,
+MINISTER_OF_HEALTH_CONTINUED,17,"27. Production of Ayurvedic, Siddha, Unani and Homeopathy medicinal drugs",,
+MINISTER_OF_HEALTH_CONTINUED,18,"28. Import, sale and distribution of raw material and manufactured drugs required for Ayurvedic, Siddha, Unani and Homeopathy systems of medicine",,
+MINISTER_OF_HEALTH_CONTINUED,19,"29. Establishment and management of hospitals, research and training institutes and pharmaceutical outlets for the improvement of indigenous systems of medicines such as, Ayurveda, Siddha, Unani",,
+MINISTER_OF_HEALTH_CONTINUED,20,"30. Regulation of export of medicinal plants and manufactured Ayurvedic, Siddha and Unani drugs",,
+MINISTER_OF_HEALTH_CONTINUED,21,31. Regulation of Ayurvedic drug manufacturers,,
+MINISTER_OF_HEALTH_CONTINUED,22,Duties & Functions,,"Departments, Statutory Institutions & Public Corporations"
+MINISTER_OF_HEALTH_CONTINUED,23,32. Launch of projects in coordination with relevant institutions in relation to promotion of medicinal plant cultivation and improvement of local medicinal drugs,,
+MINISTER_OF_HEALTH_CONTINUED,24,"33. Registration of Ayurvedic product manufacturers, Ayurvedic practitioners and Ayurvedic para-medical personnel",,
+MINISTER_OF_HEALTH_CONTINUED,25,"34. Establishment, operation and promotion of Ayurvedic Hospitals, Ayurvedic Research Institutes, Training Institutes and Pharmacies",,
+MINISTER_OF_HEALTH_CONTINUED,26,35. Implementing a mechanism in coordination with and regulated by the Tourist Board to prioritize indigenous traditional and ayurvedic treatment methods for administering treatment to tourists,,
+MINISTER_OF_HEALTH_CONTINUED,27,36. Encouraging research regarding drugs and treatment methods in relation to indigenous medicine,,
+MINISTER_OF_HEALTH_CONTINUED,28,37. Administration and personnel management of Indigenous Medical Service,,
+MINISTER_OF_HEALTH_CONTINUED,29,All other subjects that come under the purview of Institutions listed in Column II,,
+MINISTER_OF_HEALTH_CONTINUED,30,Supervision of all Institutions listed in Column II,,
+MINISTER_OF_HEALTH_CONTINUED,31,Duties & Functions,"Departments, Statutory Institutions & Public Corporations",Laws and Ordinance to be Implemented
+MINISTER_OF_HEALTH_CONTINUED,32,"1. Formulation, implementation, monitoring and evaluation of policies, programmes and projects, in relation to the subject of water supply, and those subjects that come under the purview of Departments, Statutory Institutions and Public Corporations listed in Column II based on the national policies implemented by the government.","1. National Water Supply and Drainage Board
 2. Water Resources Board
 3. Department of National Community Water Supply","
 National Water Supply and Drainage Board Law, No. 2 of 1974
 Water Resources Board Act, No. 29 of 1964
 All other legislations pertaining to the subjects specified in Column I and II that have not been specifically brought under the purview of any other Minister."
-MINISTER_OF_HEALTH_CONTD.,33,2. Provision of public services under the purview of the Ministry in an efficient and people friendly manner,,
-MINISTER_OF_HEALTH_CONTD.,34,"3. Reforming all systems and procedures using modern management techniques and technology, thus ensuring that the functions of the Ministry are fulfilled while eliminating corruption and waste.",,
-MINISTER_OF_HEALTH_CONTD.,35,4. Taking necessary measures to provide clean drinking water to all citizens.,,
-MINISTER_OF_HEALTH_CONTD.,36,"5. Inspect water supply services, drainage systems and sanitary facilities, formulate and implement new plans for them and maintain.",,
-MINISTER_OF_HEALTH_CONTD.,37,6. Improvement of water security and urban water supply schemes by coordinating rural tanks and reservoirs and irrigation systems.,,
-MINISTER_OF_HEALTH_CONTD.,38,7. Prevention of wastage of water in drinking water distribution,,
-MINISTER_OF_HEALTH_CONTD.,39,8. Taking measures to carry out community water supply projects in an efficient and proper manner,,
+MINISTER_OF_HEALTH_CONTINUED,33,2. Provision of public services under the purview of the Ministry in an efficient and people friendly manner,,
+MINISTER_OF_HEALTH_CONTINUED,34,"3. Reforming all systems and procedures using modern management techniques and technology, thus ensuring that the functions of the Ministry are fulfilled while eliminating corruption and waste.",,
+MINISTER_OF_HEALTH_CONTINUED,35,4. Taking necessary measures to provide clean drinking water to all citizens.,,
+MINISTER_OF_HEALTH_CONTINUED,36,"5. Inspect water supply services, drainage systems and sanitary facilities, formulate and implement new plans for them and maintain.",,
+MINISTER_OF_HEALTH_CONTINUED,37,6. Improvement of water security and urban water supply schemes by coordinating rural tanks and reservoirs and irrigation systems.,,
+MINISTER_OF_HEALTH_CONTINUED,38,7. Prevention of wastage of water in drinking water distribution,,
+MINISTER_OF_HEALTH_CONTINUED,39,8. Taking measures to carry out community water supply projects in an efficient and proper manner,,
 MINISTER_OF_WATER_SUPPLY_CONTINUED,1,Duties & Functions,"Departments, Statutory Institutions & Public Corporations",Laws and Ordinance to be Implemented
 MINISTER_OF_WATER_SUPPLY_CONTINUED,2,,,
 MINISTER_OF_WATER_SUPPLY_CONTINUED,3,,,
@@ -595,10 +576,10 @@ MINISTER_OF_AGRICULTURE_CONTD.,41,41. Supervision of all Institutions listed in 
 MINISTER_OF_WILDLIFE_AND_FOREST_RESOURCES_CONSERVATION_CONTD.,1,Duties & Functions,,"Departments, Statutory Institutions & Public Corporations"
 MINISTER_OF_WILDLIFE_AND_FOREST_RESOURCES_CONSERVATION_CONTD.,2,2. Provision of public services under the purview of the Ministry in an efficient and people friendly manner,,"All other legislations pertaining to the subjects specified in Column I and II, and not specifically brought under the purview of any other Minister."
 MINISTER_OF_WILDLIFE_AND_FOREST_RESOURCES_CONSERVATION_CONTD.,3,"3. Reforming all systems and procedures using modern management techniques and technology, thus ensuring that the functions of the Ministry are fulfilled while eliminating corruption and waste.",,
-MINISTER_OF_WILDLIFE_AND_FOREST_RESOURCES_CONSERVATION_CONTD.,4,"4. Protection and conservation of forests, fauna and flora",,
-MINISTER_OF_WILDLIFE_AND_FOREST_RESOURCES_CONSERVATION_CONTD.,5,5. Adoption of measures to conserve ecosystems when promoting tourism industry in wildlife protected areas.,,
-MINISTER_OF_WILDLIFE_AND_FOREST_RESOURCES_CONSERVATION_CONTD.,6,"6. Implementation of a mechanism to minimize damages caused by wild animals to housing, property and cultivations in rural areas",,
-MINISTER_OF_WILDLIFE_AND_FOREST_RESOURCES_CONSERVATION_CONTD.,7,7. Formulation and implementation of a system with rural community participation for the protection of villages and settlements to prevent elephant-human conflicts,,
+MINISTER_OF_WILDLIFE_AND_FOREST_RESOURCES_CONSERVATION_CONTD.,4,"Protection and conservation of forests, fauna and flora",,
+MINISTER_OF_WILDLIFE_AND_FOREST_RESOURCES_CONSERVATION_CONTD.,5,Adoption of measures to conserve ecosystems when promoting tourism industry in wildlife protected areas.,,
+MINISTER_OF_WILDLIFE_AND_FOREST_RESOURCES_CONSERVATION_CONTD.,6,"Implementation of a mechanism to minimize damages caused by wild animals to housing, property and cultivations in rural areas",,
+MINISTER_OF_WILDLIFE_AND_FOREST_RESOURCES_CONSERVATION_CONTD.,7,Formulation and implementation of a system with rural community participation for the protection of villages and settlements to prevent elephant-human conflicts,,
 MINISTER_OF_WILDLIFE_AND_FOREST_RESOURCES_CONSERVATION_CONTD.,8,"Matters relating to collection and exhibition of various animals, birds and reptiles",,
 MINISTER_OF_WILDLIFE_AND_FOREST_RESOURCES_CONSERVATION_CONTD.,9,Forests and Forestry matters,,
 MINISTER_OF_WILDLIFE_AND_FOREST_RESOURCES_CONSERVATION_CONTD.,10,Preservation of forest density and expansion of green cover,,
@@ -607,58 +588,56 @@ MINISTER_OF_WILDLIFE_AND_FOREST_RESOURCES_CONSERVATION_CONTD.,12,Conservation of
 MINISTER_OF_WILDLIFE_AND_FOREST_RESOURCES_CONSERVATION_CONTD.,13,Duties & Functions,,
 MINISTER_OF_WILDLIFE_AND_FOREST_RESOURCES_CONSERVATION_CONTD.,14,Matters relating to all other subjects assigned to Institutions listed in Column II,,
 MINISTER_OF_WILDLIFE_AND_FOREST_RESOURCES_CONSERVATION_CONTD.,15,Supervision of all Institutions listed in Column II,,
-MINISTER_OF_JUSTICE_PRISONS_AFFAIRS_AND_CONSTITUTIONAL_REFORMS_CONTINUED,1,Duties & Functions,"Departments, Statutory Institutions & Public Corporations",Laws and Ordinance to be Implemented
-MINISTER_OF_JUSTICE_PRISONS_AFFAIRS_AND_CONSTITUTIONAL_REFORMS_CONTINUED,2,4. Effect necessary reforms to the legal system taking into consideration social requirements and global trends.,13. Office for National Unity and Reconciliation,"<br/>Judges Institute of Sri Lanka Act, No. 46 of 1985<br/>Law Commission Act, No. 3 of 1969<br/>Legal Aid Law, No. 11 of 1978<br/>Mediation Boards Act, No. 72 of 1988<br/>Prevention of Frauds Ordinance, No. 7 of 1840<br/>Prevention of Social Disability Act, No. 21 of 1957<br/>Primary Courts' Procedure Act, No. 44 of 1979<br/>The Crown (Liability in Delicts) Act, No. 22 of 1969<br/>Prevention of Crimes Ordinance, No. 2 of 1926<br/>Quazi Courts (validation of appointment) Act<br/>Assistance to and Protection of Victims of Crime and Witnesses Act, No. 4 of 2015<br/>Commercial Mediation Centre of Sri Lanka Act, No. 44 of 2000<br/>Office of the Missing Persons (Establishment, Administration and Discharge of functions) Act, No.14 of 2016<br/>Office for Reparations Act No. 34 of 2018<br/>Prisons Ordinance, No. 16 of 1877<br/>Youthful Offenders (Training Schools) Ordinance, No. 28 of 1939<br/>Community Based Corrections Act, No. 46 of 1999"
-MINISTER_OF_JUSTICE_PRISONS_AFFAIRS_AND_CONSTITUTIONAL_REFORMS_CONTINUED,3,5. Re-documentation and consolidation of laws,15. Office for Reparations,
-MINISTER_OF_JUSTICE_PRISONS_AFFAIRS_AND_CONSTITUTIONAL_REFORMS_CONTINUED,4,6. Matters relating to the administration of the courts of justice which have not been assigned to any other party by the Constitution,16. National Authority for the Protection of Victims of Crime and Witnesses,
-MINISTER_OF_JUSTICE_PRISONS_AFFAIRS_AND_CONSTITUTIONAL_REFORMS_CONTINUED,5,"7. Conduct all activities relating to overall administration, including prevention of law's delays in the courts system, in a methodical and efficient manner, and introduce modern technology for such purpose.",17. Department of Prisons,
-MINISTER_OF_JUSTICE_PRISONS_AFFAIRS_AND_CONSTITUTIONAL_REFORMS_CONTINUED,6,8. Criminal prosecutions and civil proceedings on behalf of the government,18. Community Based Correction Department,
-MINISTER_OF_JUSTICE_PRISONS_AFFAIRS_AND_CONSTITUTIONAL_REFORMS_CONTINUED,7,9. Provide legal advice to the government and to all government departments,19. Training Schools for Youthful Offenders,
-MINISTER_OF_JUSTICE_PRISONS_AFFAIRS_AND_CONSTITUTIONAL_REFORMS_CONTINUED,8,10. Drafting of legislation,20. Rehabilitation Commissioner General's Office,
-MINISTER_OF_JUSTICE_PRISONS_AFFAIRS_AND_CONSTITUTIONAL_REFORMS_CONTINUED,9,"11. Make recommendations to grant pardons, commutations, remissions, respites and suspensions in relation to sentences passed on any offender",,
-MINISTER_OF_JUSTICE_PRISONS_AFFAIRS_AND_CONSTITUTIONAL_REFORMS_CONTINUED,10,12. Formulation and implementation of an appropriate programme to enhance the effectiveness and efficiency of the overall Quazi system,,
-MINISTER_OF_JUSTICE_PRISONS_AFFAIRS_AND_CONSTITUTIONAL_REFORMS_CONTINUED,11,13. Administration of labour tribunals and other related matters,,
-MINISTER_OF_JUSTICE_PRISONS_AFFAIRS_AND_CONSTITUTIONAL_REFORMS_CONTINUED,12,Duties & Functions,"Departments, Statutory Institutions & Public Corporations",Laws and Ordinance to be Implemented
-MINISTER_OF_JUSTICE_PRISONS_AFFAIRS_AND_CONSTITUTIONAL_REFORMS_CONTINUED,13,14. Empower the Mediation Boards mechanism to resolve civil disputes without resort to the courts,,All other legislations pertaining to the subjects specified in Column I and II that have not been specifically brought under the purview of any other Minister
-MINISTER_OF_JUSTICE_PRISONS_AFFAIRS_AND_CONSTITUTIONAL_REFORMS_CONTINUED,14,15. Provide the latest knowledge and technical training on law enforcement procedures and mechanisms to relevant persons,,
-MINISTER_OF_JUSTICE_PRISONS_AFFAIRS_AND_CONSTITUTIONAL_REFORMS_CONTINUED,15,16. Conduct activities relating to the provision of assistance to and protection of victims of crime and witnesses.,,
-MINISTER_OF_JUSTICE_PRISONS_AFFAIRS_AND_CONSTITUTIONAL_REFORMS_CONTINUED,16,17. Conduct activities relating to search of missing persons and protecting the rights of missing persons and their relatives,,
-MINISTER_OF_JUSTICE_PRISONS_AFFAIRS_AND_CONSTITUTIONAL_REFORMS_CONTINUED,17,18. Conduct activities relating to compensation for persons affected by conflicts and crises.,,
-MINISTER_OF_JUSTICE_PRISONS_AFFAIRS_AND_CONSTITUTIONAL_REFORMS_CONTINUED,18,19. Promotion of national integration and reconciliation and lasting peace in the country and formulation of a policy framework for the said purpose,,
-MINISTER_OF_JUSTICE_PRISONS_AFFAIRS_AND_CONSTITUTIONAL_REFORMS_CONTINUED,19,20. Introduction and implementation of programmes for dialogue to establish solidarity and co-existence among communities,,
-MINISTER_OF_JUSTICE_PRISONS_AFFAIRS_AND_CONSTITUTIONAL_REFORMS_CONTINUED,20,21. Taking steps to amend the Constitution to suit the current needs while ensuring that the sovereignty of the people and national security are safeguarded.,,
-MINISTER_OF_JUSTICE_PRISONS_AFFAIRS_AND_CONSTITUTIONAL_REFORMS_CONTINUED,21,22. Conduct activities relating to the drafting of a new Constitution,,
-MINISTER_OF_JUSTICE_PRISONS_AFFAIRS_AND_CONSTITUTIONAL_REFORMS_CONTINUED,22,"23. Formulation and implementation of policies, plans and programmes in relation to prison reforms",,
-MINISTER_OF_JUSTICE_PRISONS_AFFAIRS_AND_CONSTITUTIONAL_REFORMS_CONTINUED,23,Duties & Functions,"Departments, Statutory Institutions & Public Corporations",Laws and Ordinance to be Implemented
-MINISTER_OF_JUSTICE_PRISONS_AFFAIRS_AND_CONSTITUTIONAL_REFORMS_CONTINUED,24,Prison administration and reforms,,
-MINISTER_OF_JUSTICE_PRISONS_AFFAIRS_AND_CONSTITUTIONAL_REFORMS_CONTINUED,25,Develop prisons infrastructure and minimize overcrowding.,,
-MINISTER_OF_JUSTICE_PRISONS_AFFAIRS_AND_CONSTITUTIONAL_REFORMS_CONTINUED,26,Rehabilitation of prisoners,,
-MINISTER_OF_JUSTICE_PRISONS_AFFAIRS_AND_CONSTITUTIONAL_REFORMS_CONTINUED,27,Activities relating to community based correction projects,,
-MINISTER_OF_JUSTICE_PRISONS_AFFAIRS_AND_CONSTITUTIONAL_REFORMS_CONTINUED,28,Implementation of programmes and projects for rehabilitation of persons physically and mentally affected by conflicts,,
-MINISTER_OF_JUSTICE_PRISONS_AFFAIRS_AND_CONSTITUTIONAL_REFORMS_CONTINUED,29,Re-integration of persons involved in terrorist activities into the society,,
-MINISTER_OF_JUSTICE_PRISONS_AFFAIRS_AND_CONSTITUTIONAL_REFORMS_CONTINUED,30,Matters relating to all other subjects assigned to Institutions listed in Column II,,
-MINISTER_OF_JUSTICE_PRISONS_AFFAIRS_AND_CONSTITUTIONAL_REFORMS_CONTINUED,31,Supervision of all Institutions listed in Column II,,
-MINISTER_OF_TOURISM_AND_LANDS_CONTINUED,1,Duties & Functions,"Departments, Statutory Institutions & Public Corporations",Laws and Ordinance to be Implemented
-MINISTER_OF_TOURISM_AND_LANDS_CONTINUED,2,2. Provision of public services under the purview of the Ministry in an efficient and people friendly manner,7. Department of Land Use Policy Planning,"<br/>State Land Grants (Special Provisions) Act, No. 43 of 1979<br/>State Land Ordinance, No. 8 of 1947<br/>State Lands (Recovery of Possession) Act, No. 7 of 1979<br/>Survey Act, No.17 of 2002<br/>Registration of Title Act, No. 21 of 1998<br/>Land Settlement Ordinance, No. 20 of 1931<br/>All other legislations pertaining to the subjects specified in Column I and II that have not been specifically brought under the purview of any other Minister."
-MINISTER_OF_TOURISM_AND_LANDS_CONTINUED,3,"3. Reforming all systems and procedures using modern management techniques and technology, thus ensuring that the functions of the Ministry are fulfilled while eliminating corruption and waste.",8. Department of Land Settlement,
-MINISTER_OF_TOURISM_AND_LANDS_CONTINUED,4,4. Development of the tourism industry and promotion of high standards in line with the national policy while raising Sri Lanka's image.,9. Land Reform Commission,
-MINISTER_OF_TOURISM_AND_LANDS_CONTINUED,5,5. Registration and regulation of travel agencies and those involved in the tourism industry.,10. Sri Lanka Survey Department,
-MINISTER_OF_TOURISM_AND_LANDS_CONTINUED,6,"6. Popularise Sri Lanka as a unique tourist island among domestic and foreign tourists highlighting Sri Lanka's biodiversity, rich heritage, environment, climate variations, oceanic resources etc.",11. Institute of Surveying and Mapping,
-MINISTER_OF_TOURISM_AND_LANDS_CONTINUED,7,"7. Promotion of holiday resorts, internationally recognized centres related to conferences, exhibition and entertainment facilities, hotel facilities, air and sea travel for tourists.",12. Land Survey Council,
-MINISTER_OF_TOURISM_AND_LANDS_CONTINUED,8,8. Provision of required facilities to encourage those engaged in the tourism trade and related entrepreneurs.,13. Land Acquisition Board of Review,
-MINISTER_OF_TOURISM_AND_LANDS_CONTINUED,9,9. Ensure safety of tourists.,,
-MINISTER_OF_TOURISM_AND_LANDS_CONTINUED,10,10. Administration and management of state lands,,
-MINISTER_OF_TOURISM_AND_LANDS_CONTINUED,11,11. Formulation of a land use policy,,
-MINISTER_OF_TOURISM_AND_LANDS_CONTINUED,12,Duties & Functions,"Departments, Statutory Institutions & Public Corporations",Laws and Ordinance to be Implemented
-MINISTER_OF_TOURISM_AND_LANDS_CONTINUED,13,12. Advising on land use,,
-MINISTER_OF_TOURISM_AND_LANDS_CONTINUED,14,13. Matters relating to land settlement and registration of land titles,,
-MINISTER_OF_TOURISM_AND_LANDS_CONTINUED,15,"14. Provide without delay and in due manner, land required for the country's development",,
-MINISTER_OF_TOURISM_AND_LANDS_CONTINUED,16,15. Acquisition of lands required for government activities,,
-MINISTER_OF_TOURISM_AND_LANDS_CONTINUED,17,16. Administration of lands vested in the Land Reform Commission and distribution of land in accordance with the law,,
-MINISTER_OF_TOURISM_AND_LANDS_CONTINUED,18,"17. Land surveying and mapping, provision of land information and related services",,
-MINISTER_OF_TOURISM_AND_LANDS_CONTINUED,19,18. Preparing and updating a database on lands assigned to the Government and the Land Reforms Commission,,
-MINISTER_OF_TOURISM_AND_LANDS_CONTINUED,20,19. Matters relating to all other subjects assigned to Institutions listed in Column II,,
-MINISTER_OF_TOURISM_AND_LANDS_CONTINUED,21,20. Supervision of all Institutions listed in Column II,,
+MINISTER_OF_JUSTICE_PRISONS_AFFAIRS_AND_CONSTITUTIONAL_REFORMS_CONTINUED,1,Duties & Functions,"Departments, Statutory Institutions & Public Corporations","<br/>Judges Institute of Sri Lanka Act, No. 46 of 1985<br/>Law Commission Act, No. 3 of 1969<br/>Legal Aid Law, No. 11 of 1978<br/>Mediation Boards Act, No. 72 of 1988<br/>Prevention of Frauds Ordinance, No. 7 of 1840<br/>Prevention of Social Disability Act, No. 21 of 1957<br/>Primary Courts' Procedure Act, No. 44 of 1979<br/>The Crown (Liability in Delicts) Act, No. 22 of 1969<br/>Prevention of Crimes Ordinance, No. 2 of 1926<br/>Quazi Courts (validation of appointment) Act<br/>Assistance to and Protection of Victims of Crime and Witnesses Act, No. 4 of 2015<br/>Commercial Mediation Centre of Sri Lanka Act, No. 44 of 2000<br/>Office of the Missing Persons (Establishment, Administration and Discharge of functions) Act, No.14 of 2016<br/>Office for Reparations Act No. 34 of 2018<br/>Prisons Ordinance, No. 16 of 1877<br/>Youthful Offenders (Training Schools) Ordinance, No. 28 of 1939<br/>Community Based Corrections Act, No. 46 of 1999"
+MINISTER_OF_JUSTICE_PRISONS_AFFAIRS_AND_CONSTITUTIONAL_REFORMS_CONTINUED,2,Matters relating to the administration of the courts of justice which have not been assigned to any other party by the Constitution,,<br/>Office for National Unity and Reconciliation<br/>Office for Reparations<br/>National Authority for the Protection of Victims of Crime and Witnesses<br/>Department of Prisons<br/>Community Based Correction Department<br/>Training Schools for Youthful Offenders<br/>Rehabilitation Commissioner General's Office
+MINISTER_OF_JUSTICE_PRISONS_AFFAIRS_AND_CONSTITUTIONAL_REFORMS_CONTINUED,3,"Conduct all activities relating to overall administration, including prevention of law's delays in the courts system, in a methodical and efficient manner, and introduce modern technology for such purpose.",,
+MINISTER_OF_JUSTICE_PRISONS_AFFAIRS_AND_CONSTITUTIONAL_REFORMS_CONTINUED,4,Criminal prosecutions and civil proceedings on behalf of the government,"Departments, Statutory Institutions & Public Corporations",
+MINISTER_OF_JUSTICE_PRISONS_AFFAIRS_AND_CONSTITUTIONAL_REFORMS_CONTINUED,5,Provide legal advice to the government and to all government departments,"Departments, Statutory Institutions & Public Corporations",
+MINISTER_OF_JUSTICE_PRISONS_AFFAIRS_AND_CONSTITUTIONAL_REFORMS_CONTINUED,6,Drafting of legislation,"Departments, Statutory Institutions & Public Corporations",Laws and Ordinance to be Implemented
+MINISTER_OF_JUSTICE_PRISONS_AFFAIRS_AND_CONSTITUTIONAL_REFORMS_CONTINUED,7,"Make recommendations to grant pardons, commutations, remissions, respites and suspensions in relation to sentences passed on any offender",,All other legislations pertaining to the subjects specified in Column I and II that have not been specifically brought under the purview of any other Minister
+MINISTER_OF_JUSTICE_PRISONS_AFFAIRS_AND_CONSTITUTIONAL_REFORMS_CONTINUED,8,Formulation and implementation of an appropriate programme to enhance the effectiveness and efficiency of the overall Quazi system,,
+MINISTER_OF_JUSTICE_PRISONS_AFFAIRS_AND_CONSTITUTIONAL_REFORMS_CONTINUED,9,Administration of labour tribunals and other related matters,,
+MINISTER_OF_JUSTICE_PRISONS_AFFAIRS_AND_CONSTITUTIONAL_REFORMS_CONTINUED,10,Duties & Functions,"Departments, Statutory Institutions & Public Corporations",
+MINISTER_OF_JUSTICE_PRISONS_AFFAIRS_AND_CONSTITUTIONAL_REFORMS_CONTINUED,11,14. Empower the Mediation Boards mechanism to resolve civil disputes without resort to the courts,,
+MINISTER_OF_JUSTICE_PRISONS_AFFAIRS_AND_CONSTITUTIONAL_REFORMS_CONTINUED,12,15. Provide the latest knowledge and technical training on law enforcement procedures and mechanisms to relevant persons,,
+MINISTER_OF_JUSTICE_PRISONS_AFFAIRS_AND_CONSTITUTIONAL_REFORMS_CONTINUED,13,16. Conduct activities relating to the provision of assistance to and protection of victims of crime and witnesses.,,
+MINISTER_OF_JUSTICE_PRISONS_AFFAIRS_AND_CONSTITUTIONAL_REFORMS_CONTINUED,14,17. Conduct activities relating to search of missing persons and protecting the rights of missing persons and their relatives,,
+MINISTER_OF_JUSTICE_PRISONS_AFFAIRS_AND_CONSTITUTIONAL_REFORMS_CONTINUED,15,18. Conduct activities relating to compensation for persons affected by conflicts and crises.,,
+MINISTER_OF_JUSTICE_PRISONS_AFFAIRS_AND_CONSTITUTIONAL_REFORMS_CONTINUED,16,19. Promotion of national integration and reconciliation and lasting peace in the country and formulation of a policy framework for the said purpose,,
+MINISTER_OF_JUSTICE_PRISONS_AFFAIRS_AND_CONSTITUTIONAL_REFORMS_CONTINUED,17,20. Introduction and implementation of programmes for dialogue to establish solidarity and co-existence among communities,,Laws and Ordinance to be Implemented
+MINISTER_OF_JUSTICE_PRISONS_AFFAIRS_AND_CONSTITUTIONAL_REFORMS_CONTINUED,18,21. Taking steps to amend the Constitution to suit the current needs while ensuring that the sovereignty of the people and national security are safeguarded.,,
+MINISTER_OF_JUSTICE_PRISONS_AFFAIRS_AND_CONSTITUTIONAL_REFORMS_CONTINUED,19,22. Conduct activities relating to the drafting of a new Constitution,,
+MINISTER_OF_JUSTICE_PRISONS_AFFAIRS_AND_CONSTITUTIONAL_REFORMS_CONTINUED,20,"23. Formulation and implementation of policies, plans and programmes in relation to prison reforms",,
+MINISTER_OF_JUSTICE_PRISONS_AFFAIRS_AND_CONSTITUTIONAL_REFORMS_CONTINUED,21,Duties & Functions,"Departments, Statutory Institutions & Public Corporations",
+MINISTER_OF_JUSTICE_PRISONS_AFFAIRS_AND_CONSTITUTIONAL_REFORMS_CONTINUED,22,Prison administration and reforms,,
+MINISTER_OF_JUSTICE_PRISONS_AFFAIRS_AND_CONSTITUTIONAL_REFORMS_CONTINUED,23,Develop prisons infrastructure and minimize overcrowding.,,
+MINISTER_OF_JUSTICE_PRISONS_AFFAIRS_AND_CONSTITUTIONAL_REFORMS_CONTINUED,24,Rehabilitation of prisoners,,
+MINISTER_OF_JUSTICE_PRISONS_AFFAIRS_AND_CONSTITUTIONAL_REFORMS_CONTINUED,25,Activities relating to community based correction projects,,
+MINISTER_OF_JUSTICE_PRISONS_AFFAIRS_AND_CONSTITUTIONAL_REFORMS_CONTINUED,26,Implementation of programmes and projects for rehabilitation of persons physically and mentally affected by conflicts,,
+MINISTER_OF_JUSTICE_PRISONS_AFFAIRS_AND_CONSTITUTIONAL_REFORMS_CONTINUED,27,Re-integration of persons involved in terrorist activities into the society,,
+MINISTER_OF_JUSTICE_PRISONS_AFFAIRS_AND_CONSTITUTIONAL_REFORMS_CONTINUED,28,Matters relating to all other subjects assigned to Institutions listed in Column II,,
+MINISTER_OF_JUSTICE_PRISONS_AFFAIRS_AND_CONSTITUTIONAL_REFORMS_CONTINUED,29,Supervision of all Institutions listed in Column II,,
+MINISTER_OF_TOURISM_AND_LANDS_CONTD.,1,Duties & Functions,"Departments, Statutory Institutions & Public Corporations",Laws and Ordinance to be Implemented
+MINISTER_OF_TOURISM_AND_LANDS_CONTD.,2,2. Provision of public services under the purview of the Ministry in an efficient and people friendly manner,7. Department of Land Use Policy Planning,"<br/>State Land Grants (Special Provisions) Act, No. 43 of 1979<br/>State Land Ordinance, No. 8 of 1947<br/>State Lands (Recovery of Possession) Act, No. 7 of 1979<br/>Survey Act, No.17 of 2002<br/>Registration of Title Act, No. 21 of 1998<br/>Land Settlement Ordinance, No. 20 of 1931<br/>All other legislations pertaining to the subjects specified in Column I and II that have not been specifically brought under the purview of any other Minister."
+MINISTER_OF_TOURISM_AND_LANDS_CONTD.,3,"3. Reforming all systems and procedures using modern management techniques and technology, thus ensuring that the functions of the Ministry are fulfilled while eliminating corruption and waste.",8. Department of Land Settlement,
+MINISTER_OF_TOURISM_AND_LANDS_CONTD.,4,4. Development of the tourism industry and promotion of high standards in line with the national policy while raising Sri Lanka's image.,9. Land Reform Commission,
+MINISTER_OF_TOURISM_AND_LANDS_CONTD.,5,5. Registration and regulation of travel agencies and those involved in the tourism industry.,10. Sri Lanka Survey Department,
+MINISTER_OF_TOURISM_AND_LANDS_CONTD.,6,"6. Popularise Sri Lanka as a unique tourist island among domestic and foreign tourists highlighting Sri Lanka's biodiversity, rich heritage, environment, climate variations, oceanic resources etc.",11. Institute of Surveying and Mapping,
+MINISTER_OF_TOURISM_AND_LANDS_CONTD.,7,"7. Promotion of holiday resorts, internationally recognized centres related to conferences, exhibition and entertainment facilities, hotel facilities, air and sea travel for tourists.",12. Land Survey Council,
+MINISTER_OF_TOURISM_AND_LANDS_CONTD.,8,8. Provision of required facilities to encourage those engaged in the tourism trade and related entrepreneurs.,13. Land Acquisition Board of Review,
+MINISTER_OF_TOURISM_AND_LANDS_CONTD.,9,9. Ensure safety of tourists.,,
+MINISTER_OF_TOURISM_AND_LANDS_CONTD.,10,10. Administration and management of state lands,,
+MINISTER_OF_TOURISM_AND_LANDS_CONTD.,11,11. Formulation of a land use policy,,
+MINISTER_OF_TOURISM_AND_LANDS_CONTD.,12,Duties & Functions,"Departments, Statutory Institutions & Public Corporations",Laws and Ordinance to be Implemented
+MINISTER_OF_TOURISM_AND_LANDS_CONTD.,13,12. Advising on land use,,
+MINISTER_OF_TOURISM_AND_LANDS_CONTD.,14,13. Matters relating to land settlement and registration of land titles,,
+MINISTER_OF_TOURISM_AND_LANDS_CONTD.,15,"14. Provide without delay and in due manner, land required for the country's development",,
+MINISTER_OF_TOURISM_AND_LANDS_CONTD.,16,15. Acquisition of lands required for government activities,,
+MINISTER_OF_TOURISM_AND_LANDS_CONTD.,17,16. Administration of lands vested in the Land Reform Commission and distribution of land in accordance with the law,,
+MINISTER_OF_TOURISM_AND_LANDS_CONTD.,18,"17. Land surveying and mapping, provision of land information and related services",,
+MINISTER_OF_TOURISM_AND_LANDS_CONTD.,19,18. Preparing and updating a database on lands assigned to the Government and the Land Reforms Commission,,
+MINISTER_OF_TOURISM_AND_LANDS_CONTD.,20,19. Matters relating to all other subjects assigned to Institutions listed in Column II,,
+MINISTER_OF_TOURISM_AND_LANDS_CONTD.,21,20. Supervision of all Institutions listed in Column II,,
 MINISTER_OF_PLANTATION_INDUSTRIES_CONTD.,1,Duties & Functions,"Departments, Statutory Institutions & Public Corporations",Laws and Ordinance to be Implemented
 MINISTER_OF_PLANTATION_INDUSTRIES_CONTD.,2,Statutory Institutions and Public Corporations listed in Column II based on the national policies implemented by the government.,,"Tea Subsidy Act, No. 12 of 1958
 Tea (Tax and Control of Exports) Act, No. 16 of 1959
@@ -681,7 +660,7 @@ MINISTER_OF_PLANTATION_INDUSTRIES_CONTD.,4,10. Issuance of licenses related to t
 MINISTER_OF_PLANTATION_INDUSTRIES_CONTD.,5,11. Promote rural tea cultivation and encourage small tea holders,27. Coconut Research Institute,
 MINISTER_OF_PLANTATION_INDUSTRIES_CONTD.,6,12. Issuance of permits for export of tea,28. Palmyrah Development Board,
 MINISTER_OF_PLANTATION_INDUSTRIES_CONTD.,7,13. Expansion of the international tea market for Ceylon Tea with the participation of both state and private sectors,29. Kithul Development Board,
-MINISTER_OF_PLANTATION_INDUSTRIES_CONTD.,8,14. Development of crop based cultivation including lands owned by public and private plantation companies,,
+MINISTER_OF_PLANTATION_INDUSTRIES_CONTD.,8,14. Development of crop based cultivation including lands owned by public and private plantation companies,30. Kapruka Fund,
 MINISTER_OF_PLANTATION_INDUSTRIES_CONTD.,9,15. Encouragement of rubber related products aimed at local and foreign markets,,
 MINISTER_OF_PLANTATION_INDUSTRIES_CONTD.,10,16. Formulation and implementation of a plan for proper utilization of lands in the estate sector,,
 MINISTER_OF_PLANTATION_INDUSTRIES_CONTD.,11,"17. Issuance of licenses related to fragmentation of tea, rubber and coconut and their control",,
@@ -689,30 +668,33 @@ MINISTER_OF_PLANTATION_INDUSTRIES_CONTD.,12,18. Implementation of a programme to
 MINISTER_OF_PLANTATION_INDUSTRIES_CONTD.,13,19. Introduction of high yielding varieties to farmers in collaboration with research institutes.,,
 MINISTER_OF_PLANTATION_INDUSTRIES_CONTD.,14,20. Expansion of export market opportunities and production of high value items through value addition to local products using modern technology.,,
 MINISTER_OF_PLANTATION_INDUSTRIES_CONTD.,15,21. Take measures to direct small scale agri-entrepreneurs to the global economy by ensuring the security of the minor crops industry.,,
-MINISTER_OF_PLANTATION_INDUSTRIES_CONTD.,16,22. Provision of necessary incentives and facilities to increase the yield by supplying quality seeds and plants for minor crop cultivations.,,
-MINISTER_OF_PLANTATION_INDUSTRIES_CONTD.,17,23. Implementation of policies for promotion of sustainable resource use and bio protection including value added production.,"Departments, Statutory Institutions & Public Corporations",Laws and Ordinance to be Implemented
-MINISTER_OF_PLANTATION_INDUSTRIES_CONTD.,18,24. Development of local crops such as cinnamon and pepper for the export market under the Sri Lanka Brand instead of re-export.,,
-MINISTER_OF_PLANTATION_INDUSTRIES_CONTD.,19,25. Revive closed down sugar factories.,,
-MINISTER_OF_PLANTATION_INDUSTRIES_CONTD.,20,26. Implementation of a technology based programme for sparse water utilization in sugarcane cultivation.,,
-MINISTER_OF_PLANTATION_INDUSTRIES_CONTD.,21,27. Cultivation of maize required for Thriposha and animal feed within the country.,,
-MINISTER_OF_PLANTATION_INDUSTRIES_CONTD.,22,28. Establish export villages for small plantation crops.,"Departments, Statutory Institutions & Public Corporations",Laws and Ordinance to be Implemented
-MINISTER_OF_PLANTATION_INDUSTRIES_CONTD.,23,"29. Development, promotion and research on coconut, kithul and palmyrrah related industries.",,
-MINISTER_OF_PLANTATION_INDUSTRIES_CONTD.,24,"30. Development of strategies to meet the local demand for coconut, and to export of value added products of coconut, thambili and kurumba.",,
-MINISTER_OF_PLANTATION_INDUSTRIES_CONTD.,25,"31. Optimum utilization of plantation lands through multiple cropping and integrated farming, thereby increasing production and employment.",,
-MINISTER_OF_PLANTATION_INDUSTRIES_CONTD.,26,Duties & Functions,,
-MINISTER_OF_PLANTATION_INDUSTRIES_CONTD.,27,"32. Introduction of high yielding coconut plant varieties, taking into consideration geographical factors.",,
-MINISTER_OF_PLANTATION_INDUSTRIES_CONTD.,28,"33. Development of technology infused coconut, kitul and palmryah based industries targeting the local and foreign markets.",,
-MINISTER_OF_PLANTATION_INDUSTRIES_CONTD.,29,34. Matters relating to all other subjects assigned to Institutions listed in Column II,,
-MINISTER_OF_PLANTATION_INDUSTRIES_CONTD.,30,35. Supervision of the Institutions listed in Column II,,
-MINISTER_OF_PLANTATION_INDUSTRIES_CONTD.,31,Duties & Functions,,
-MINISTER_OF_PLANTATION_INDUSTRIES_CONTD.,32,Implementing a programme to resuscitate businesses and failed industries,,
-MINISTER_OF_PLANTATION_INDUSTRIES_CONTD.,33,Protecting and strengthening local entrepreneurs and businessmen,,
-MINISTER_OF_PLANTATION_INDUSTRIES_CONTD.,34,Implementing an integrated programme with relevant institutions for resolving issues faced by all industrialists,,
-MINISTER_OF_PLANTATION_INDUSTRIES_CONTD.,35,Establishing a single integrated mechanism for executing import-export process in an efficient manner,,
-MINISTER_OF_PLANTATION_INDUSTRIES_CONTD.,36,"Formulating and implementing policies, programmes and projects covering all provinces to strengthen export related production process",,
-MINISTER_OF_PLANTATION_INDUSTRIES_CONTD.,37,Providing necessary facilities for the development of infrastructure facilities in Industrial Estates,,
-MINISTER_OF_PLANTATION_INDUSTRIES_CONTD.,38,"Explore by adoption of modern high-technology, mineral resources that are expected to be found underground and in the sea, and exploiting such resources to strengthen the countries' production process.",,
-MINISTER_OF_PLANTATION_INDUSTRIES_CONTD.,39,Development of small and medium scale enterprises,,
+MINISTER_OF_PLANTATION_INDUSTRIES_CONTD.,16,Duties & Functions,,
+MINISTER_OF_PLANTATION_INDUSTRIES_CONTD.,17,22. Provision of necessary incentives and facilities to increase the yield by supplying quality seeds and plants for minor crop cultivations.,"Departments, Statutory Institutions & Public Corporations",Laws and Ordinance to be Implemented
+MINISTER_OF_PLANTATION_INDUSTRIES_CONTD.,18,23. Implementation of policies for promotion of sustainable resource use and bio protection including value added production.,,
+MINISTER_OF_PLANTATION_INDUSTRIES_CONTD.,19,24. Development of local crops such as cinnamon and pepper for the export market under the Sri Lanka Brand instead of re-export.,,
+MINISTER_OF_PLANTATION_INDUSTRIES_CONTD.,20,25. Revive closed down sugar factories.,,
+MINISTER_OF_PLANTATION_INDUSTRIES_CONTD.,21,26. Implementation of a technology based programme for sparse water utilization in sugarcane cultivation.,,
+MINISTER_OF_PLANTATION_INDUSTRIES_CONTD.,22,27. Cultivation of maize required for Thriposha and animal feed within the country.,,
+MINISTER_OF_PLANTATION_INDUSTRIES_CONTD.,23,28. Establish export villages for small plantation crops.,,
+MINISTER_OF_PLANTATION_INDUSTRIES_CONTD.,24,"29. Development, promotion and research on coconut, kithul and palmyrrah related industries.",,
+MINISTER_OF_PLANTATION_INDUSTRIES_CONTD.,25,"30. Development of strategies to meet the local demand for coconut, and to export of value added products of coconut, thambili and kurumba.",,
+MINISTER_OF_PLANTATION_INDUSTRIES_CONTD.,26,"31. Optimum utilization of plantation lands through multiple cropping and integrated farming, thereby increasing production and employment.",,
+MINISTER_OF_PLANTATION_INDUSTRIES_CONTD.,27,Duties & Functions,,
+MINISTER_OF_PLANTATION_INDUSTRIES_CONTD.,28,"32. Introduction of high yielding coconut plant varieties, taking into consideration geographical factors.","Departments, Statutory Institutions & Public Corporations",Laws and Ordinance to be Implemented
+MINISTER_OF_PLANTATION_INDUSTRIES_CONTD.,29,"33. Development of technology infused coconut, kitul and palmryah based industries targeting the local and foreign markets.",,
+MINISTER_OF_PLANTATION_INDUSTRIES_CONTD.,30,34. Matters relating to all other subjects assigned to Institutions listed in Column II,,
+MINISTER_OF_PLANTATION_INDUSTRIES_CONTD.,31,35. Supervision of the Institutions listed in Column II,,
+MINISTER_OF_PLANTATION_INDUSTRIES_CONTD.,32,Duties & Functions,,
+MINISTER_OF_PLANTATION_INDUSTRIES_CONTD.,33,Implementing a programme to resuscitate businesses and failed industries,"Departments, Statutory Institutions & Public Corporations",Laws and Ordinance to be Implemented
+MINISTER_OF_PLANTATION_INDUSTRIES_CONTD.,34,Protecting and strengthening local entrepreneurs and businessmen,,
+MINISTER_OF_PLANTATION_INDUSTRIES_CONTD.,35,Implementing an integrated programme with relevant institutions for resolving issues faced by all industrialists,,
+MINISTER_OF_PLANTATION_INDUSTRIES_CONTD.,36,Establishing a single integrated mechanism for executing import-export process in an efficient manner,,
+MINISTER_OF_PLANTATION_INDUSTRIES_CONTD.,37,"Formulating and implementing policies, programmes and projects covering all provinces to strengthen export related production process",,
+MINISTER_OF_PLANTATION_INDUSTRIES_CONTD.,38,Providing necessary facilities for the development of infrastructure facilities in Industrial Estates,,
+MINISTER_OF_PLANTATION_INDUSTRIES_CONTD.,39,"Explore by adoption of modern high-technology, mineral resources that are expected to be found underground and in the sea, and exploiting such resources to strengthen the countries' production process.",,
+MINISTER_OF_PLANTATION_INDUSTRIES_CONTD.,40,Development of small and medium scale enterprises,,All other legislations pertaining to the subjects specified in Column I and II that have not been specifically brought under the purview of any other Minister
+MINISTER_OF_PLANTATION_INDUSTRIES_CONTD.,41,,,
+MINISTER_OF_PLANTATION_INDUSTRIES_CONTD.,42,,,
 MINISTER_OF_INDUSTRIES_CONTD.,1,Duties & Functions,"Departments, Statutory Institutions & Public Corporations",Laws and Ordinance to be Implemented
 MINISTER_OF_INDUSTRIES_CONTD.,2,"13. Prioritizing and encouraging the promotion of rural industries including rattan, brass, pottery, furniture as value addition industries.",,
 MINISTER_OF_INDUSTRIES_CONTD.,3,"14. Providing opportunities and incentives for the cultivation of raw materials in state lands on a long term lease basis under a cooperative system as a remedial measure to resolve problems of raw materials in relation to carpentry, rattan industry and reed industry",,
@@ -767,46 +749,44 @@ MINISTER_OF_URBAN_DEVELOPMENT_AND_HOUSING_CONTD.,5,"Reforming all systems and pr
 MINISTER_OF_URBAN_DEVELOPMENT_AND_HOUSING_CONTD.,6,Planning and development of metropolis and suburbs,,
 MINISTER_OF_URBAN_DEVELOPMENT_AND_HOUSING_CONTD.,7,"Systematic promotion and regulation of integrated economic, social and physical development of urban areas",,
 MINISTER_OF_URBAN_DEVELOPMENT_AND_HOUSING_CONTD.,8,Construction and development of housing complexes for shanty dwellers and low income groups.,,
-MINISTER_OF_URBAN_DEVELOPMENT_AND_HOUSING_CONTD.,9,Implementation of new housing projects and provision of credit facilities to resolve housing problems of middle class families,,
-MINISTER_OF_URBAN_DEVELOPMENT_AND_HOUSING_CONTD.,10,Introducing storied housing schemes on reasonable rental basis for those seeking temporary residency on rent basis,,
-MINISTER_OF_URBAN_DEVELOPMENT_AND_HOUSING_CONTD.,11,Incentivizing investors to launch new housing projects by providing lands at concessionary prices to housing construction companies,,
-MINISTER_OF_URBAN_DEVELOPMENT_AND_HOUSING_CONTD.,12,Duties & Functions,,
-MINISTER_OF_URBAN_DEVELOPMENT_AND_HOUSING_CONTD.,13,10. Management of Urban Solid Waste,,
-MINISTER_OF_URBAN_DEVELOPMENT_AND_HOUSING_CONTD.,14,11. Adopting measures to prevent the disposal of waste in an irresponsible manner,,
-MINISTER_OF_URBAN_DEVELOPMENT_AND_HOUSING_CONTD.,15,12. Formulating a programme to regulate all urban construction in terms of urban development plans,,
-MINISTER_OF_URBAN_DEVELOPMENT_AND_HOUSING_CONTD.,16,13. Ensure that all urban construction projects provide for vehicle parks and access facilities for disabled persons.,,
-MINISTER_OF_URBAN_DEVELOPMENT_AND_HOUSING_CONTD.,17,14. Preparation of National Physical Plans and Regional Physical Plans,,
-MINISTER_OF_URBAN_DEVELOPMENT_AND_HOUSING_CONTD.,18,15. Directing and regulating all construction activities to be based on national physical plans to ensure integrated urban development,,
-MINISTER_OF_URBAN_DEVELOPMENT_AND_HOUSING_CONTD.,19,16. Maintenance and regulation of condominium property,,
-MINISTER_OF_URBAN_DEVELOPMENT_AND_HOUSING_CONTD.,20,17. Public condominium reforms and transferring ownership of houses efficiently and speedily.,,
-MINISTER_OF_URBAN_DEVELOPMENT_AND_HOUSING_CONTD.,21,18. Matters relating to reclamation and development of low lying areas,,"Departments, Statutory Institutions & Public Corporations"
-MINISTER_OF_URBAN_DEVELOPMENT_AND_HOUSING_CONTD.,22,19. Providing necessary guidance for the development of underserved areas and marshy lands in urban areas based on a common plan,,
-MINISTER_OF_URBAN_DEVELOPMENT_AND_HOUSING_CONTD.,23,20. Establish standards and norms for government quarters and other buildings,,
-MINISTER_OF_URBAN_DEVELOPMENT_AND_HOUSING_CONTD.,24,Duties & Functions,,
-MINISTER_OF_URBAN_DEVELOPMENT_AND_HOUSING_CONTD.,25,Implement housing schemes and housing financial grants programmes to service housing needs of people including low income recipients and particular community groups,,
-MINISTER_OF_URBAN_DEVELOPMENT_AND_HOUSING_CONTD.,26,Provide guidance to rural communities on environmental friendly and cost effective techniques for housing construction,,
-MINISTER_OF_URBAN_DEVELOPMENT_AND_HOUSING_CONTD.,27,Provide mechanical engineering services to government institutions,,
-MINISTER_OF_URBAN_DEVELOPMENT_AND_HOUSING_CONTD.,28,"Regulation, registration, regularization and standardization of activities in the construction sector in line with relevant rules and regulations and standards",,
-MINISTER_OF_URBAN_DEVELOPMENT_AND_HOUSING_CONTD.,29,Provide consultancy and regulatory services for the construction industries,,
-MINISTER_OF_URBAN_DEVELOPMENT_AND_HOUSING_CONTD.,30,Provide training on heavy construction equipment operation and maintenance,,
-MINISTER_OF_URBAN_DEVELOPMENT_AND_HOUSING_CONTD.,31,Develop basic infrastructure in remote rural areas using appropriate technology,,
-MINISTER_OF_URBAN_DEVELOPMENT_AND_HOUSING_CONTD.,32,Develop building material industry,,
-MINISTER_OF_URBAN_DEVELOPMENT_AND_HOUSING_CONTD.,33,Strengthen local construction personnel,,"Departments, Statutory Institutions & Public Corporations"
-MINISTER_OF_URBAN_DEVELOPMENT_AND_HOUSING_CONTD.,34,Strengthen and safeguard local small and medium scale subcontractors,,Laws and Ordinance to be Implemented
-MINISTER_OF_URBAN_DEVELOPMENT_AND_HOUSING_CONTD.,35,Engineering consultancy services and construction work,,Laws and Ordinance to be Implemented
-MINISTER_OF_URBAN_DEVELOPMENT_AND_HOUSING_CONTD.,36,Duties & Functions,,Laws and Ordinance to be Implemented
-MINISTER_OF_URBAN_DEVELOPMENT_AND_HOUSING_CONTD.,37,Prevention of marine pollution,,Laws and Ordinance to be Implemented
-MINISTER_OF_URBAN_DEVELOPMENT_AND_HOUSING_CONTD.,38,Preparation and implementation of an action plan for the prevention of marine and marine related pollution,,Laws and Ordinance to be Implemented
-MINISTER_OF_URBAN_DEVELOPMENT_AND_HOUSING_CONTD.,39,Coast Conservation and Protection,,Laws and Ordinance to be Implemented
-MINISTER_OF_URBAN_DEVELOPMENT_AND_HOUSING_CONTD.,40,Implementing ocean cleanliness programmes for the prevention of damage caused to the coastal belt and sea bed by the disposal of waste,,Laws and Ordinance to be Implemented
-MINISTER_OF_URBAN_DEVELOPMENT_AND_HOUSING_CONTD.,41,Creation of new villages and townships aimed at developing housing and infrastructure for landless employed in government and privately owned plantation companies,,Laws and Ordinance to be Implemented
-MINISTER_OF_URBAN_DEVELOPMENT_AND_HOUSING_CONTD.,42,"Adopting necessary measures for the provision of basic facilities, livelihood generation and community development projects including other requirements for empowerment of plantation community economically, socially and culturally",,Laws and Ordinance to be Implemented
-MINISTER_OF_URBAN_DEVELOPMENT_AND_HOUSING_CONTD.,43,Development of basic infrastructure in rural estate sector,,Laws and Ordinance to be Implemented
-MINISTER_OF_URBAN_DEVELOPMENT_AND_HOUSING_CONTD.,44,Establishing 'People-Centric Boards and People-Centric Centers' giving pride of place to estate sector related community leadership and community participation.,,
-MINISTER_OF_URBAN_DEVELOPMENT_AND_HOUSING_CONTD.,45,Implement a special programme to ensure primary education and healthcare for children in estate communities.,,
-MINISTER_OF_URBAN_DEVELOPMENT_AND_HOUSING_CONTD.,46,Duties & Functions,"Departments, Statutory Institutions & Public Corporations",
-MINISTER_OF_URBAN_DEVELOPMENT_AND_HOUSING_CONTD.,47,41. All other subjects that come under the purview of Institutions listed in Column II,,
-MINISTER_OF_URBAN_DEVELOPMENT_AND_HOUSING_CONTD.,48,42. Supervision of all Institutions listed in Column II,,
+MINISTER_OF_URBAN_DEVELOPMENT_AND_HOUSING_CONTD.,9,Implementation of new housing projects and provision of credit facilities to resolve housing problems of middle class families,,"Departments, Statutory Institutions & Public Corporations"
+MINISTER_OF_URBAN_DEVELOPMENT_AND_HOUSING_CONTD.,10,Introducing storied housing schemes on reasonable rental basis for those seeking temporary residency on rent basis,,Laws and Ordinance to be Implemented
+MINISTER_OF_URBAN_DEVELOPMENT_AND_HOUSING_CONTD.,11,Incentivizing investors to launch new housing projects by providing lands at concessionary prices to housing construction companies,,Laws and Ordinance to be Implemented
+MINISTER_OF_URBAN_DEVELOPMENT_AND_HOUSING_CONTD.,12,10. Management of Urban Solid Waste,,Laws and Ordinance to be Implemented
+MINISTER_OF_URBAN_DEVELOPMENT_AND_HOUSING_CONTD.,13,11. Adopting measures to prevent the disposal of waste in an irresponsible manner,,Laws and Ordinance to be Implemented
+MINISTER_OF_URBAN_DEVELOPMENT_AND_HOUSING_CONTD.,14,12. Formulating a programme to regulate all urban construction in terms of urban development plans,,Laws and Ordinance to be Implemented
+MINISTER_OF_URBAN_DEVELOPMENT_AND_HOUSING_CONTD.,15,13. Ensure that all urban construction projects provide for vehicle parks and access facilities for disabled persons.,,Laws and Ordinance to be Implemented
+MINISTER_OF_URBAN_DEVELOPMENT_AND_HOUSING_CONTD.,16,14. Preparation of National Physical Plans and Regional Physical Plans,,Laws and Ordinance to be Implemented
+MINISTER_OF_URBAN_DEVELOPMENT_AND_HOUSING_CONTD.,17,15. Directing and regulating all construction activities to be based on national physical plans to ensure integrated urban development,,Laws and Ordinance to be Implemented
+MINISTER_OF_URBAN_DEVELOPMENT_AND_HOUSING_CONTD.,18,16. Maintenance and regulation of condominium property,,Laws and Ordinance to be Implemented
+MINISTER_OF_URBAN_DEVELOPMENT_AND_HOUSING_CONTD.,19,17. Public condominium reforms and transferring ownership of houses efficiently and speedily.,,Laws and Ordinance to be Implemented
+MINISTER_OF_URBAN_DEVELOPMENT_AND_HOUSING_CONTD.,20,18. Matters relating to reclamation and development of low lying areas,,
+MINISTER_OF_URBAN_DEVELOPMENT_AND_HOUSING_CONTD.,21,19. Providing necessary guidance for the development of underserved areas and marshy lands in urban areas based on a common plan,,
+MINISTER_OF_URBAN_DEVELOPMENT_AND_HOUSING_CONTD.,22,20. Establish standards and norms for government quarters and other buildings,"Departments, Statutory Institutions & Public Corporations",
+MINISTER_OF_URBAN_DEVELOPMENT_AND_HOUSING_CONTD.,23,21. Implement housing schemes and housing financial grants programmes to service housing needs of people including low income recipients and particular community groups,,
+MINISTER_OF_URBAN_DEVELOPMENT_AND_HOUSING_CONTD.,24,22. Provide guidance to rural communities on environmental friendly and cost effective techniques for housing construction,,
+MINISTER_OF_URBAN_DEVELOPMENT_AND_HOUSING_CONTD.,25,23. Provide mechanical engineering services to government institutions,,
+MINISTER_OF_URBAN_DEVELOPMENT_AND_HOUSING_CONTD.,26,"24. Regulation, registration, regularization and standardization of activities in the construction sector in line with relevant rules and regulations and standards",,
+MINISTER_OF_URBAN_DEVELOPMENT_AND_HOUSING_CONTD.,27,25. Provide consultancy and regulatory services for the construction industries,,
+MINISTER_OF_URBAN_DEVELOPMENT_AND_HOUSING_CONTD.,28,26. Provide training on heavy construction equipment operation and maintenance,,
+MINISTER_OF_URBAN_DEVELOPMENT_AND_HOUSING_CONTD.,29,27. Develop basic infrastructure in remote rural areas using appropriate technology,,
+MINISTER_OF_URBAN_DEVELOPMENT_AND_HOUSING_CONTD.,30,28. Develop building material industry,,
+MINISTER_OF_URBAN_DEVELOPMENT_AND_HOUSING_CONTD.,31,29. Strengthen local construction personnel,,
+MINISTER_OF_URBAN_DEVELOPMENT_AND_HOUSING_CONTD.,32,30. Strengthen and safeguard local small and medium scale subcontractors,,
+MINISTER_OF_URBAN_DEVELOPMENT_AND_HOUSING_CONTD.,33,31. Engineering consultancy services and construction work,,
+MINISTER_OF_URBAN_DEVELOPMENT_AND_HOUSING_CONTD.,34,Duties & Functions,,
+MINISTER_OF_URBAN_DEVELOPMENT_AND_HOUSING_CONTD.,35,Prevention of marine pollution,,
+MINISTER_OF_URBAN_DEVELOPMENT_AND_HOUSING_CONTD.,36,Preparation and implementation of an action plan for the prevention of marine and marine related pollution,,
+MINISTER_OF_URBAN_DEVELOPMENT_AND_HOUSING_CONTD.,37,Coast Conservation and Protection,,
+MINISTER_OF_URBAN_DEVELOPMENT_AND_HOUSING_CONTD.,38,Implementing ocean cleanliness programmes for the prevention of damage caused to the coastal belt and sea bed by the disposal of waste,,
+MINISTER_OF_URBAN_DEVELOPMENT_AND_HOUSING_CONTD.,39,Creation of new villages and townships aimed at developing housing and infrastructure for landless employed in government and privately owned plantation companies,,
+MINISTER_OF_URBAN_DEVELOPMENT_AND_HOUSING_CONTD.,40,"Adopting necessary measures for the provision of basic facilities, livelihood generation and community development projects including other requirements for empowerment of plantation community economically, socially and culturally",,
+MINISTER_OF_URBAN_DEVELOPMENT_AND_HOUSING_CONTD.,41,Development of basic infrastructure in rural estate sector,,
+MINISTER_OF_URBAN_DEVELOPMENT_AND_HOUSING_CONTD.,42,Establishing 'People-Centric Boards and People-Centric Centers' giving pride of place to estate sector related community leadership and community participation.,,
+MINISTER_OF_URBAN_DEVELOPMENT_AND_HOUSING_CONTD.,43,Implement a special programme to ensure primary education and healthcare for children in estate communities.,,
+MINISTER_OF_URBAN_DEVELOPMENT_AND_HOUSING_CONTD.,44,Duties & Functions,,
+MINISTER_OF_URBAN_DEVELOPMENT_AND_HOUSING_CONTD.,45,41. All other subjects that come under the purview of Institutions listed in Column II,,
+MINISTER_OF_URBAN_DEVELOPMENT_AND_HOUSING_CONTD.,46,42. Supervision of all Institutions listed in Column II,,
 MINISTER_OF_FOREIGN AFFAIRS_CONTINUED,1,Duties & Functions,"Departments, Statutory Institutions & Public Corporations",Laws and Ordinance to be Implemented
 MINISTER_OF_FOREIGN AFFAIRS_CONTINUED,2,"5. Adoption of necessary measures to widen international cooperation in accordance with national policies, coordination and provision of necessary advice to the government.",,
 MINISTER_OF_FOREIGN AFFAIRS_CONTINUED,3,6. Responding appropriately to counteract adverse propaganda affecting the good image of Sri Lanka and stabilize the image of Sri Lanka,,
@@ -912,60 +892,59 @@ MINISTER_OF_ENVIRONMENT_CONTD.,16,Promotion of infrastructure and facilitation r
 MINISTER_OF_ENVIRONMENT_CONTD.,17,"Promotion of sports education, training and research",,
 MINISTER_OF_ENVIRONMENT_CONTD.,18,Formulation of new strategies and implementation of programmes to harness the potential of sports in building the image of Sri Lanka internationally,,
 MINISTER_OF_ENVIRONMENT_CONTD.,19,Expansion of opportunities for athletes to participate in international competitions,,
-MINISTER_OF_SPORTS_AND_YOUTH_AFFAIRS_CONTINUED,1,Duties & Functions,,"Departments, Statutory Institutions & Public Corporations"
-MINISTER_OF_SPORTS_AND_YOUTH_AFFAIRS_CONTINUED,2,9. Promotion of facilities to provide physical fitness for the general public and coordination of activities,,
-MINISTER_OF_SPORTS_AND_YOUTH_AFFAIRS_CONTINUED,3,10. Adoption of measures for promoting sports medical facilities and combating doping in sports,,
-MINISTER_OF_SPORTS_AND_YOUTH_AFFAIRS_CONTINUED,4,11. Development and management of sports complexes,,
-MINISTER_OF_SPORTS_AND_YOUTH_AFFAIRS_CONTINUED,5,12. Promotion of sports associations and sports competitions,,
-MINISTER_OF_SPORTS_AND_YOUTH_AFFAIRS_CONTINUED,6,13. Formulation and implementation of attitudinal development programmes aimed at a national programme for meeting the aspirations of the youth,,
-MINISTER_OF_SPORTS_AND_YOUTH_AFFAIRS_CONTINUED,7,14. Implementation of youth-centric international development cooperation programmes,,
-MINISTER_OF_SPORTS_AND_YOUTH_AFFAIRS_CONTINUED,8,15. Implementation of skills development programmes aimed at unemployed youth,,
-MINISTER_OF_SPORTS_AND_YOUTH_AFFAIRS_CONTINUED,9,16. Youth organizations related regulatory and development activities,,
-MINISTER_OF_SPORTS_AND_YOUTH_AFFAIRS_CONTINUED,10,"17. Formulating special programmes targeting youth community in such a way as to accord social recognition of the youth competencies, skills and creativity thus enabling them to achieve their objectives",,
-MINISTER_OF_SPORTS_AND_YOUTH_AFFAIRS_CONTINUED,11,18. Establishing a 'Youth Human Resources Data-bank' facilitating local and foreign employment opportunities,,
-MINISTER_OF_SPORTS_AND_YOUTH_AFFAIRS_CONTINUED,12,19. Take actions to create youth entrepreneurs and introduce and implement strategies to encourage and create new opportunities for them.,,
-MINISTER_OF_SPORTS_AND_YOUTH_AFFAIRS_CONTINUED,13,Duties & Functions,"Departments, Statutory Institutions & Public Corporations",Laws and Ordinance to be Implemented
-MINISTER_OF_SPORTS_AND_YOUTH_AFFAIRS_CONTINUED,14,Matters relating to all other subjects assigned to Institutions listed in Column II,,
-MINISTER_OF_SPORTS_AND_YOUTH_AFFAIRS_CONTINUED,15,Supervision of all Institutions listed in Column II,,
+MINISTER_OF_SPORTS_AND_YOUTH_AFFAIRS_CONTD.,1,9. Promotion of facilities to provide physical fitness for the general public and coordination of activities,"Departments, Statutory Institutions & Public Corporations",Laws and Ordinance to be Implemented
+MINISTER_OF_SPORTS_AND_YOUTH_AFFAIRS_CONTD.,2,10. Adoption of measures for promoting sports medical facilities and combating doping in sports,,
+MINISTER_OF_SPORTS_AND_YOUTH_AFFAIRS_CONTD.,3,11. Development and management of sports complexes,,
+MINISTER_OF_SPORTS_AND_YOUTH_AFFAIRS_CONTD.,4,12. Promotion of sports associations and sports competitions,,
+MINISTER_OF_SPORTS_AND_YOUTH_AFFAIRS_CONTD.,5,13. Formulation and implementation of attitudinal development programmes aimed at a national programme for meeting the aspirations of the youth,,
+MINISTER_OF_SPORTS_AND_YOUTH_AFFAIRS_CONTD.,6,14. Implementation of youth-centric international development cooperation programmes,,
+MINISTER_OF_SPORTS_AND_YOUTH_AFFAIRS_CONTD.,7,15. Implementation of skills development programmes aimed at unemployed youth,,
+MINISTER_OF_SPORTS_AND_YOUTH_AFFAIRS_CONTD.,8,16. Youth organizations related regulatory and development activities,,
+MINISTER_OF_SPORTS_AND_YOUTH_AFFAIRS_CONTD.,9,"17. Formulating special programmes targeting youth community in such a way as to accord social recognition of the youth competencies, skills and creativity thus enabling them to achieve their objectives",,
+MINISTER_OF_SPORTS_AND_YOUTH_AFFAIRS_CONTD.,10,18. Establishing a 'Youth Human Resources Data-bank' facilitating local and foreign employment opportunities,,
+MINISTER_OF_SPORTS_AND_YOUTH_AFFAIRS_CONTD.,11,19. Take actions to create youth entrepreneurs and introduce and implement strategies to encourage and create new opportunities for them.,,
+MINISTER_OF_SPORTS_AND_YOUTH_AFFAIRS_CONTD.,12,Duties & Functions,,
+MINISTER_OF_SPORTS_AND_YOUTH_AFFAIRS_CONTD.,13,Matters relating to all other subjects assigned to Institutions listed in Column II,,
+MINISTER_OF_SPORTS_AND_YOUTH_AFFAIRS_CONTD.,14,Supervision of all Institutions listed in Column II,,
 MINISTER_OF_IRRIGATION_CONTD.,1,Duties & Functions,,"Departments, Statutory Institutions & Public Corporations"
-MINISTER_OF_IRRIGATION_CONTD.,2,6. Control flood and drainage through flood control schemes,,
-MINISTER_OF_IRRIGATION_CONTD.,3,7. Proper management of reservoirs and irrigation facilities required for electricity supply and drinking water whilst giving priority for agricultural development in principle.,,
-MINISTER_OF_IRRIGATION_CONTD.,4,8. Determine catchment areas and river basins and take necessary measures for their sustainable conservation and development,,
-MINISTER_OF_IRRIGATION_CONTD.,5,"9. Prevention of environmental pollution in water sources such as rivers, canals and tanks",,
-MINISTER_OF_IRRIGATION_CONTD.,6,10. Developing strategies for controlling water pollution and protection of water quality,,
-MINISTER_OF_IRRIGATION_CONTD.,7,11. Implementation of irrigation development programmes,,
-MINISTER_OF_IRRIGATION_CONTD.,8,12. Formulation of dam safety measures,,
-MINISTER_OF_IRRIGATION_CONTD.,9,13. Implementation of sea water elimination schemes,,
-MINISTER_OF_IRRIGATION_CONTD.,10,14. Formulation of programmes and projects for the conservation of underground water resources and rain water conservation,,
-MINISTER_OF_IRRIGATION_CONTD.,11,15. Implementation of development programmes in Mahaweli zones and land related activities,,
-MINISTER_OF_IRRIGATION_CONTD.,12,16. All other subjects that come under the purview of Institutions listed in Column II,,
-MINISTER_OF_IRRIGATION_CONTD.,13,17. Supervision of all Institutions listed in Column II,,
-MINISTER_OF_IRRIGATION_CONTD.,14,Duties & Functions,"Departments, Statutory Institutions & Public Corporations",Laws and Ordinances to be Implemented
+MINISTER_OF_IRRIGATION_CONTD.,2,Control flood and drainage through flood control schemes,,
+MINISTER_OF_IRRIGATION_CONTD.,3,Proper management of reservoirs and irrigation facilities required for electricity supply and drinking water whilst giving priority for agricultural development in principle.,,
+MINISTER_OF_IRRIGATION_CONTD.,4,Determine catchment areas and river basins and take necessary measures for their sustainable conservation and development,,
+MINISTER_OF_IRRIGATION_CONTD.,5,"Prevention of environmental pollution in water sources such as rivers, canals and tanks",,
+MINISTER_OF_IRRIGATION_CONTD.,6,Developing strategies for controlling water pollution and protection of water quality,,
+MINISTER_OF_IRRIGATION_CONTD.,7,Implementation of irrigation development programmes,,
+MINISTER_OF_IRRIGATION_CONTD.,8,Formulation of dam safety measures,,
+MINISTER_OF_IRRIGATION_CONTD.,9,Implementation of sea water elimination schemes,,
+MINISTER_OF_IRRIGATION_CONTD.,10,Formulation of programmes and projects for the conservation of underground water resources and rain water conservation,,
+MINISTER_OF_IRRIGATION_CONTD.,11,Implementation of development programmes in Mahaweli zones and land related activities,,
+MINISTER_OF_IRRIGATION_CONTD.,12,All other subjects that come under the purview of Institutions listed in Column II,,
+MINISTER_OF_IRRIGATION_CONTD.,13,Supervision of all Institutions listed in Column II,,
+MINISTER_OF_IRRIGATION_CONTD.,14,Duties & Functions,"Departments, Statutory Institutions & Public Corporations",Laws and Ordinance to be Implemented
 MINISTER_OF_IRRIGATION_CONTD.,15,"1. Formulation, implementation, monitoring and evaluation of policies, programmes and projects, in relation to the subjects of Labour and Foreign employment, and those subjects that come under the purview of Departments, Statutory Institutions and Public Corporations listed in Column II based on the national policies implemented by the government.","1. Department of Labour
-2. National Institute ofLabour Studies
-3. National Institute forOccupationalSafety and Health
-4. Office ofthe Commissioner ofWorkmen'sCompensation
-5. NationalProductivitySecretariat
-6. ShramaVasanaFund
-7. Department ofManpowerandEmployment
-8. SriLankaForeignEmploymentBureau
-9. ForeignEmploymentAgencyofSriLanka(Pvt.)Ltd.","• Employees'CouncilsAct,No.32of1979
-•Employees'ProvidentFundAct,No.15of1958
-•EmploymentofWomen,YoungPersons,andChildrenAct,No.47of1956
-•FactoriesOrdinanceNo.45of1942
-•IndustrialDisputesAct,No.43of1950
-•MaternityBenefitsOrdinanceNo.32of1939
-•NationalInstituteofOccupationalSafetyandHealthAct,No.38of2009
-•PaymentofGratuityActNo.12of1983
-•ShopandOfficeEmployees(RegulationofEmploymentandRemuneration)ActNo.19of1954
-•TerminationofEmploymentofWorkmen(SpecialProvisions)Act,No.45of1971
-•TradeUnionOrdinanceNo.14of1935
-•WagesBoardsOrdinanceNo.27of1941
-•CompensationOrdinanceNo.19of1934
-•ShramaVasanaFundActNo.12of1998
-•SriLankaBureauofForeignEmploymentAct,No.21of1985
-•Fee-ChargingEmploymentAgenciesActNo.37of1956
-•AllotherlegislationspertainingtothesubjectsspecifiedinColumnsIandIIthathavenotspecificallybroughtundertheperviewofanyotherMinister."
+2. National Institute of Labour Studies
+3. National Institute for Occupational Safety and Health
+4. Office of the Commissioner of Workmen's Compensation
+5. National Productivity Secretariat
+6. Shrama Vasana Fund
+7. Department of Manpower and Employment
+8. Sri Lanka Foreign Employment Bureau
+9. Foreign Employment Agency of Sri Lanka (Pvt.) Ltd.","• Employees' Councils Act, No. 32 of 1979
+• Employees' Provident Fund Act, No. 15 of 1958
+• Employment of Women, Young Persons, and Children Act, No. 47 of 1956
+• Factories Ordinance No. 45 of 1942
+• Industrial Disputes Act, No. 43 of 1950
+• Maternity Benefits Ordinance No. 32 of 1939
+• National Institute of Occupational Safety and Health Act, No. 38 of 2009
+• Payment of Gratuity Act No. 12 of 1983
+• Shop and Office Employees (Regulation of Employment and Remuneration) Act No. 19 of 1954
+• Termination of Employment of Workmen (Special Provisions) Act, No. 45 of 1971
+• Trade Union Ordinance No. 14 of 1935
+• Wages Boards Ordinance No. 27 of 1941
+• Compensation Ordinance No. 19 of 1934
+• ShramaVasana Fund Act No. 12 of 1998
+• Sri Lanka Bureau of Foreign Employment Act, No. 21 of 1985
+• Fee-Charging Employment Agencies Act No. 37of 1956
+• All other legislations pertaining to the subjects specified in Column I and II that have not been specifically brought under the purview of any other Minister."
 MINISTER_OF_IRRIGATION_CONTD.,16,2. Provision of public services under the purview of the Ministry in an efficient and people friendly manner,,
 MINISTER_OF_IRRIGATION_CONTD.,17,"3. Reforming all systems and procedures using modern management techniques and technology, thus ensuring that the functions of the Ministry are fulfilled while eliminating corruption and waste.",,
 MINISTER_OF_IRRIGATION_CONTD.,18,"4. Formulation and implementation of policies for labour relations standards, employee administration, welfare and health in line with international standards.",,

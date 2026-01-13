@@ -1,6 +1,41 @@
 Minister,Row_ID,Column I,Column II,Column III
 MINISTER_OF_DEFENCE_CONTINUED,1,Duties & Functions,"Departments, Statutory Institutions & Public Corporations",Laws and Ordinance to be Implemented
-MINISTER_OF_DEFENCE_CONTINUED,2,25. Encourage research and development into appropriate technology for housing and construction sector,,
-MINISTER_OF_DEFENCE_CONTINUED,3,"26. Promote sustained development in the telecommunication industry by shaping the regulatory process, protecting public interest and being responsive to challenges in an increasingly competitive market",,
-MINISTER_OF_DEFENCE_CONTINUED,4,27. All other subjects that come under the purview of Institutions listed in Column II,,
-MINISTER_OF_DEFENCE_CONTINUED,5,28. Supervision of all the Institutions listed in Column II,,
+MINISTER_OF_DEFENCE_CONTINUED,2,11. Provision of defence education and post-service education for defence service personnel,19. National Dangerous Drugs Control Board,"• Private Security Agencies Act, No. 45 of 1998"
+MINISTER_OF_DEFENCE_CONTINUED,3,12. Provision of higher education for defence service personnel,20. National Defence Fund,"• Department of Coast Guard Act, No. 41 of 2009"
+MINISTER_OF_DEFENCE_CONTINUED,4,13. Matters relating to private security services,21. Ranaviru Seva Authority,"• Convention against Illicit Traffic in Narcotic Drugs and Psychotropic Substances Act, No. 1 of 2008"
+MINISTER_OF_DEFENCE_CONTINUED,5,14. Rescue operations and administration of Coast Guard Service,22. Api Wenuwen Api Fund,"• National Dangerous Drugs Control Board Act, No. 11 of 1984"
+MINISTER_OF_DEFENCE_CONTINUED,6,15. Matters relating to Extradition,23. Department of Meteorology,"• Ranaviru Seva Authority Act, No. 54 of 1999"
+MINISTER_OF_DEFENCE_CONTINUED,7,16. Prevention and control of the use of dangerous drugs,24. National Disaster Management Council,"• Api Wenuwen Api Fund Act, No. 6 of 2008"
+MINISTER_OF_DEFENCE_CONTINUED,8,17. Matters relating to veteran and disabled soldiers,25. Disaster Management Centre,"• Sri Lanka Disaster Management Act, No. 13 of 2005"
+MINISTER_OF_DEFENCE_CONTINUED,9,18. Provision of weather and climate related services,26. National Disaster Relief Services Centre,"• Sri Lanka Telecommunications Act, No. 25 of 1991"
+MINISTER_OF_DEFENCE_CONTINUED,10,19. Meteorological surveys and research,27. National Building Research Organization,"• All other legislations pertaining to the subjects specified in Column I and II, and not specifically brought under the purview of any other Minister."
+MINISTER_OF_DEFENCE_CONTINUED,11,20. Landslide disaster management and related research and development,,"• All other legislations pertaining to the subjects specified in Column I and II, and not specifically brought under the purview of any other Minister."
+MINISTER_OF_DEFENCE_CONTINUED,12,21. Forecasting natural disasters and sensitizing relevant sectors regarding them,,"• All other legislations pertaining to the subjects specified in Column I and II, and not specifically brought under the purview of any other Minister."
+MINISTER_OF_DEFENCE_CONTINUED,13,22. Coordination of awareness programmes on natural and man-made disasters,,"• All other legislations pertaining to the subjects specified in Column I and II, and not specifically brought under the purview of any other Minister."
+MINISTER_OF_DEFENCE_CONTINUED,14,23. Conduct rescue operations during natural and man-made disasters,,"• All other legislations pertaining to the subjects specified in Column I and II, and not specifically brought under the purview of any other Minister."
+MINISTER_OF_DEFENCE_CONTINUED,15,24. Promotion of disaster resilient construction and provision of technical guidance.,,"• All other legislations pertaining to the subjects specified in Column I and II, and not specifically brought under the purview of any other Minister."
+MINISTER_OF_DEFENCE_CONTINUED,16,Duties & Functions,"Departments, Statutory Institutions & Public Corporations","• All other legislations pertaining to the subjects specified in Column I and II, and not specifically brought under the purview of any other Minister."
+MINISTER_OF_DEFENCE_CONTINUED,17,25. Encourage research and development into appropriate technology for housing and construction sector,,Laws and Ordinance to be Implemented
+MINISTER_OF_DEFENCE_CONTINUED,18,"26. Promote sustained development in the telecommunication industry by shaping the regulatory process, protecting public interest and being responsive to challenges in an increasingly competitive market",,
+MINISTER_OF_DEFENCE_CONTINUED,19,27. All other subjects that come under the purview of Institutions listed in Column II,,
+MINISTER_OF_DEFENCE_CONTINUED,20,28. Supervision of all the Institutions listed in Column II,"Departments, Statutory Institutions & Public Corporations",
+MINISTER_OF_DEFENCE_CONTINUED,21,Duties & Functions,Department of Public Finance,Laws and Ordinances to be Implemented
+MINISTER_OF_DEFENCE_CONTINUED,22,Formulation of national economic and financial policies and strategies,Department of Treasury Operations,Excise Ordinance (Chapter 52)
+MINISTER_OF_DEFENCE_CONTINUED,23,Preparation of national development and public investment programmes,Department of State Accounts,"Finance Leasing Act, No. 56 of 2000"
+MINISTER_OF_DEFENCE_CONTINUED,24,Formulation of fiscal and macro fiscal management policies,Department of Information Technology Management,"Financial Transactions Reporting Act, No. 6 of 2006"
+MINISTER_OF_DEFENCE_CONTINUED,25,Identify causes for the economic crises and introduce immediate resuscitation remedies and programmes,Department of Legal Affairs,"Public Fiscal Management (Responsibility) Act, No. 3 of 2003"
+MINISTER_OF_DEFENCE_CONTINUED,26,"Introduce, implement and monitor economic reforms programmes needed to establish a stable and sustainable economic growth in the country.",Department of Management Audit,"Regulation of Insurance Industry Act, No. 43 of 2000"
+MINISTER_OF_DEFENCE_CONTINUED,27,Monitor the mechanism for implementation of cross-sectoral national policy priorities.,Department of International Trade Integration,"Lady Lochore Fund Act, No. 38 of 1951"
+MINISTER_OF_DEFENCE_CONTINUED,28,Function as the Focal Point for facilitation and coordination of international and regional trade integration including bilateral and multilateral trade agreements and resolution of disputes arising from these agreements.,Department of Development Finance,"Local Treasury Bills Ordinance, No. 8 of 1923"
+MINISTER_OF_DEFENCE_CONTINUED,29,Preparation of the annual budget and management of financial resources,Office of Comptroller General,"Nation Building Tax Act, No. 9 of 2009"
+MINISTER_OF_DEFENCE_CONTINUED,30,,Department of Inland Revenue,"Business Names Act, No. 07 of 1987"
+MINISTER_OF_DEFENCE_CONTINUED,31,,Sri Lanka Customs,Companies Act No. 07 of 2007
+MINISTER_OF_DEFENCE_CONTINUED,32,,Department of Excise,Trade Marks Act No. 30 of 1964
+MINISTER_OF_DEFENCE_CONTINUED,33,,National Lotteries Board,Cheetus Ordinance No. 61 of 1935
+MINISTER_OF_DEFENCE_CONTINUED,34,,Development Lotteries Board,Public Contract Act No. 03 of 1987
+MINISTER_OF_DEFENCE_CONTINUED,35,,Department of Valuation,"Prevention of Money Laundering Act, No. 5 of 2006"
+MINISTER_OF_DEFENCE_CONTINUED,36,,Import and Export Control Department,"Sri Lanka Accounting and Auditing Standards Act, No. 15 of 1995"
+MINISTER_OF_DEFENCE_CONTINUED,37,,Sri Lanka Export Development Board,"Import and Export (Control) Act, No. 1 of 1969"
+MINISTER_OF_DEFENCE_CONTINUED,38,,Central Bank of Sri Lanka,
+MINISTER_OF_DEFENCE_CONTINUED,39,,"All State Banks, Financial Institutions, Insurance Companies and their subsidiaries and related institutions",Sri Lanka Export Development Act No. 40 of 1979
+MINISTER_OF_DEFENCE_CONTINUED,40,,,

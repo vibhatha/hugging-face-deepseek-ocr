@@ -1,0 +1,9 @@
+{
+  "total_duration_seconds": 433.71776700019836,
+  "phase1_duration_seconds": 140.97427582740784,
+  "phase2_duration_seconds": 292.7432761192322,
+  "token_usage": {
+    "total_input": 184500,
+    "total_output": 72923
+  }
+}

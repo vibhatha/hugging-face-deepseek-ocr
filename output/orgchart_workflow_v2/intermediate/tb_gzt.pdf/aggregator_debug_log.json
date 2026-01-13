@@ -15,23 +15,23 @@
   },
   {
     "page": 3,
-    "raw_minister": "Minister of Defence (Contd.)",
-    "norm_name": "MINISTER OF DEFENCE",
-    "decision": "MERGED",
-    "target_minister": "Minister of Defence"
-  },
-  {
-    "page": 4,
     "raw_minister": "MINISTER_OF_DEFENCE_CONTINUED",
     "norm_name": "MINISTER_OF_DEFENCE_",
     "decision": "NEW_MINISTER",
     "target_minister": "MINISTER_OF_DEFENCE_CONTINUED"
   },
   {
+    "page": 4,
+    "raw_minister": "MINISTER_OF_DEFENCE_CONTINUED",
+    "norm_name": "MINISTER_OF_DEFENCE_",
+    "decision": "MERGED",
+    "target_minister": "MINISTER_OF_DEFENCE_CONTINUED"
+  },
+  {
     "page": 5,
-    "raw_minister": "",
-    "norm_name": "",
-    "decision": "SKIPPED_EMPTY_NAME",
+    "raw_minister": "CONTINUATION_FROM_PREVIOUS",
+    "norm_name": "CONTINUATION_FROM_PREVIOUS",
+    "decision": "MERGED",
     "target_minister": "MINISTER_OF_DEFENCE_CONTINUED"
   },
   {
@@ -113,31 +113,31 @@
   },
   {
     "page": 17,
-    "raw_minister": "MINISTER_OF_INVESTMENT_PROMOTION_CONTINUED",
+    "raw_minister": "MINISTER_OF_INVESTMENT_PROMOTION_CONTD.",
     "norm_name": "MINISTER_OF_INVESTMENT_PROMOTION_",
     "decision": "NEW_MINISTER",
-    "target_minister": "MINISTER_OF_INVESTMENT_PROMOTION_CONTINUED"
+    "target_minister": "MINISTER_OF_INVESTMENT_PROMOTION_CONTD."
   },
   {
     "page": 18,
     "raw_minister": "CONTINUATION_FROM_PREVIOUS",
     "norm_name": "CONTINUATION_FROM_PREVIOUS",
     "decision": "MERGED",
-    "target_minister": "MINISTER_OF_INVESTMENT_PROMOTION_CONTINUED"
+    "target_minister": "MINISTER_OF_INVESTMENT_PROMOTION_CONTD."
   },
   {
     "page": 19,
     "raw_minister": "CONTINUATION_FROM_PREVIOUS",
     "norm_name": "CONTINUATION_FROM_PREVIOUS",
     "decision": "MERGED",
-    "target_minister": "MINISTER_OF_INVESTMENT_PROMOTION_CONTINUED"
+    "target_minister": "MINISTER_OF_INVESTMENT_PROMOTION_CONTD."
   },
   {
     "page": 20,
     "raw_minister": "CONTINUATION_FROM_PREVIOUS",
     "norm_name": "CONTINUATION_FROM_PREVIOUS",
     "decision": "MERGED",
-    "target_minister": "MINISTER_OF_INVESTMENT_PROMOTION_CONTINUED"
+    "target_minister": "MINISTER_OF_INVESTMENT_PROMOTION_CONTD."
   },
   {
     "page": 21,
@@ -197,10 +197,10 @@
   },
   {
     "page": 29,
-    "raw_minister": "Transport and Highways",
-    "norm_name": "TRANSPORT AND HIGHWAYS",
-    "decision": "NEW_MINISTER",
-    "target_minister": "Transport and Highways"
+    "raw_minister": "CONTINUATION_FROM_PREVIOUS",
+    "norm_name": "CONTINUATION_FROM_PREVIOUS",
+    "decision": "MERGED",
+    "target_minister": "MINISTER_OF_EDUCATION_CONTINUED"
   },
   {
     "page": 30,
@@ -239,31 +239,31 @@
   },
   {
     "page": 35,
-    "raw_minister": "MINISTER_OF_HEALTH_CONTD.",
+    "raw_minister": "MINISTER_OF_HEALTH_CONTINUED",
     "norm_name": "MINISTER_OF_HEALTH_",
     "decision": "NEW_MINISTER",
-    "target_minister": "MINISTER_OF_HEALTH_CONTD."
+    "target_minister": "MINISTER_OF_HEALTH_CONTINUED"
   },
   {
     "page": 36,
     "raw_minister": "Minister of Health (Contd.)",
     "norm_name": "MINISTER OF HEALTH",
     "decision": "MERGED",
-    "target_minister": "MINISTER_OF_HEALTH_CONTD."
+    "target_minister": "MINISTER_OF_HEALTH_CONTINUED"
   },
   {
     "page": 37,
-    "raw_minister": "Minister of Health (Contd.)",
-    "norm_name": "MINISTER OF HEALTH",
+    "raw_minister": "MINISTER_OF_HEALTH_CONTINUED",
+    "norm_name": "MINISTER_OF_HEALTH_",
     "decision": "MERGED",
-    "target_minister": "MINISTER_OF_HEALTH_CONTD."
+    "target_minister": "MINISTER_OF_HEALTH_CONTINUED"
   },
   {
     "page": 38,
     "raw_minister": "CONTINUATION_FROM_PREVIOUS",
     "norm_name": "CONTINUATION_FROM_PREVIOUS",
     "decision": "MERGED",
-    "target_minister": "MINISTER_OF_HEALTH_CONTD."
+    "target_minister": "MINISTER_OF_HEALTH_CONTINUED"
   },
   {
     "page": 39,
@@ -323,7 +323,7 @@
   },
   {
     "page": 47,
-    "raw_minister": "MINISTER_OF JUSTICE, PRISONS AFFAIRS AND CONSTITUTIONAL REFORMS (Contd.)",
+    "raw_minister": "MINISTER_OF JUSTICE, PRISONS AFFAIRS AND CONSTITUTIONAL REFORMS (CONTINUED)",
     "norm_name": "MINISTER_OF JUSTICE, PRISONS AFFAIRS AND CONSTITUTIONAL REFORMS",
     "decision": "MERGED",
     "target_minister": "MINISTER_OF_JUSTICE_PRISONS_AFFAIRS_AND_CONSTITUTIONAL_REFORMS_CONTINUED"
@@ -337,17 +337,17 @@
   },
   {
     "page": 49,
-    "raw_minister": "MINISTER_OF_TOURISM_AND_LANDS_CONTINUED",
+    "raw_minister": "MINISTER_OF_TOURISM_AND_LANDS_CONTD.",
     "norm_name": "MINISTER_OF_TOURISM_AND_LANDS_",
     "decision": "NEW_MINISTER",
-    "target_minister": "MINISTER_OF_TOURISM_AND_LANDS_CONTINUED"
+    "target_minister": "MINISTER_OF_TOURISM_AND_LANDS_CONTD."
   },
   {
     "page": 50,
     "raw_minister": "MINISTER_OF_TOURISM_AND_LANDS_CONTINUED",
     "norm_name": "MINISTER_OF_TOURISM_AND_LANDS_",
     "decision": "MERGED",
-    "target_minister": "MINISTER_OF_TOURISM_AND_LANDS_CONTINUED"
+    "target_minister": "MINISTER_OF_TOURISM_AND_LANDS_CONTD."
   },
   {
     "page": 51,
@@ -449,8 +449,8 @@
   },
   {
     "page": 65,
-    "raw_minister": "Buddhasadana, Religious and Cultural Affairs (Contd.)",
-    "norm_name": "BUDDHASADANA, RELIGIOUS AND CULTURAL AFFAIRS",
+    "raw_minister": "Buddhadasana, Religious and Cultural Affairs (Contd.)",
+    "norm_name": "BUDDHADASANA, RELIGIOUS AND CULTURAL AFFAIRS",
     "decision": "MERGED",
     "target_minister": "MINISTER_OF_FOREIGN AFFAIRS_CONTINUED"
   },
@@ -463,8 +463,8 @@
   },
   {
     "page": 67,
-    "raw_minister": "Buddhasadana, Religious and Cultural Affairs (Contd.)",
-    "norm_name": "BUDDHASADANA, RELIGIOUS AND CULTURAL AFFAIRS",
+    "raw_minister": "CONTINUATION_FROM_PREVIOUS",
+    "norm_name": "CONTINUATION_FROM_PREVIOUS",
     "decision": "MERGED",
     "target_minister": "MINISTER_OF_FOREIGN AFFAIRS_CONTINUED"
   },
@@ -498,17 +498,17 @@
   },
   {
     "page": 72,
-    "raw_minister": "MINISTER_OF_SPORTS_AND_YOUTH_AFFAIRS_CONTINUED",
+    "raw_minister": "MINISTER_OF_SPORTS_AND_YOUTH_AFFAIRS_CONTD.",
     "norm_name": "MINISTER_OF_SPORTS_AND_YOUTH_AFFAIRS_",
     "decision": "NEW_MINISTER",
-    "target_minister": "MINISTER_OF_SPORTS_AND_YOUTH_AFFAIRS_CONTINUED"
+    "target_minister": "MINISTER_OF_SPORTS_AND_YOUTH_AFFAIRS_CONTD."
   },
   {
     "page": 73,
     "raw_minister": "MINISTER_OF_SPORTS_AND_YOUTH_AFFAIRS_CONTINUED",
     "norm_name": "MINISTER_OF_SPORTS_AND_YOUTH_AFFAIRS_",
     "decision": "MERGED",
-    "target_minister": "MINISTER_OF_SPORTS_AND_YOUTH_AFFAIRS_CONTINUED"
+    "target_minister": "MINISTER_OF_SPORTS_AND_YOUTH_AFFAIRS_CONTD."
   },
   {
     "page": 74,
